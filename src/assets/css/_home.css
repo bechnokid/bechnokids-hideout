@@ -33,7 +33,7 @@ article.home {
 
     li:not(:last-child):after {
       content: var(--icon-list);
-      color: var(--text-primary);
+      color: var(--bg-primary);
       margin-left: .75rem;
     }
 

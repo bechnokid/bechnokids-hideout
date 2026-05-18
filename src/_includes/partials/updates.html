@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <div class="h2 text-center p-1">❤ Updates ❤</div>
+  <div class="h2 text-center p-1 d-flex flex-center flex-gap-1">{% imgDiv { cls: "img-updates" } %} Updates {% imgDiv { cls: "img-updates" } %}</div>
   <div class="update-content p-2">
     {% set feed_items = collections.feed | reverse %}
     {%- for update in feed_items | limit(3) %}

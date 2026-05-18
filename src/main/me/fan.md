@@ -40,7 +40,7 @@ As such, I split a few of my favorites into **different categories**:
   </div>
 {% endmacro %}
 <div class="d-flex flex-column flex-gap-3 mt-4">
-  <div class="favs row g-3"><div class="col-md-6"><div class="sidebar"><p class="h3">Almost Like Me IRL</p><div class="favs-container">{% for item in about.favs.irl %}{{ fav_box(item) }}{% endfor %}</div></div></div><div class="col-md-6"><div class="sidebar"><p class="h3">Other Favorites</p><div class="other favs-container">{% for item in about.favs.other %}{{ fav_box(item) }}{% endfor %}</div></div></div></div>
+  <div class="favs row g-3"><div class="col-md-6"><div class="sidebar"><p class="h3 bg-dots">Almost Like Me IRL</p><div class="favs-container">{% for item in about.favs.irl %}{{ fav_box(item) }}{% endfor %}</div></div></div><div class="col-md-6"><div class="sidebar"><p class="h3 bg-dots">Other Favorites</p><div class="other favs-container">{% for item in about.favs.other %}{{ fav_box(item) }}{% endfor %}</div></div></div></div>
   <div class="favs science sidebar"><p class="h3">Scientists</p><div class="favs-container">{% for item in about.favs.science %}{{ fav_box(item) }}{% endfor %}</div></div>
 </div>
 
@@ -101,7 +101,7 @@ When writing down ship names, I don't consider if the character is a "top" or "b
 
 You can click on ships with a dotted underline for commentary!
 
-<div class="row mt-1 mb-4 g-3">{% for key, value in about.ships.canon %} <div class="col-md-4 d-flex flex-column"><div class="sidebar"><p class="h3">{{ key | title }}</p><div class="content">{% for media in value %} <details open class="p-2"><summary class="media">{{ media.name }}</summary><ul>{% for item in media.items %} <li>{% if item.desc %} <details class="ship-desc"><summary>{{ item.ship | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %}</summary><p>{{ item.desc | safe }}</p></details>{% else %} {{ (item.ship or item) | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %} {% endif %} </li>{% endfor %}</ul></details>{% endfor %}</div></div></div>{% endfor %}
+<div class="row mt-1 mb-4 g-3">{% for key, value in about.ships.canon %} <div class="col-md-4 d-flex flex-column"><div class="sidebar"><p class="h3 bg-dots">{{ key | title }}</p><div class="content">{% for media in value %} <details open class="p-2"><summary class="media rounded">{{ media.name }}</summary><ul>{% for item in media.items %} <li>{% if item.desc %} <details class="ship-desc"><summary>{{ item.ship | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %}</summary><p>{{ item.desc | safe }}</p></details>{% else %} {{ (item.ship or item) | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %} {% endif %} </li>{% endfor %}</ul></details>{% endfor %}</div></div></div>{% endfor %}
 </div>
 
 ### OC x Canon

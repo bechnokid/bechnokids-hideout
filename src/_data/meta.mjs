@@ -28,9 +28,7 @@ export default {
   },
   updated: [
     "Digimon",
-    "Other",
     "Now",
-    "Blog",
   ],
   new: [
   ],

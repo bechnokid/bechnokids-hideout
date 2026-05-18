@@ -77,8 +77,9 @@ const img = function(src, options = {}) {
 };
 
 const imgDiv = function(params) {
-  const divCls = (params.cls) ? ` class="${params.cls}"` : "";
-  let results = `<div${divCls} role="img" aria-label="${params.alt}"></div>`;
+  const divCls = (params.cls) ? `class="${params.cls}"` : "";
+  const divAlt = (params.alt) ? `aria-label="${params.alt}"` : "aria-hidden=true";
+  let results = `<div ${divCls} role="img" ${divAlt}></div>`;
   if (params.url) {
     const urlCls = (params.urlCls) ? ` class="${params.urlCls}"` : "";
     results = `<a href="${params.url}"${urlCls}>${results}</a>`

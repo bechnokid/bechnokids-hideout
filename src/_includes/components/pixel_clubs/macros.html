@@ -10,7 +10,7 @@
 #}
 {% macro basic(params) %}
   <section class="{{ params.id or (params.name | slugify) }}">
-    <h2>{{ params.name }}</h2>
+    <h2 class="bg-dots">{{ params.name }}</h2>
     <p>Created by <a href="{{ params.url }}">{{ params.owner }}</a>!</p>
     {% set gap_cls = ("justify-content-md-start justify-content-center flex-md-gap-1 flex-gap-" + params.gap) if params.gap else "flex-gap-1" %}
     <div class="d-flex flex-wrap py-3 {{ gap_cls }}">
@@ -28,7 +28,7 @@
 
 {% macro detailed(params) %}
   <section class="{{ params.id or (params.name | slugify )}} detailed">
-    <h2>{{ params.name }}</h2>
+    <h2 class="bg-dots">{{ params.name }}</h2>
     <p>Created by {% link params.url, { text: params.owner } %}</p>
     <div class="d-flex flex-wrap justify-content-center flex-gap-2 py-3">
       {% for item in params.arr %}
@@ -68,7 +68,7 @@
 
 {% macro cdw() %}
   <section class="cdw">
-    <h2>CDwORLD</h2>
+    <h2 class="bg-dots">CDwORLD</h2>
     <p>Created by <a href="https://humanfinny.neocities.org/clubs/cd_world/cdworld_home">Finny</a>!</p>
     <div class="d-flex justify-content-md-start justify-content-center align-items-center flex-md-gap-2 flex-gap-4 flex-wrap py-md-0 py-4 mt-2">
       {% for item in goodies.pixel_clubs.cdw %}
@@ -144,7 +144,7 @@
 
 {% macro stickers() %}
   <section class="sticker-sheet-club">
-    <h2>Sticker Sheet Club</h2>
+    <h2 class="bg-dots">Sticker Sheet Club</h2>
     <p>Created by <a href="https://stickersheetclub.neocities.org/">RoseDryad</a>!</p>
     <div class="d-flex flex-column align-items-center flex-gap-3 mt-4">
       {{ stickerSheet(true) }}
@@ -183,7 +183,7 @@
 {% macro yys() %}
   {% set yysAlt = "A small pixel of " %}
   <section class="yys">
-    <h2>Yum-Yum Shoppe</h2>
+    <h2 class="bg-dots">Yum-Yum Shoppe</h2>
     <p>Created by <a href="https://web.archive.org/web/20030608043805/http://www.letsbefriends.org/yum-yum/">Lani</a>! (archived)</p>
     <div class="d-flex flex-column align-items-center mt-md-0 mt-4">
       {{ yysTable(true) }}

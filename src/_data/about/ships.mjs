@@ -3,16 +3,6 @@
 ❗ - with caveats
 🌱 - loved as a kid
 */
-
-/* OC x Canon
-"Stella Aiba (OC) x Alphamon (Cyber Sleuth)",
-"Avis Hunter (♀ OC) x Nadia (Wilds)",
-"Siduri (OC) x Gilgamesh (VII Remake)",
-"Siduri (OC) x Gilgamesh (Chocobo Tales)",
-"Hotaru Haganezuka x Hisui Aoyama (OC)"
-"Whisper x Kaybee (OC) (Yokai Watch)",
-"Dr. Vitamin (OC) x Professor Membrane (Invader Zim)",
-*/
 export default {
   tropes: [
     "friends to lovers",
@@ -212,7 +202,7 @@ export default {
         items: [
           { ship: "Doctor Strange x Clea (Marvel Comics)", emoji: "💀"},
           "Inosuke x Aoi (Demon Slayer)",
-          "Vash x Wolfwood (TRIGUN)",
+          { ship: "Vash x Wolfwood (TRIGUN)", emoji: "💀" },
           { ship: "Shadow Milk Cookie x Pure Vanilla Cookie", emoji: "💀" },
           "Sonic x Sally (Archie Sonic)",
           "Knuckles x Julie-Su (Archie Sonic)",

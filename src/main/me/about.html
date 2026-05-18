@@ -36,7 +36,7 @@ The little guys next to me are **Numemon**, a shy Champion-level Digimon, and **
   <div class="col-lg-7 col-md-8 d-flex flex-column justify-content-center px-3">
     {{ profile_text | markdownify | safe }}
     <details class="identity-btns sidebar m-3">
-      <summary>ID Buttons</summary>
+      <summary class="bg-dot">ID Buttons</summary>
       <div class="d-flex flex-wrap justify-content-center align-items-center flex-gap-2 p-2">
         {% for item in about.list.identityBtns %}
           {% img "/assets/images/about/" + item.src, { alt: 'Button that says "' + item.name + '"'} %}

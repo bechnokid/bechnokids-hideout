@@ -52,6 +52,40 @@
 
   .h2 {
     font-size: 1.25em;
+
+    & > [role='img'] {
+      background-image: url('/assets/images/nav.png');
+    }
+
+    .img-main {
+      width: 16px;
+      height: 13px;
+      background-position: -33px -14px;
+    }
+
+    .img-creative {
+      width: 17px;
+      height: 17px;
+      background-position: 0 0;
+    }
+
+    .img-resources {
+      width: 16px;
+      height: 15px;
+      background-position: -16px -17;
+    }
+
+    .img-fun {
+      width: 16px;
+      height: 14px;
+      background-position: -33px 0;
+    }
+
+    .img-outgoing {
+      width: 16px;
+      height: 16px;
+      background-position: -17px 0;
+    }
   }
 
   .sidebar {
