@@ -8,7 +8,7 @@ noPlaceholderText: true
 
 The first Status Cafe theme I've created! I got a few compliments on it, so I thought I'd share it for those who would like to relive the old days of DeviantART!
 
-I might do other iterations of the site if I have the inspiration to do so, but I hope you enjoy this one in the meantime! If you are having any issues of any kind or happen to notice errors in the code, don't be afraid to shoot me an email at **bechnokid@yahoo.com**!
+I might do other iterations of the site if I have the inspiration to do so, but I hope you enjoy this one in the meantime! If you are having any issues of any kind or happen to notice errors in the code, don't be afraid to [contact me](/contact)!
 
 ## Terms of Service
 

@@ -264,4 +264,4 @@ fetch(feedURL)
 
 Thank you for reading this tutorial! Like I said previously, it is entirely possible to use an iframe with StatusCafe as its source, but I've started to enjoy this method just for its customization options. Regardless, I hope you find this useful!
 
-If you come across any issues or mistakes with this tutorial, feel free to email me at **bechnokid@yahoo.com**!
+If you come across any issues or mistakes with this tutorial, feel free to [contact me](/contact)!

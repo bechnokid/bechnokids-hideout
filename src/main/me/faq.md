@@ -1,6 +1,6 @@
 ---
 title: F.A.Q
-summary: I've gotten a lot of questions over the years. Many of them are asked pretty often, which is why I created this page! If you have another question that you don't see on this page, feel free to email me at **bechnokid@yahoo.com**.
+summary: I've gotten a lot of questions over the years. Many of them are asked pretty often, which is why I created this page! If you have another question that you don't see on this page, feel free to [contact me](/contact).
 description: Short for "frequently asked questions", here are some questions that I've been asked a lot over the years!
 displayOrder: 3
 permalink: faq/index.html

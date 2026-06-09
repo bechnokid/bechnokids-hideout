@@ -116,4 +116,4 @@ Honestly, I wouldn't be able to tell you how this code works. I took a look at h
 
 XML is pretty confusing, and I might never figure it out. I might have to take some more time in learning XML, but seeing as how I'm mostly only using it for feeds, I'm not sure if I'll have a use for that knowledge in the future. Oh well!
 
-Regardless, I hope this tutorial helped in some shape or form, and if you come across any problems or mistakes, you are more than welcome to email me at **bechnokid@yahoo.com**!
+Regardless, I hope this tutorial helped in some shape or form, and if you come across any problems or mistakes, you are more than welcome to [contact me](/contact)!

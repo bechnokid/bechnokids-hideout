@@ -241,6 +241,6 @@ I sadly have no explanation for this block of code except, "-shrugs- it works!"
 
 ## 6) Closing Thoughts
 
-Hopefully this tutorial helps anyone who wishes to make their site a little more accessible. If you have any questions, don't be afraid to send an email to <bechnokid@yahoo.com>. I'll do my best to answer any questions you might have!
+Hopefully this tutorial helps anyone who wishes to make their site a little more accessible. If you have any questions, don't be afraid to [contact me](/contact). I'll do my best to answer any questions you might have!
 
 I would also like to give HUGE thanks to Vance for the corrections as well as suggestions on improving this tutorial. I would also argue that [their tutorial](https://entropically.neocities.org/learn/freezeframe/) covers a lot, if not more, aspects of the library as well as providing alternatives to disabling the animations on GIFS. Please give it a read when you can!

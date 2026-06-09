@@ -521,7 +521,7 @@ That's all I can think of, but I'll be sure to put more in this section if I fin
 
 ## Closing Thoughts
 
-As mentioned before, this script isn't perfect since I'm not a JavaScript expert, so if anyone reads through the script and sees some improvements that can be made, feel free to send them to me at **bechnokid@yahoo.com**, and I'll make the appropriate changes!
+As mentioned before, this script isn't perfect since I'm not a JavaScript expert, so if anyone reads through the script and sees some improvements that can be made, feel free to [contact me](/contact), and I'll make the appropriate changes!
 
 You can also make a pull request on the [GitHub repository](https://github.com/bechnokid/simple-freeze) if that's more your style!
 
