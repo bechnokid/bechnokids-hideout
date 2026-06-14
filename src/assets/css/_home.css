@@ -3,38 +3,55 @@
   src: url('https://reef.kingdra.net/lmm-i.otf');
 }
 
-[data-theme="light"] .rainbow.clique {
-  background: linear-gradient(to right, #CB3A2A, #A34D14, #846E15, #14710A, #036A96, #644AC9, #A3144D);
-  background-clip: text;
-  color: transparent;
+:root {
+  --rainbow-gradient: light-dark(linear-gradient(to right, #CB3A2A, #ce590b, #d09412, #14710A, #036A96, #644AC9, #CB3A2A), linear-gradient(to right, #FF5555, #FFB86C, #F1FA8C, #50FA7B, #8BE9FD, #BD93F9, #FF79C6));
+  --fav-color: light-dark(var(--mint-30), var(--mint-10));
 }
 
-[data-theme="light"] .rainbow.fav {
-  color: #07be91;
-}
+.rainbow {
+  &.clique {
+    background: var(--rainbow-gradient);
+    background-clip: text;
+    color: transparent;
+  }
 
-[data-theme="dark"] .rainbow.clique {
-  background: linear-gradient(to right, #FF5555, #FFB86C, #F1FA8C, #50FA7B, #8BE9FD, #BD93F9, #FF79C6);
-  background-clip: text;
-  color: transparent;
-}
-
-[data-theme="dark"] .rainbow.fav {
-  color: #b0ffe5;
+  &.fav {
+    color: var(--fav-color);
+  }
 }
 
 article.home {
+  strong.intro {
+    font-family: "TamaFont";
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
   .home-links {
     gap: .75rem;
     font-size: 1.1rem;
-    font-family: 'Dyslexic';
+    font-family: 'TamaFont';
     line-height: 1.5rem;
     color: var(--text-primary);
 
+    &::before,
+    &::after {
+      display: flex;
+      align-items: end;
+    }
+
+    &::before {
+      content: url(/assets/images/icon_tama_hydrangea_l.png);
+    }
+
+    &::after {
+      content: url(/assets/images/icon_tama_hydrangea_r.png);
+    }
+
     li:not(:last-child):after {
       content: var(--icon-list);
-      color: var(--bg-primary);
       margin-left: .75rem;
+      font-size: .8rem;
     }
 
     a {
@@ -73,7 +90,7 @@ article.home {
   }
 
   .problematic strike {
-    font-family:'lmm-i';
+    font-family: 'lmm-i';
     font-size: 1.15em;
     letter-spacing: 2px;
     opacity: 0.65;
@@ -93,5 +110,9 @@ article.home {
       text-align: center;
       gap: .25rem;
     }
+  }
+
+  strong.intro {
+    font-size: 1.4rem !important;
   }
 }

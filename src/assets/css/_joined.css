@@ -100,9 +100,52 @@
   position: relative;
   width: 180px;
   height: 120px;
-  background: #a0a3c6 url(/assets/images/webrings/crwr_bg.png) bottom/cover;
-  border: 4px solid #242946;
+  border-width: 4px;
+  border-style: solid;
   border-radius: 1rem;
+  background-image: url(/assets/images/webrings/crwr_bg_2.png);
+
+  .cookie-icon {
+    width: 64px;
+    height: 64px;
+    background-image: url(/assets/images/webrings/crwr_icon_2.png);
+  }
+
+  &.timekeeper {
+    border-color: #772700;
+    background-color: burlywood;
+    background-position-y: -40px;
+  }
+
+  &.silent-salt {
+    border-color: #272532;
+    background-color: #888795;
+    background-position: right -29px;
+
+    .cookie-icon {
+      background-position: right top;
+    }
+  }
+
+  &.venom-dough {
+    border-color: darkslateblue;
+    background-position: left 136px;
+    background-color: #946eaf;
+
+    .cookie-icon {
+      background-position: left bottom;
+    }
+  }
+
+  &.dark-enchantress {
+    border-color: #9c003a;
+    background-position: right 140px;
+    background-color: #d483a1;
+
+    .cookie-icon {
+      background-position: right bottom;
+    }
+  }
 
   &:has(.cookie-icon:hover) .cookie-tooltip-content{
     opacity: 1;
@@ -132,7 +175,7 @@
     .img-index {
       width: 86px;
       height: 34px;
-      background: url(/assets/images/webrings/cookie-run.png) -17px 0/104px;
+      background: url(/assets/images/webrings/cookie-run.png) -18px 0px/106px;
       opacity: .5;
     }
 
@@ -419,89 +462,6 @@
 
   a {
     color: #ecdde5;
-  }
-}
-
-/* personaring */
-@font-face {
-  font-family: 'Shantell Sans';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/shantell-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/shantell-sans@latest/latin-400-normal.woff) format('woff');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}
-
-.p-ring {
-  font-family: "Shantell Sans", 'Comic Sans';
-
-  * {
-    color: #fff;
-  }
-
-  .sona {
-    position: relative;
-    max-width: 110px;
-    z-index: 10 !important;
-    margin-right: -1.25rem;
-  }
-
-  .ring-container {
-    .name-tag {
-      width: 180px;
-      background: #fff;
-      border: 2px solid #000;
-      border-radius: 8px;
-      overflow: hidden;
-
-      .hello,
-      .links {
-        background: #e84e8f;
-      }
-
-      .name,
-      a {
-        color: #000;
-      }
-
-      .hello {
-        font-weight: bold;
-        padding: .5rem 0 .25rem;
-
-        strong {
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
-      }
-
-      .name {
-        font-size: 1.75rem;
-      }
-
-      .links {
-        font-size: .65rem;
-      }
-    }
-  }
-
-  .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-
-    .img-prev,
-    .img-next {
-      width: 30px;
-      height: 17px;
-      background: url(/assets/images/webrings/persona.png) -27px 0px;
-    }
-
-    .img-rand {
-      width: 27px;
-      height: 25px;
-      background: url(/assets/images/webrings/persona.png) 0;
-    }
   }
 }
 

@@ -4,7 +4,7 @@
 
 {% macro navSection(section, name = null) %}
 <li>
-  <div class="d-flex align-items-center flex-gap-2 px-2 py-1 h2">{% imgDiv { cls: "img-" + (name or section) } %} {{ (name or section) | title }}</div>
+  <div class="section-header d-flex align-items-center flex-gap-2 px-2 py-1 h2">{% imgDiv { cls: "img-" + (name or section) } %} <span>{{ (name or section) | title }}</span></div>
   <ul class="section-list ms-lg-3 ms-md-2 ms-4 my-1 pe-md-1 pe-0">
     {%- for link in collections[section] | sortCollectionByDisplayOrder %}
       {% if link.data.wip %}

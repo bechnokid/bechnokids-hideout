@@ -32,7 +32,7 @@ I also removed any instances of JQuery for this tutorial. I still like using JQu
 
 Here's a small demo of the new script without any styling!
 
-{% codeDemo  "Script demo for freezing GIFs", height = "115", class = "mt-2" %}
+{% codeDemo  "Script demo for freezing GIFs", height = "115", class = "mt-2 bg-body" %}
 
 ```html
 <button class="play-gif">Play GIFs</button>
@@ -412,9 +412,9 @@ document.addEventListener("readystatechange", function () {
 });
 ```
 
-At **line 5**, you would change **play-gif** to **start-img-btn**.
-At **line 9**, you would change **stop-gif** to **stop-img-btn**.
-At **line 13**, you would change **toggle-gif** to **toggle-img-btn**.
+- At **line 5**, you would change **play-gif** to **start-img-btn**.
+- At **line 9**, you would change **stop-gif** to **stop-img-btn**.
+- At **line 13**, you would change **toggle-gif** to **toggle-img-btn**.
 
 If you want to take the advanced route, you can remove **lines 5 through 15** entirely and make your own event listeners that will call the `start()`, `stop()`, and `toggle()` methods on their own.
 

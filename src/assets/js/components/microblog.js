@@ -56,7 +56,7 @@ function generateStatusHtml(el, isHome = false){
     html = `
     <div class="flex-shrink-0 d-flex align-items-center">${emoticonElement}</div>
     <div class="d-flex flex-column justify-content-center flex-gap-1">
-      <p class='status-date'><strong>${ dateString }</strong></p>
+      <p class='status-date h3 text-accent'>${ dateString }</p>
       <p class='status-text'>${content}</p>
     </div>
     `;

@@ -41,7 +41,7 @@ As such, I split a few of my favorites into **different categories**:
 {% endmacro %}
 <div class="d-flex flex-column flex-gap-3 mt-4">
   <div class="favs row g-3"><div class="col-md-6"><div class="sidebar"><p class="h3 bg-dots">Almost Like Me IRL</p><div class="favs-container">{% for item in about.favs.irl %}{{ fav_box(item) }}{% endfor %}</div></div></div><div class="col-md-6"><div class="sidebar"><p class="h3 bg-dots">Other Favorites</p><div class="other favs-container">{% for item in about.favs.other %}{{ fav_box(item) }}{% endfor %}</div></div></div></div>
-  <div class="favs science sidebar"><p class="h3">Scientists</p><div class="favs-container">{% for item in about.favs.science %}{{ fav_box(item) }}{% endfor %}</div></div>
+  <div class="favs science sidebar"><p class="h3 bg-dots">Scientists</p><div class="favs-container">{% for item in about.favs.science %}{{ fav_box(item) }}{% endfor %}</div></div>
 </div>
 
 ## Shipper Behavior

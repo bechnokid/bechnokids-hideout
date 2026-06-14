@@ -1,11 +1,15 @@
 const markdownLib = require('./markdownlib.js');
+const CUSTOM_ICONS = [
+  "meat",
+  "hand_point",
+]
 
 const icon = function (value, options = {}) {
   let iconCls = '';
-  if (value == 'meat') {
-    const iconAlt = (options.alt) ? ` alt="${options.alt}"` : '';
+  if (CUSTOM_ICONS.includes(value)) {
+    const iconAlt = (options.alt) ? ` alt="${options.alt}"` : "alt='' aria-hidden='true'";
     if (options.cls) iconCls = ` class='${options.cls}'`;
-    return `<img src='/assets/images/meat.png'${iconAlt + iconCls}>`;
+    return `<img src='/assets/images/icon_${value}.${ options.gif ? "gif" : "png"}'${iconAlt + iconCls}>`;
   } else if (value == 'new' || value == "updated") {
     return `<img src='/assets/images/${value}.gif' alt='${value[0].toUpperCase() + value.substring(1)}'>`;
   } else {

@@ -1,0 +1,66 @@
+@import "_reset.css";
+
+@font-face {
+  font-family: 'TamaFont';
+  src: url(/assets/fonts/TamaFont.woff2);
+}
+
+:root {
+  --bg-body: light-dark(#fff0f3, #351b3a);
+  --border-color: light-dark(var(--text-primary), #1f0d23);
+  --text-body: #0e172c;
+  --text-primary: #97004c;
+  --text-secondary: #561386;
+  --text-link: var(--text-secondary);
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  color: var(--text-body);
+  background: var(--bg-body);
+  accent-color: var(--text-secondary);
+}
+
+main {
+  border: 2px solid var(--border-color);
+
+  .content {
+    width: 226px;
+    height: 265px;
+    top: 3.5rem;
+    left: 7.5rem;
+  }
+}
+
+h1 {
+  font-family: 'TamaFont';
+  font-weight: 100;
+  color: var(--text-primary);
+  font-size: 1.75rem;
+}
+
+a {
+  font-family: 'TamaFont';
+  font-size: 1.5rem;
+  color: var(--text-link);
+
+  &:focus-visible {
+    padding: 0 .5rem;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    &::before {
+      content: url('/assets/images/404_point.gif');
+      margin-right: .5rem;
+    }
+  }
+}
+
+.content {
+  font-family: Verdana;
+  font-size: .8em;
+}

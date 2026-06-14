@@ -6,8 +6,8 @@ const plugins = require('./config/plugins.js');
 const shortcodes = require('./config/shortcodes.js');
 const pairedShortcodes = require('./config/shortcodesPaired.js');
 
+const htmlMin =  require('html-minifier-next');
 const markdownLib = require('./config/markdownlib.js');
-const htmlmin = require('./config/htmlmin.js');
 const csvParse = require('./config/csvparse.js');
 
 const TEMPLATE_ENGINE = 'njk';
@@ -68,9 +68,16 @@ module.exports = async function(eleventyConfig){
     return `${subtitle}<div${galleryId} class='${mainClsArr.join(' ')}'>${title}<div class='content p-3 position-relative ${subClsArr.join(' ')}'>${mainContent}</div></div>`;
   })
 
-
   // Transform
-  eleventyConfig.addTransform("htmlmin", htmlmin);
+  if (env === "prod") eleventyConfig.addTransform("html-minifier-next", async function(content) {
+    if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {
+      let minified = await htmlMin.minify(content, {
+        preset: 'comprehensive',
+      });
+      return minified;
+    }
+    return content;
+  });
 
   // Filters
   for (key in filters.base) {

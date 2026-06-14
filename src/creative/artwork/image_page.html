@@ -14,13 +14,13 @@ eleventyComputed:
 {% macro art_nav(img) %}
   {% if img.prevImg %}
     {% set art_link = img.prevImg | slugify %}
-    {% link "../" + art_link, { text: "&lt;&lt;", cls: 'button', alt: 'Go to previous image' } %}
+    {% link "../" + art_link, { text: "Prev", cls: 'button', alt: 'Go to previous image' } %}
   {% endif %}
   {% set art_link = img.gallery | slugify %}
   {% link "/art/" + art_link + "/", { text: "Index", cls: 'button' } %}
   {% if img.nextImg %}
     {% set art_link = img.nextImg | slugify %}
-    {% link "../" + art_link, { text: "&gt;&gt;", cls: 'button', alt: 'Go to next image' } %}
+    {% link "../" + art_link, { text: "Next", cls: 'button', alt: 'Go to next image' } %}
   {% endif %}
 {% endmacro %}
 <section class="d-flex flex-column flex-gap-3">

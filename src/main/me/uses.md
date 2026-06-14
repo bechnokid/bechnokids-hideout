@@ -41,7 +41,7 @@ description: A list of things that I use to make my life a little easier(?) and 
 
 ### Technologies & Frameworks
 
-- [Neocities](https://neocities.org) - Hosting
+- [NearlyFreeSpeech](https://nearlyfreespeech.net) - Hosting
 - [Porkbun](https://porkbun.com) - Domain
 - [Eleventy](https://11ty.dev) - Static site generator
 - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/contents/#css-files) - Grid formatting

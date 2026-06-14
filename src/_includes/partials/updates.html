@@ -3,7 +3,7 @@
   <div class="update-content p-2">
     {% set feed_items = collections.feed | reverse %}
     {%- for update in feed_items | limit(3) %}
-      <strong>{{ update.fileSlug | monDayYear }}</strong>
+      <span class="update-date text-center text-accent">{{ update.fileSlug | monDayYear }}</span>
       <ul>
         {%- for item in update.data.updateContent %}
         <li>{{ item | markdownifyInline | safe }}</li>

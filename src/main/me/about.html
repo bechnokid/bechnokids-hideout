@@ -96,7 +96,7 @@ The little guys next to me are **Numemon**, a shy Champion-level Digimon, and **
   {% set img_path = "/assets/images/about/quiz-results/" %}
   <div class="quiz-results sidebar">
     <h2>Quiz Results</h2>
-    <div class="gallery-box">
+    <div class="gallery-box d-flex flex-md-row flex-column align-items-center flex-gap-3 p-3">
       {% for item in about.quiz_results %}
         {% if item.title %}
           <div class="text-widget sidebar d-flex{{ " flex-column" if item.alignment == "vertical" }} flex-gap-3 p-3{{ " " + item.cls if item.cls }}">

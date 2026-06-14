@@ -7,12 +7,16 @@ import { loadBishieQuiz } from "./components/bishie.js";
 
 $(themeSwitchLabel).on('click', function () {
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  const isDark = newTheme === 'dark';
   localStorage.setItem('theme', newTheme);
-  updateButtonAndTheme(themeSwitchLabel, newTheme === 'dark', newTheme);
+  updateTheme(newTheme);
+  updateButton(isDark);
   currentTheme = newTheme;
 });
 
 $(document).ready(function() {
+  updateButton(currentTheme === 'dark');
+
   if ($('.freezeframe').length > 0) loadFreeze();
   if ($(`#${STATUS_CONTAINER}`).length > 0) loadMicroblog();
   if ($('.webrings').length > 0) loadWebrings(webringLinks);

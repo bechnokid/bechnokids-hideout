@@ -87,11 +87,11 @@
     url: "https://evehibi.nekoweb.org/ckwr/"
   } %}
   <div class="{{ webring_params.id }}">
-    <div class="cookie-wrapper d-flex flex-column px-1 h-100 justify-content-evenly">
+    <div class="cookie-wrapper d-flex flex-column py-1 h-100">
       {% imgDiv { cls: 'img-index me-1', alt: alt_index + webring_params.name + " webring", url: webring_params.url, urlCls: 'index align-self-end'} %}
       <div class="nav d-flex justify-content-around">
         <div class="cookie-tooltip">
-          {% img "/assets/images/webrings/crwr_icon.png", { cls: "cookie-icon", ariaHidden: true } %}
+          {% imgDiv { cls: "cookie-icon", alt: "Profile image of Timekeepr Cookie" } %}
         </div>
         <div class="arrows-container js-required d-flex align-items-center flex-gap-3">
           {% imgDiv { cls: 'img-prev', alt: alt_prev + webring_params.name + " webring", url: webring_params.url + "?action=previous", urlCls: 'prev'} %}
@@ -100,7 +100,7 @@
       </div>
     </div>
     <div class="cookie-tooltip-content" role="tooltip">
-        <p>This is Bechno Kid's favorite cookie! When asked why they liked this cookie, they said: "I love her voice and design! We love crazy intelligent girls in this household!"</p>
+        <p>This is Bechno Kid's favorite cookie! When asked why they liked this cookie, they said: "<span id="reason">N/A</span>"</p>
       </div>
   </div>
 {% endmacro %}
@@ -218,31 +218,6 @@
     <a href="https://baccyflap.com/noai/?rnd" target="_top"><img src="https://baccyflap.com/noai/valywidget2.gif" alt="random no ai webring site" title="random no ai webring site"></a>
     <a href="https://baccyflap.com/noai/?nxt&s=bkh" target="_top"><img src="https://baccyflap.com/noai/valywidget3.gif" alt="next no ai webring site" title="next no ai webring site"></a>
   </div>
-{% endmacro %}
-
-{% macro persona() %}
-  {% set webring_params = {
-    id: "p-ring",
-    name: "persona ring",
-    url: "https://silly-beanz.neocities.org/personaring",
-    vars: "/onionring-variables.js"
-  } %}
-  <div class="{{ set_ring_id(webring_params) }} d-flex align-items-center">
-    <img src="{{ img_path }}/personaring.png" alt="" class="sona outline" aria-hidden="true">
-    <div class="ring-container d-flex flex-column flex-gap-1 text-center">
-      <div class="name-tag">
-        <p class="hello d-flex flex-column"><strong>HELLO!</strong> my name is:</p>
-        <p class="name font-weight-bold">Bechno</p>
-        <p class="links p-1">part of the <a href="{{ webring_params.url }}/home" title="join???">{{ webring_params.name }}</a> :)</p>
-      </div>
-      <div class="nav js-required">
-        {% imgDiv { cls: "img-prev black-text", alt: alt_prev + webring_params.name + " webring", url: "#", urlCls: "prev js-required" if params.prev_url == "#" else "prev" } %}
-        {% imgDiv { cls: "img-rand black-text", alt: alt_rand + webring_params.name + " webring", url: "#", urlCls: "rand" } %}
-        {% imgDiv { cls: "img-next black-text", alt: alt_next + webring_params.name + " webring", url: "#", urlCls: "prev js-required" if params.prev_url == "#" else "prev" } %}
-      </div>
-    </div>
-  </div>
-  {{ set_ring_sites(webring_params) }}
 {% endmacro %}
 
 {% macro queercoded() %}

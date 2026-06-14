@@ -7,6 +7,11 @@ body#splash-page {
     text-decoration: underline;
     border: 0;
 
+    &.enter-link {
+      font-family: 'TamaFont';
+      font-size: 1.75rem;
+    }
+
     &:hover {
       text-decoration: none;
     }
@@ -19,7 +24,6 @@ body#splash-page {
   .content {
     max-width: 850px;
     min-height: 450px;
-    border: 2px solid var(--bg-primary);
 
   .splash-desc {
       gap: 1rem;

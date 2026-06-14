@@ -87,7 +87,9 @@ class FreezeImages {
     }
   }
 
-  toggle() { // Toggles animation based on current state
+  toggle(event) { // Toggles animation based on current state
+    const isPlaying = event.target.innerHTML.includes("Play");
+    event.target.innerHTML = "Loading..."
     for (const img of this.imgList) {
       let imgNewCls = (img.className.includes('ff-inactive')) ? "ff-active" : "ff-inactive";
       let canvasNewCls = (img.className.includes('ff-inactive')) ? "ff-inactive" : "ff-active";
@@ -95,6 +97,7 @@ class FreezeImages {
       img.className = `${this.imgCls} ${imgNewCls}`;
       img.nextSibling.className = `${this.canvasCls} ${canvasNewCls}`;
     }
+    event.target.innerHTML = isPlaying ? "Stop GIFs" : "Play GIFs";
   }
 }
 
@@ -108,5 +111,5 @@ export function loadFreeze() {
   $('.stop-gif').on('click', () => f.stop());
 
   // When .toggle-gif is clicked, images will play or start depending on its current state
-  $('.toggle-gif').on('click', () => f.toggle());
+  $('.toggle-gif').on('click', (event) => f.toggle(event));
 }

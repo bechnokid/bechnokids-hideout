@@ -1,6 +1,5 @@
 footer {
   font-size: .8em;
-  border: 5px solid var(--border-body);
   border-top: 0;
 
   p {
@@ -11,7 +10,9 @@ footer {
     font-size: 1.25em;
 
     li:not(:last-child):after {
-      content: "|";
+      content: var(--icon-list);
+      color: var(--text-primary);
+      font-size: .6rem;
       margin-left: .5rem;
     }
   }

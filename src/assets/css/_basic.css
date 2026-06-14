@@ -83,8 +83,8 @@ img.preview-img {
 .feed-links {
   height: 125px;
   justify-content: space-around;
-  font-family: 'Dyslexic';
-  font-size: 1.15rem;
+  font-family: 'TamaFont';
+  font-size: 1.5rem;
   line-height: 1.5rem;
 
   a {

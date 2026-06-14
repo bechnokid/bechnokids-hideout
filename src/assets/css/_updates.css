@@ -1,7 +1,8 @@
 #updates-bar {
-  strong {
+  .update-date {
     display: block;
-    text-align: center;
+    font-family: 'TamaFont';
+    font-size: .9rem;
   }
 
   li {
@@ -11,12 +12,13 @@
 
     &::marker {
       content: var(--icon-list);
+      font-size: .55rem;
       color: var(--text-secondary);
     }
   }
 
   .h2 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 
   hr {
@@ -30,18 +32,23 @@
   }
 
   .img-updates {
-    width: 16px;
-    height: 16px;
-    background: url('/assets/images/nav.png') 0 -17px;
+    width: 18px;
+    height: 18px;
+    background: url('/assets/images/nav.gif') 0 -19px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #updates-bar .update-content {
+  #updates-bar, .update-content {
     hr,
     strong:not(:first-of-type),
-    ul:not(:first-of-type) {
+    ul:not(:first-of-type),
+    .update-date {
       display: none;
     }
+  }
+
+  .update-date {
+    font-size: 1.4rem;
   }
 }

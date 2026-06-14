@@ -1,3 +1,10 @@
+const COOKIE_LIST = [
+  { name: 'Timekeeper', reason: 'I love her voice and design! We love crazy intelligent girls in this household!'},
+  { name: 'Silent Salt', reason: "This is Bechno Kid's favorite cookie! When asked why they liked this cookie, they said: 'I love his design and story so much! He makes me sob but in a good way!"},
+  { name: 'Venom Dough', reason: "ngl but I was kind of ok with them at first until I saw their waving animation and thought it was really cute given how intimidating they are. So polite!" },
+  { name: 'Dark Enchantress', reason: "Listen...I really like her voice actor. Patty McCormack is so good!"},
+]
+
 function getWebringSites(json, params) {
   $.ajax({
     url: json,
@@ -44,5 +51,13 @@ export function loadWebrings(webringLinks) {
     } else {
       updateWebringLinks(webringParams);
     }
+  };
+
+  const randomCookie = COOKIE_LIST[getRandomIndex(COOKIE_LIST)];
+  const cookieCls = randomCookie.name.toLowerCase().replaceAll(' ', '-');
+  let ckwr = document.querySelectorAll('.ckwr')[0];
+  if (!ckwr.className.includes(cookieCls)) {
+    ckwr.className = `ckwr ${cookieCls}`;
+    document.querySelectorAll('.ckwr #reason')[0].innerHTML = randomCookie.reason;
   }
 }

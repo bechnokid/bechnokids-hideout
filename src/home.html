@@ -9,7 +9,7 @@ noScroll: true
 freezeframe: true
 ---
 {% set contentBlock %}
-Hello and welcome to **Bechno Kid's Hideout!**
+Hello and welcome to **Bechno Kid's Hideout!**{.intro .ms-1} {.d-flex .flex-gap-1}
 
 This is a little nook where a simple beet can live her childhood dream as a webmaster. You'll find artwork, my blog, some tutorials, and some other things that I collected while browsing the Web.
 
@@ -22,7 +22,7 @@ Webrings and fanlistings can be found in [/joined](/joined)!
   <div class="content">{{ contentBlock | markdownify | safe }}</div>
   <ul class="home-links inline-list justify-content-center">
     {%- for link in meta.introLinks %}
-      <li>{% link link.url, { text: link.name} %}</li>
+      <li class="d-flex align-items-center display-2">{% link link.url, { text: link.name} %}</li>
     {% endfor %}
   </ul>
   <div class="home-row row d-flex flex-md-row flex-column flex-md-gap-0 flex-gap-4">

@@ -193,15 +193,17 @@ $.ajax = function (args) {
 }
 
 // Load theme
-function updateButtonAndTheme(labelEl, isDark, theme) {
-  const themeVar = theme;
-  $("html").attr('data-theme', themeVar);
-  const element = $(labelEl);
+function updateButton(isDark) {
+  const element = $(themeSwitchLabel);
   const ariaLabel = isDark ? 'light' : 'dark';
-  element.attr('aria-label', `Switch to ${ariaLabel} mode`);
-
   const iconCls = isDark ? 'ft-sun' : 'ft-moon';
-  $(labelEl + ' i').forEach(el => el.classList = [iconCls]);
+  element.attr('aria-label', `Switch to ${ariaLabel} mode`);
+  $(themeSwitchLabel + ' i').forEach(el => el.classList = [iconCls]);
+}
+
+function updateTheme(newTheme) {
+  const themeVar = newTheme;
+  $("html").attr('data-theme', themeVar);
 };
 
 const themeSwitchLabel = '.toggle-mode';
@@ -212,7 +214,7 @@ let currentTheme = 'light';
 if (systemThemeDark.matches) currentTheme = 'dark';
 if (storedTheme !== null) currentTheme = storedTheme;
 
-updateButtonAndTheme(themeSwitchLabel, currentTheme === 'dark', currentTheme);
+updateTheme(currentTheme);
 
 /* HELPER FUNCTIONS */
 

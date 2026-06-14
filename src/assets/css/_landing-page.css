@@ -25,11 +25,11 @@ article.landing-page {
 
   dt,
   ul.gallery-list > li {
-    font-family: 'Dyslexic';
-    font-size: 1.4em;
+    font-family: 'TamaFont';
+    font-size: 1.5rem;
 
     &::marker {
-      color: var(--text-link-visited);
+      font-size: .85rem;;
     }
   }
 
@@ -46,6 +46,7 @@ article.landing-page {
         margin-right: .25rem;
         content: var(--icon-list);
         color: var(--text-link-visited);
+        font-size: .55rem;
       }
     }
 

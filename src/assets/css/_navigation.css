@@ -1,3 +1,39 @@
+nav {
+  [role='img'] {
+    background-image: url('/assets/images/nav.gif');
+  }
+
+  .img-main {
+    width: 18px;
+    height: 15px;
+    background-position: -36px -16px;
+  }
+
+  .img-creative {
+    width: 19px;
+    height: 19px;
+    background-position: 0 0;
+  }
+
+  .img-resources {
+    width: 18px;
+    height: 17px;
+    background-position: -18px -18px;
+  }
+
+  .img-fun {
+    width: 18px;
+    height: 16px;
+    background-position: -37px 0;
+  }
+
+  .img-outgoing {
+    width: 18px;
+    height: 18px;
+    background-position: -19px 0;
+  }
+}
+
 .skip-link {
   position: absolute;
   margin: .25rem;
@@ -26,10 +62,12 @@
   ul.section-list li.nav-link-item::marker {
     content: var(--icon-list);
     color: var(--text-secondary);
+    font-size: .55rem;
   }
 
   ul.section-list li ul li.mobile::marker {
     content: var(--icon-sublist);
+    font-size: .85rem;
   }
 
   li.nav-link-item {
@@ -39,7 +77,7 @@
   }
 
   details summary::marker {
-    color: var(--text-link-visited);
+    color: light-dark(var(--main-pink-20), var(--light-purple-20));
   }
 
   details summary:hover {
@@ -50,42 +88,8 @@
     margin-left: 1rem;
   }
 
-  .h2 {
-    font-size: 1.25em;
-
-    & > [role='img'] {
-      background-image: url('/assets/images/nav.png');
-    }
-
-    .img-main {
-      width: 16px;
-      height: 13px;
-      background-position: -33px -14px;
-    }
-
-    .img-creative {
-      width: 17px;
-      height: 17px;
-      background-position: 0 0;
-    }
-
-    .img-resources {
-      width: 16px;
-      height: 15px;
-      background-position: -16px -17;
-    }
-
-    .img-fun {
-      width: 16px;
-      height: 14px;
-      background-position: -33px 0;
-    }
-
-    .img-outgoing {
-      width: 16px;
-      height: 16px;
-      background-position: -17px 0;
-    }
+  .section-header {
+    font-size: 1.25rem;
   }
 
   .sidebar {
@@ -102,6 +106,10 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+
+  .section-header {
+    font-size: 2rem;
+  }
 
   details.burger {
     width: 100%;
@@ -152,7 +160,10 @@
 
       &.toggle-gif {
         padding: .5rem 1rem;
-        font-weight: bold;
+
+        &:hover {
+          color: var(--bg-sidebar);
+        }
       }
     }
   }
