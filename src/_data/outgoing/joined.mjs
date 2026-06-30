@@ -12,7 +12,9 @@ export default {
     },
   ],
   fanlistings: {
-    pending: "none",
+    pending: [
+      { src: "y2kmusic.png", url: "https://humanfinny.neocities.org/fanlistings/fanlisting_2000s", alt: "2000s music" }
+    ],
     characters: [
       { src: "rin.jpg", url: "https://www.marheavenj.net/rin/", alt: "Rin Okumura from Blue Exorcist" },
       { src: "mercury.gif", url: "https://eien-melody.net/ami/", alt: "Ami Mizuno/Sailor Mercury from Sailor Moon" },
