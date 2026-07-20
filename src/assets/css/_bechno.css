@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'TamaFont';
-  src: url(/assets/fonts/TamaFont.woff2);
+  src: url(/assets/fonts/TamaFont.woff);
 }
 
 :root {
@@ -29,7 +29,7 @@
   --main-pink-10: #e48aa7;
   --main-pink-20: #c56583;
   --main-pink-30: #9e1074;
-  --main-pink-40: #6a133f;
+  --main-pink-40: #7b224f;
   --main-pink-50: #3d1234;
 
   --light-purple-10: #f0e1f6;
@@ -44,7 +44,7 @@
   --main-purple-40: #34193c;
   --main-purple-50: #1b0e24;
 
-  --dark-purple-10: #604263;
+  --dark-purple-10: #66406b;
   --dark-purple-20: #492c51;
   --dark-purple-30: #30223d;
   --dark-purple-40: #1e1828;
@@ -73,7 +73,6 @@
   --border-body: var(--bg-body);
   --border-button: var(--border-sidebar);
   --border-sidebar: light-dark(var(--main-pink-10), var(--dark-purple-50));
-  --border-sidebar-stitch: light-dark(var(--main-pink-10), var(--main-pink-30));
   --border-glow: light-dark( var(--mint-20), var(--mint-30));
 
   --scroll-bg: light-dark(var(--bg-footer), var(--dark-purple-10));
@@ -83,6 +82,7 @@
   --text-body: light-dark(var(--black), var(--white));
   --text-button: var(--text-primary);
   --text-link: var(--text-secondary);
+  --text-link-hover: light-dark(var(--mint-40), var(--mint-20));
   --text-link-visited: light-dark(var(--mint-40), var(--mint-20));
   --text-muted: #805f6f;
   --text-primary: light-dark(var(--main-pink-30), var(--light-purple-30));
@@ -151,6 +151,16 @@
 
 .bg-dots-secondary {
   background-color: var(--bg-heading-secondary);
+}
+
+.heading-stitch {
+  --border-stitch: light-dark(var(--main-purple-30), var(--main-pink-40));
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  border: 1px dashed var(--border-stitch);
+  outline: 2px solid var(--bg-secondary);
+  font-weight: bold;
+  padding: 0 .5rem;
 }
 
 .text-background {
@@ -267,6 +277,7 @@ a {
 
     &:hover {
       border-bottom-color: transparent;
+      color: var(--text-link-hover);
     }
   }
 

@@ -13,7 +13,6 @@ export default {
   ],
   fanlistings: {
     pending: [
-      { src: "y2kmusic.png", url: "https://humanfinny.neocities.org/fanlistings/fanlisting_2000s", alt: "2000s music" }
     ],
     characters: [
       { src: "rin.jpg", url: "https://www.marheavenj.net/rin/", alt: "Rin Okumura from Blue Exorcist" },
@@ -28,6 +27,7 @@ export default {
       { url: "https://hellokitty.i-heart-you.net/", src: "hello_kitty.gif", alt: "Hello Kitty" },
     ],
     media: [
+      { src: "y2kmusic.png", url: "https://humanfinny.neocities.org/fanlistings/fanlisting_2000s", alt: "2000s music" },
       { url: "http://daria.ravenbeauty.net/", src: "daria.png", alt: "Daria" },
       { url: "https://boundless-realms.com/invaderzim/", src: "fan_iz.png", alt: "Invader Zim" },
       { url: "https://rikafire.fanimated.net/recess/index.php", src: "recess.png", alt: "Recess TV Show" },

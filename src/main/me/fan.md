@@ -101,7 +101,7 @@ When writing down ship names, I don't consider if the character is a "top" or "b
 
 You can click on ships with a dotted underline for commentary!
 
-<div class="row mt-1 mb-4 g-3">{% for key, value in about.ships.canon %} <div class="col-md-4 d-flex flex-column"><div class="sidebar"><p class="h3 bg-dots">{{ key | title }}</p><div class="content">{% for media in value %} <details open class="p-2"><summary class="media rounded">{{ media.name }}</summary><ul>{% for item in media.items %} <li>{% if item.desc %} <details class="ship-desc"><summary>{{ item.ship | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %}</summary><p>{{ item.desc | safe }}</p></details>{% else %} {{ (item.ship or item) | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %} {% endif %} </li>{% endfor %}</ul></details>{% endfor %}</div></div></div>{% endfor %}
+<div class="row mt-1 mb-4 g-3">{% for key, value in about.ships.canon %} <div class="col-md-4 d-flex flex-column"><div class="sidebar"><p class="h3 bg-dots">{{ key | title }}</p><div class="content">{% for media in value %} <details open class="p-2"><summary class="heading-stitch text-center rounded mb-2">{{ media.name }}</summary><ul>{% for item in media.items %} <li>{% if item.desc %} <details class="ship-desc"><summary>{{ item.ship | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %}</summary><p>{{ item.desc | safe }}</p></details>{% else %} {{ (item.ship or item) | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %} {% endif %} </li>{% endfor %}</ul></details>{% endfor %}</div></div></div>{% endfor %}
 </div>
 
 ### OC x Canon
