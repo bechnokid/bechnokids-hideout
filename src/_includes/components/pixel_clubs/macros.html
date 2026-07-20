@@ -10,10 +10,11 @@
 #}
 {% macro basic(params) %}
   <section class="{{ params.id or (params.name | slugify) }}">
-    <h2 class="bg-dots">{{ params.name }}</h2>
+    <h2>{{ params.name }}</h2>
     <p>Created by <a href="{{ params.url }}">{{ params.owner }}</a>!</p>
-    {% set gap_cls = ("justify-content-md-start justify-content-center flex-md-gap-1 flex-gap-" + params.gap) if params.gap else "flex-gap-1" %}
-    <div class="d-flex flex-wrap py-3 {{ gap_cls }}">
+    {% set center_cls = "justify-content-md-start justify-content-center" if not params.center else "justify-content-center" %}
+    {% set gap_cls = ("flex-md-gap-1 flex-gap-" + params.gap) if params.gap else "flex-gap-1" %}
+    <div class="sidebar d-flex flex-wrap p-3 {{ center_cls }} {{ gap_cls }} mt-3">
       {%- for item in params.arr %}
         {% set alt_text = (params.alt + item.alt) if params.alt else item.alt %}
         {% set options = { url: item.url, alt: (alt_text or ""), freezeframe: item.freezeframe } %}
@@ -28,15 +29,15 @@
 
 {% macro detailed(params) %}
   <section class="{{ params.id or (params.name | slugify )}} detailed">
-    <h2 class="bg-dots">{{ params.name }}</h2>
+    <h2>{{ params.name }}</h2>
     <p>Created by {% link params.url, { text: params.owner } %}</p>
-    <div class="d-flex flex-wrap justify-content-center flex-gap-2 py-3">
+    <div class="sidebar d-flex flex-wrap justify-content-center flex-gap-2 py-3 mt-3">
       {% for item in params.arr %}
         <div class="item d-flex flex-column flex-gap-1">
           {% set options = { url: item.url, alt: item.alt, freezeframe: item.freezeframe } %}
           <div class="img">{% img img_path + (params.id or (params.name | slugify)) + "/" + item.src, options %}</div>
-          <details class="desc sidebar text-xs text-center py-1 px-2 w-100">
-            <summary>{{ params.summary }}</summary>
+          <details class="desc text-xs text-center w-100">
+            <summary class="heading-stitch rounded mb-1">{{ params.summary }}</summary>
             {{ item.desc or params.desc or "N/A" }}
           </details>
         </div>
@@ -62,6 +63,7 @@
     owner: "Karla",
     url: "https://miserabledolly.net/bottlecaps",
     arr: goodies.pixel_clubs.bottlecaps,
+    center: true,
     gap: 5
   }) }}
 {% endmacro %}
@@ -85,6 +87,16 @@
       {% endfor %}
     </div>
   </section>
+{% endmacro %}
+
+{% macro charm() %}
+  {{ basic({
+    name: "Charm Ring",
+    owner: "Lapin",
+    url: "https://charm-ring.valentinely.cc/",
+    arr: goodies.pixel_clubs.charms,
+    center: true
+  }) }}
 {% endmacro %}
 
 {% macro fizzyVendor() %}

@@ -28,7 +28,8 @@ export default {
   },
   updated: [
     "Digimon",
-    "Now",
+    "Other",
+    "Pixel Clubs"
   ],
   new: [
   ],

@@ -39,11 +39,11 @@ nav {
   margin: .25rem;
   padding: .25rem;
   z-index: -99;
-}
 
-.skip-link:focus-visible {
-  position: relative;
-  z-index: 99;
+  &:focus-visible {
+    position: relative;
+    z-index: 99;
+  }
 }
 
 #nav-main {
@@ -51,7 +51,7 @@ nav {
     border: 0;
 
     &:hover {
-      border-bottom: 1px solid var(--text-link);
+      border-bottom: 1px solid var(--text-link-hover);
 
       &:visited {
         border-color: var(--text-link-visited);
@@ -59,15 +59,17 @@ nav {
     }
   }
 
-  ul.section-list li.nav-link-item::marker {
-    content: var(--icon-list);
-    color: var(--text-secondary);
-    font-size: .55rem;
-  }
+  ul.section-list {
+    li.nav-link-item::marker {
+      content: var(--icon-list);
+      color: var(--text-secondary);
+      font-size: .55rem;
+    }
 
-  ul.section-list li ul li.mobile::marker {
-    content: var(--icon-sublist);
-    font-size: .85rem;
+    li ul li.mobile::marker {
+      content: var(--icon-sublist);
+      font-size: .85rem;
+    }
   }
 
   li.nav-link-item {
@@ -76,16 +78,23 @@ nav {
     margin: .25rem 0 .1rem .5rem;
   }
 
-  details summary::marker {
-    color: light-dark(var(--main-pink-20), var(--light-purple-20));
-  }
+  details {
+    summary {
+      color: var(--text-link);
 
-  details summary:hover {
-    text-decoration: underline;
-  }
+      &::marker {
+        color: light-dark(var(--main-pink-20), var(--light-purple-20));
+      }
 
-  details .nav-link-item {
-    margin-left: 1rem;
+      &:hover {
+        color: var(--text-link-hover);
+        text-decoration: underline;
+      }
+    }
+
+    .nav-link-item {
+      margin-left: 1rem;
+    }
   }
 
   .section-header {
@@ -120,12 +129,12 @@ nav {
       cursor: var(--img-cursor-point), pointer;
       background: var(--bg-body);
       color: transparent;
-    }
 
-    summary.burger-summary::before {
-      content: "☰";
-      font-size: 2.5em;
-      color: var(--text-primary);
+      &::before {
+        content: "☰";
+        font-size: 2.5em;
+        color: var(--text-primary);
+      }
     }
 
     nav {
@@ -204,12 +213,14 @@ li.mobile {
     vertical-align: middle;
   }
 
-  li.desktop {
-    display: none;
-  }
+  li {
+    &.desktop {
+      display: none;
+    }
 
-  li.mobile {
-    display: revert;
+    &.mobile {
+      display: revert;
+    }
   }
 
   .mobile-nav-container {

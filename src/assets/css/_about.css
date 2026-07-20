@@ -114,17 +114,6 @@
         overflow-y: auto;
       }
 
-      summary.media {
-        margin-bottom: .5rem;
-        padding: 0 .5rem;
-        color: var(--text-secondary);
-        background-color: var(--bg-secondary);
-        text-align: center;
-        font-weight: bold;
-        border: 1px dashed var(--border-sidebar-stitch);
-        outline: 2px solid var(--bg-secondary);
-      }
-
       .emoji {
         font-size: 1rem;
       }

@@ -145,6 +145,11 @@ export default {
           url: "http://sweetskingdom.web.fc2.com/dot_icon/index.html"
         },
         {
+          src: "starloft_thyme.png",
+          alt: 'A white house with pink details and a sign that reads "Thyme" in capital letters.',
+          url: "https://starloft.neocities.org"
+        },
+        {
           src: "heru.gif",
           alt: "A hercules beetle",
           url: "http://www.anne-box.com/"

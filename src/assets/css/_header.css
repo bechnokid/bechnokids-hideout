@@ -7,7 +7,7 @@
 
 a:hover {
   header {
-    border: 5px solid var(--border-sidebar);
+    border: 5px solid var(--mint-30);
   }
 }
 

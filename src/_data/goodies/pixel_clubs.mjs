@@ -11,6 +11,42 @@ export default {
     { src: "miserabledolly-net_orange.png", alt: "An orange bottle cap with a picture of an orange and text that says \"Orange\"", url: "https://miserabledolly.net/bottlecaps" },
     { src: "sakuradreams_peach.png", alt: "A peach bottle cap with a picture of a peach and text that says \"Peach\"", url: "https://sakuradreams.neocities.org/" },
   ],
+  charms: [
+    {
+      src: "bechno.png",
+      alt: "A keychain that consists of three beaded strings, with two of them consisting of yellow, orange, white, and purple circle-, star-, and heart-shaped beads. That last string ends with an orange Original Tamagotchi shell with Maskutchi in the screen."
+    },
+    {
+      src: "valentinely.png",
+      alt: "An golden keychain with a heart-shaped carabiner with a decorated ornament adorned with a large pink ribbon and a Cupid's arrow.",
+      url: "https://valentinely.cc"
+    },
+    {
+      src: "allyratworld.png",
+      alt: "A golden heart-shaped keychain attached to a large pink, yellow, and purple ribbon adorned with several pink pearls. Attached to the ribbon is a small doll with blonde hair tied into two twintails. The text on the ribbon reads, \"Hopeless Fangirl\".",
+      url: "https://allyratworld.com"
+    },
+    {
+      src: "lazer-bunny.png",
+      alt: "A silver heart-shaped keychain attached to a looped string of pink, blue, and white beads with a large blue ribbon and a pink checkered heart bead at the end. A pink bunny with a blue bow on one of its ears is also attached.",
+      url: "https://lazer-bunny.neocities.org"
+    },
+    {
+      src: "peachlantern.png",
+      alt: "A pink flower-shaped keychain attached to a looped chain of charms that consist of pink and orange hibiscus flowers with a watermelon attached at the end. In the center of the chain is a large jar-shaped charm filled with a pink liquid and ice cubes and adorned with a blue straw, a pink hibsicus flower, and a slice of lime. At the bottom of the charm is an island charm with a palm tree.",
+      url: "https://peachlantern.neocities.org"
+    },
+    {
+      src: "pocketdollhouse.png",
+      alt: "A golden star-shaped keychain with several charms attached to it. One is a simplified angel wing. Another is a strawberry charm. Another a charm of Lucky, the mascot of Pocket Dollhouse, with a large envelope with a heart-shaped seal attached to the bottom. the last charm is a large four-leafed clover with a string of pink, green, blue, and yellow beads attached at the bottom.",
+      url: "https://pocketdollhouse.neocities.org"
+    },
+    {
+      src: "sweetcharm.gif",
+      alt: "A pink heart-shaped keychain with two pink ribbons, a string of star and circular beads, and a charm of a blue mascot with angel wings and a bow accessory. The carabiner itself has two wings and a ell attached to it. In the bottom right corner of the charm is a floating moon.",
+      url: "https://sweetcharm.net"
+    }
+  ],
   kindnessrocks: [
     {
       src: "bechnokid_beet.png",
