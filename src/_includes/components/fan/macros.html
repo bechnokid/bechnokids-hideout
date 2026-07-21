@@ -13,7 +13,15 @@
 
 {% macro pairing(media) %}
   {% set data = about.ocxcanon[media] %}
-  <div class="ocxcanon">
+  <div class="ocxcanon sidebar">
+    <div class="row g-0 title bg-dots p-2">
+      <p class="ship-name">{{ data.shipname }}</p>
+      <ul class="inline-list">
+        {% for item in data.relationship.tropes %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
     <div class="row g-0">
       <div class="col-md-6 row g-0 oc">
         <div class="col-md-4 summary">
