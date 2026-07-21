@@ -42,6 +42,7 @@ const stuff = [
 
 export default {
   digimon: {
+    shipname: "AlphaStella",
     oc: {
       name: "Stella Aiba",
       age: 27,
