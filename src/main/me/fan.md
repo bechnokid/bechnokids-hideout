@@ -7,6 +7,8 @@ permalink: fan/index.html
 toc:
   unlisted: true
 ---
+{% import 'components/fan/macros.html' as Fan with context %}
+
 ## Fan Behavior
 
 Perhaps one of my most defining traits as a fan is the [art](/art) that I draw of the things I like. I have been a fan artist since 1998 but didn't start engaging in fandoms until 2006, which was when I created a DeviantArt account in late 2005 and started interacting with other people who had similar interests as mine.
@@ -27,17 +29,6 @@ I would say this is a load of hogwash, but I recognize that this quote just does
 
 As such, I split a few of my favorites into **different categories**:
 
-{% set img_path = "/assets/images/about/favs/" %}
-{% macro fav_box(params) %}
-  <div class="fav-box">
-    {% set alt_text = params.name + " from " + params.series if params.series else params.name %}
-    {% img img_path + params.src, { alt: alt_text } %}
-    <p class="name font-weight-bold text-primary">{{ params.name | markdownifyInline | safe }}</p>
-    {% if params.series %}
-      <p class="series">{{ params.series | markdownifyInline | safe }}</p>
-    {% endif %}
-  </div>
-{% endmacro %}
 <div class="d-flex flex-column flex-gap-3 mt-4">
   <div class="favs row g-3"><div class="col-md-6"><div class="sidebar"><p class="h3 bg-dots">Almost Like Me IRL</p><div class="favs-container">{% for item in about.favs.irl %}{{ fav_box(item) }}{% endfor %}</div></div></div><div class="col-md-6"><div class="sidebar"><p class="h3 bg-dots">Other Favorites</p><div class="other favs-container">{% for item in about.favs.other %}{{ fav_box(item) }}{% endfor %}</div></div></div></div>
   <div class="favs science sidebar"><p class="h3 bg-dots">Scientists</p><div class="favs-container">{% for item in about.favs.science %}{{ fav_box(item) }}{% endfor %}</div></div>
@@ -115,7 +106,7 @@ I plan on writing full descriptions for each OC x Canon ship I have, but for now
 
 **Note:** "x" is for romantic ships, while "&" is for platonic ships!
 
-<ul>{% for item in about.ships.ocxcanon %}<li>{{ item | markdownifyInline | safe }}</li>{% endfor %}</ul>
+{{ Fan.pairing("digimon") }}
 
 ## Inspirations
 

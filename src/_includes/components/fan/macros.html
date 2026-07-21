@@ -1,0 +1,45 @@
+{% set img_path = "/assets/images/about/favs/" %}
+
+{% macro fav_box(params) %}
+  <div class="fav-box">
+    {% set alt_text = params.name + " from " + params.series if params.series else params.name %}
+    {% img img_path + params.src, { alt: alt_text } %}
+    <p class="name font-weight-bold text-primary">{{ params.name | markdownifyInline | safe }}</p>
+    {% if params.series %}
+      <p class="series">{{ params.series | markdownifyInline | safe }}</p>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+{% macro pairing(media) %}
+  {% set data = about.ocxcanon[media] %}
+  <div class="ocxcanon">
+    <div class="row g-0">
+      <div class="col-md-6 row g-0 oc">
+        <div class="col-md-4 summary">
+          <img src="{{ data.oc.img or "https://placehold.co/200"}}" alt="Image of {{ data.oc.name }}">
+          <p class="name">{{ data.oc.name }}</p>
+        </div>
+        <div class="col-md-8 lore">
+          {{ data.oc.info }}
+        </div>
+      </div>
+      <div class="col-md-6 row g-0 canon">
+        <div class="col-md-4 summary">
+          <img src="{{ data.canon.img or "https://placehold.co/200"}}" alt="Image of {{ data.canon.name }}">
+          <p class="name">{{ data.canon.name }}</p>
+        </div>
+        <div class="col-md-8 lore">
+          {{ data.canon.info }}
+        </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <p class="media">{{ data.lore.media }}</p>
+      <p><strong>{{ data.lore.content | markdownifyInline | safe }}</strong></p>
+      {% for item in data.lore.readMore %}
+        <p>{{ item }}</p>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}
