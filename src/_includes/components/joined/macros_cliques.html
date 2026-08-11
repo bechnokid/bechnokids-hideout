@@ -18,11 +18,13 @@
   {{ clique_text(leftText, { url: left_url, cls: clique.left.cls }) }}
 
   {# Center text (or image) #}
+  {% set regexExp = r/\w+\.+\w{3}/g %}
   {% if clique.center %}
     {% set center_url = clique.center.url or clique.centerUrl %}
     {% set center_text = clique.center.text or clique.centerText or clique.center %}
-    {% if clique.center.img %}
-      {% img img_path + clique.center.img, { cls: clique.center.cls, ariaHidden: true } %}
+    {% set center_img = clique.center if regexExp.test(clique.center) else clique.center.img or "" %}
+    {% if center_img != "" %}
+      {% img img_path + center_img, { cls: clique.center.cls, ariaHidden: true } %}
     {% else %}
       {{ clique_text(center_text, { url: center_url, cls: clique.center.cls }) }}
     {% endif %}
@@ -36,15 +38,16 @@
 
 {% macro img(clique) %}
   {% if clique.tooltip %}
-  {% set tooltip_params = {
-  tooltipId: "clique-" + (clique.id or clique.name | slugify),
-    url: clique.url,
-    src: img_path + clique.img,
-    alt: clique.alt,
-    cls: clique.cls
-  } %}
-  {% tooltip tooltip_params %}{{ clique.tooltip }}{% endtooltip %}
+    {% set tooltip_params = {
+    tooltipId: "clique-" + (clique.id or clique.name | slugify),
+      url: clique.url,
+      urlCls: "d-flex",
+      src: img_path + clique.img,
+      alt: clique.alt,
+      cls: clique.cls
+    } %}
+    {% tooltip tooltip_params %}{{ clique.tooltip }}{% endtooltip %}
   {% else %}
-    {% img img_path + clique.img, { url: clique.url, alt: clique.alt, cls: clique.cls } %}
+    {% img img_path + clique.img, { url: clique.url, alt: clique.alt, cls: clique.cls, urlCls: "d-flex" } %}
   {% endif %}
 {% endmacro %}

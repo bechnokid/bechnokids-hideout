@@ -27,9 +27,7 @@ export default {
     dev: "/assets/images/icon_meat.png"
   },
   updated: [
-    "Digimon",
-    "Other",
-    "Pixel Clubs"
+    "Now"
   ],
   new: [
   ],

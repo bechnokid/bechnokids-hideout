@@ -5,9 +5,8 @@ displayOrder: 3
 description: A tutorial on how to make your RSS Feed pretty and easy to read with full descriptions for each entry.
 prism: true
 permalink: /tutorials/rss-feed/index.html
+toc: true
 ---
-==toc
-
 ## Intro
 
 If you ever had the chance to look at my [RSS](/feeds/rss.xml) (or [Atom](/feeds/atom.xml)) Feed, you might have noticed that it looks like an actual HTML page, with styling and everything. However, if you were to put it through a feed reader, it will still behave like an actual feed.

@@ -70,7 +70,7 @@ img.preview-img {
 
 .go-to-heck.new-curse {
   &:hover {
-    filter: drop-shadow(0 0 .5rem var(--text-secondary));
+    filter: drop-shadow(0 0 .5rem var(--text-link-hover));
     cursor: var(--img-cursor-point), pointer;
   }
 
@@ -99,6 +99,19 @@ img.preview-img {
 .older-entries {
   summary.h2 {
     margin-bottom: 0;
+  }
+}
+
+article.now {
+  .older-entries {
+    section {
+      padding-left: .5rem;
+    }
+
+    summary.h2 {
+      font-size: 1.25rem;
+      padding: .25rem .5rem;
+    }
   }
 }
 

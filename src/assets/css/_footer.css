@@ -12,7 +12,8 @@ footer {
     li:not(:last-child):after {
       content: var(--icon-list);
       color: var(--text-primary);
-      font-size: .6rem;
+      font-family: 'TamaFont';
+      font-size: .75rem;
       margin-left: .5rem;
     }
   }

@@ -6,9 +6,8 @@ description: A tutorial on how to use VSCode to help make developing Neocities s
 prism: true
 permalink: /tutorials/vscode/index.html
 redirectFrom: [/blog/2022_08_22, /resources/tutorials/vscode]
+toc: true
 ---
-==toc
-
 ## Introduction
 
 As [Erin](https://strawberry-gashes.neocities.org) has said in the past:

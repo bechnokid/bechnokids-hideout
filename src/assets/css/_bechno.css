@@ -220,10 +220,6 @@ body {
   background-color: var(--scroll-tab);
 }
 
-:target {
-  scroll-margin: 150px;
-}
-
 ::selection {
   background: var(--bg-selection);
   color: var(--text-selection);
@@ -323,7 +319,7 @@ article {
 hr {
   margin: 1em 0;
   border: none;
-  border-top: 2px dashed var(--line-color);
+  border-top: 1px dashed var(--line-color);
   color: var(--line-color);
   overflow: visible;
   text-align: center;
@@ -331,10 +327,12 @@ hr {
 
   &::after {
     background-color: var(--bg-body);
-    content: '❤ ❤ ❤';
+    content: '❤❤❤❤︎';
+    font-family: 'TamaFont';
+    font-size: 1rem;
     padding: 0 .5rem;
     position: relative;
-    top: -.9em;
+    top: -0.7em;
   }
 }
 
@@ -393,9 +391,8 @@ blockquote {
   color: var(--text-primary);
 
   &::before {
-    content: "‟";
-    font-family: 'Georgia';
-    font-weight: bold;
+    content: "“";
+    font-family: 'TamaFont';
     font-size: 2.5rem;
     position: absolute;
     left: .25rem;
@@ -413,8 +410,10 @@ button,
   text-decoration: none;
 }
 
+button:not(.pagination-btn):not(.pagination-num):hover,
 .button:not(.pagination-btn):not(.pagination-num):hover,
-.botton:hover {
+.button:hover {
+  background-color: var(--bg-selection);
   cursor: var(--img-cursor-point), pointer;
   color: var(--text-selection);
 }
@@ -426,11 +425,6 @@ button,
   border-color: var(--border-button);
   font-family: 'TamaFont';
   font-size: 1.25rem;
-}
-
-button:not(.pagination-btn):not(.pagination-num):hover,
-.button:hover {
-  background-color: var(--bg-selection);
 }
 
 summary:hover {
@@ -488,7 +482,7 @@ main {
     }
   }
 
-  ul:not(.inline-list), ol {
+  ul:not(.inline-list) {
     display: flex;
     flex-direction: column;
     gap: .25rem;
@@ -500,17 +494,26 @@ main {
   }
 
   ol {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
     padding-left: 1.5rem;
 
     > li {
       &::marker {
         color: var(--text-primary);
-        font-weight: bold;
+        font-family: 'TamaFont';
+        font-size: 1rem;
+        padding-left: .5rem;
       }
 
       > ul {
         padding-top: .5rem;
         padding-bottom: .5rem;
+
+        > li {
+          padding-left: .25rem;
+        }
       }
     }
   }
@@ -552,7 +555,8 @@ main {
     > li {
       &::marker {
         content: var(--icon-list);
-        font-size: .55rem;
+        font-family: 'TamaFont';
+        font-size: 1rem;
       }
 
       > ul {
@@ -561,7 +565,7 @@ main {
 
         > li::marker {
           content: var(--icon-sublist);
-          font-size: .85rem;
+          font-size: 1.1rem;
         }
       }
     }
@@ -796,51 +800,23 @@ html:not(.no-js) .main:has(.position-relative > .loading-sidebar:not(.d-none)) .
 
 .toc {
   display: inline-block;
-  border: 1px solid var(--border-sidebar);
-  background: var(--bg-sidebar);
-  padding: .5rem .75rem .75rem;
+  padding: 1rem 1.25rem 1rem 1rem;
 
-  &:has(+ p) {
-    margin-bottom: 1rem;
+  & > ul {
+    padding-left: 1rem;
+
+    ul {
+      padding: .25rem .5rem !important;
+    }
   }
 
-  > * {
+  & > ol {
+    margin-left: 1.5rem;
     padding-left: .5rem;
   }
 
-  p {
-    background: var(--bg-heading);
-    font-family: 'TamaFont';
-    font-size: 1rem;
-    color: var(--text-primary);
-    padding: .25rem .5rem;
-    margin-bottom: .25rem;
-  }
-
-  li {
-    padding: .1rem 0;
-  }
-
-  ol {
-    margin-left: 1.5rem;
-
-    > li {
-      padding-left: .25rem;
-
-      & > ol {
-        padding-top: .25rem;
-        padding-left: 0;
-        list-style-type: lower-roman;
-      }
-    }
-  }
-
-  ul {
-    margin-left: 1rem;
-
-    & > li {
-      padding-left: .5rem;
-    }
+  &:has(+ p) {
+    margin-bottom: 1rem;
   }
 }
 
@@ -879,10 +855,6 @@ position: absolute;
 }
 
 @media screen and (max-width: 767px) {
-  :target {
-    scroll-margin: 80px;
-  }
-
   body {
     font-size: 1em;
     line-height: 1.7em;

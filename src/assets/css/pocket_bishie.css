@@ -2,20 +2,35 @@
 
 @font-face {
   font-family: 'TamaFont';
-  src: url(/assets/fonts/OpenDyslexic-Regular.otf)
+  src: url(/assets/fonts/TamaFont.woff)
 }
 
 :root {
   --bg-body: #fff0f3;
-  --bg-footer: #fccdd7;
+  --bg-footer: #ffd1da;
   --bg-heading: var(--bg-footer);
-  --bg-selection: #a50e5a;
-  --border-sidebar: var(--bg-primary);
+  --bg-selection: var(--text-primary);
+  --border-sidebar: #e48aa7;
   --scroll-bg: var(--bg-footer);
   --scroll-tab: var(--bg-primary);
   --text-body: #0e172c;
-  --text-primary: #a50e5a;
+  --text-primary: #9e1074;
   --text-selection: #fffffe;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-body: #66406b;
+    --bg-footer: #1e1828;
+    --bg-heading: var(--bg-footer);
+    --bg-selection: #fffff3;
+    --border-sidebar: #0d0b13;
+    --scroll-bg: #66406b;
+    --scroll-tab: var(--border-sidebar);
+    --text-body: #fffffe;
+    --text-primary: #d8b1e9;
+    --text-selection: #0e172c;
+  }
 }
 
 ::selection {
@@ -69,21 +84,6 @@ fieldset {
 
 .quiz-img-container > img:not(:last-child){
   margin-right: .5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-body: #47284D;
-    --bg-footer: #2f1933;
-    --bg-heading: #180c1a;
-    --bg-selection: #ffffff;
-    --border-sidebar: var(--bg-heading);
-    --scroll-bg: var(--bg-heading);
-    --scroll-tab: var(--bg-body);
-    --text-body: #fff;
-    --text-primary: #FDCDD9;
-    --text-selection: #28162b;
-  }
 }
 
 @media screen and (max-width: 600px) {

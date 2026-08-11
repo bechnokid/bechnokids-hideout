@@ -182,6 +182,10 @@ a.uwu:hover img {
         font-size: .8rem;
       }
     }
+
+    section:has(h2#ships) .content {
+      max-height: unset;
+    }
   }
 
   .quiz-results .gallery-box {

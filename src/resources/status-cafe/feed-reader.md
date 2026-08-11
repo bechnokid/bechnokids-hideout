@@ -7,9 +7,8 @@ prism: true
 summary: "**NOTE:** The examples will not work if JavaScript is disabled."
 redirectFrom: [/resources/tut_statuscafefeed, /resources/statuscafefeed]
 tags: statusCafe
+toc: true
 ---
-==toc
-
 StatusCafe is great, so here's a tutorial on how to make a microblog out of it to put on your own site!
 
 It is possible to modify the CSS in your StatusCafe account and then put it in an iframe, but creating a feed reader allows for more customization, if needed.

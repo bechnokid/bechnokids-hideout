@@ -15,7 +15,6 @@ export default [
     alt: "A gingham-patterned cup with a flower and a button on the saucer. Inside the tea cup is a bear with sparkles next to it",
     url: "https://maplebear.neocities.org/",
     desc: "maple syrup matcha latte",
-    freezeframe: true,
   },
   {
     src: "cloudcover.png",
@@ -34,7 +33,6 @@ export default [
     alt: "A pink cup with a white polka-dot pattern. It is surrounded by sparkles and some clovers in it.",
     url: "https://sleepymoss.neocities.org",
     desc: "sweet strawberries and matcha",
-    freezeframe: true
   },
   {
     src: "sakuradreams.gif",
@@ -72,7 +70,6 @@ export default [
     url: "https://mostlypixels.com/pixelclubs/",
     alt: "A cup with a bee pattern. Behind it are some leaves, and some bees are flying above the cup",
     desc: 'honey',
-    freezeframe: true
   },
   {
     src: "starfighter.png",
@@ -85,13 +82,11 @@ export default [
     alt: "A tea cup that contains the night sky with a comet occassionally flying through the sky",
     url: "http://themby.neocities.org/",
     desc: "stardust",
-    freezeframe: true
   },
   {
     src: "lazer-bunny.gif",
     alt: "A pink cup with a bunny pattern. On the saucer is a piece of heart-shaped chocolate. Inside the cup is a pink bunny, some whipped cream with sprinkles, and a chocolate stick",
     url: "https://lazer-bunny.neocities.org",
     desc: "pink hot chocolate",
-    freezeframe: true,
   },
 ]

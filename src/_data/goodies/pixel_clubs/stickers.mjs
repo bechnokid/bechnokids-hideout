@@ -64,7 +64,6 @@ export default {
       src: "loandbihold.gif",
       alt: "A rose with a glittering galaxy pattern",
       url: "https://loandbihold.neocities.org",
-      freezeframe: true,
     },
     {
       src: "honeydewmiku.png",
@@ -120,11 +119,6 @@ export default {
       src: "mikaorangeart.png",
       alt: "the ouroburos",
       url: "https://mikaorangeart.neocities.org/webcliques"
-    },
-    {
-      src: "mizuki.png",
-      alt: "A pink and blue pill",
-      url: "https://mizuki.world/collection"
     },
     {
       src: "piranhebula.png",
@@ -185,7 +179,6 @@ export default {
       src: "ales-playground.gif",
       alt: "A clear blue diamond",
       url: "https://ales-playground.neocities.org/cute-stickers",
-      freezeframe: true
     },
     {
       src: "gummywormhydra.png",

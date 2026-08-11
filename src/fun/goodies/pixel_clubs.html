@@ -8,17 +8,19 @@ permalink: 'goodies/pixel-clubs/index.html'
 freezeframe: true
 hasLinks: true
 flashing: true
+loading: true
+toc:
+  unlisted: true
 ---
-<div class="position-relative">
-  {% include "partials/loading-sidebar.html" %}
   {% import 'components/pixel_clubs/macros.html' as cliques with context %}
   {{ cliques.afternoonTea() }}
+  {{ cliques.angelical() }}
   {{ cliques.bottlecaps() }}
   {{ cliques.charm() }}
   {{ cliques.cdw() }}
   {{ cliques.fizzyVendor() }}
   {{ cliques.kindnessRocks() }}
   {{ cliques.jarJams() }}
+  {{ cliques.sip() }}
   {{ cliques.stickers() }}
   {{ cliques.yys() }}
-</div>

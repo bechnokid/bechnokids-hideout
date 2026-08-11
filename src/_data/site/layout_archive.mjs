@@ -2,6 +2,11 @@ export default {
   altText: "Layout for ",
   layouts: [
     {
+      date: "Aug 2026",
+      desc: "I made an attempt to make my site look cuter! Admittedly, I'm trying to join the [Café Rosé](https://allyratworld.com/cafe/rose), but even if I don't get accepted, I'm still very happy with how the new layout has turned out!",
+      img: "2026-08.png"
+    },
+    {
       date: "Oct 2025",
       desc: "Admittedly, there are several versions before this one, but I didn't feel like the site was at a stage significant enough to add to this page until now! I'm really happy with how the site currently looks and functions thanks to Eleventy! Also, I finally uploaded artwork!",
       img: "2025-10.jpg"

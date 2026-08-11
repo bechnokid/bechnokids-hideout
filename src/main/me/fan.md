@@ -4,10 +4,9 @@ summary: A page where I talk about preferences and experiences as a fan of the m
 description: A page that describes myself as a fan of whatever media I consume.
 displayOrder: 5
 permalink: fan/index.html
+toc:
+  unlisted: true
 ---
-
-==toc
-
 ## Fan Behavior
 
 Perhaps one of my most defining traits as a fan is the [art](/art) that I draw of the things I like. I have been a fan artist since 1998 but didn't start engaging in fandoms until 2006, which was when I created a DeviantArt account in late 2005 and started interacting with other people who had similar interests as mine.

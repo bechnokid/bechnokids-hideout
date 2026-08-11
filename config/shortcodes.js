@@ -36,10 +36,10 @@ const link = function (url, options = {}) {
   const desc = (options.desc) ? ` aria-describedby="${options.desc}"` : '';
   const alt = (options.alt) ? ` aria-label="${options.alt}"` : '';
   if (options.markdown && desc == '') {
-    if (options.cls) linkCls = `{${options.cls.split(' ').map((x) => `.${x}`).join(' ')}}`;
+    if (options.cls || options.urlCls) linkCls = `{${(options.cls || options.urlCls).split(' ').map((x) => `.${x}`).join(' ')}}`;
     return `[${linkContent}](${url})${linkCls}`
   } else {
-    if (options.cls) linkCls = ` class='${options.cls}'`;
+    if (options.cls || options.urlCls) linkCls = ` class='${options.cls || options.urlCls}'`;
     return `<a href='${url}'${linkCls + desc + alt}>${linkContent}</a>`;
   }
 }

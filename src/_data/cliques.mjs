@@ -80,14 +80,12 @@ export default {
         url: "https://dust.kuchiki.net/",
         img: "aquarius.gif",
         alt: "A button with a star and text that says, 'Aquarius'",
-        cls: "freezeframe",
         mobile: { left: "celestial divine", center: "//", right: "aquarius" }
       },
       {
         name: "Anime Genres",
         url: "https://dust.kuchiki.net/",
         img: "shoujo.gif",
-        cls: "freezeframe",
         alt: "A pink button with a floating heart and text that says, 'Shoujo'",
         mobile: { left: "i love anime", center: "//", right: "shoujo" }
       },
@@ -96,7 +94,6 @@ export default {
         tooltip: 'This Barbie is a Monster Hunter!',
         url: "https://fan.sanguineroyal.com/cli/barbieland/",
         img: "barbieland.gif",
-        cls: "freezeframe",
         alt: "A white button with pink text that says, \"Barbieland\" with the Barbie logo on the side",
         mobile: { left: "Barbieland", center: "::", right: "This Barbie is a Monster Hunter!" }
       },
@@ -105,7 +102,6 @@ export default {
         tooltip: "Wezen",
         url: "https://star.aquarel.nu/",
         img: 'stardaze.gif',
-        cls: "freezeframe",
         alt: 'A pink white and purple starry button that says, \"Stardaze\"',
         mobile: { left: 'Stardaze', center: '☆', right: "Wezen" }
       }
@@ -168,6 +164,13 @@ export default {
         alt: "The symbol of feminism with the trangender pride flag colors overlayed over it, meaning that trans people are safe on this site",
         tooltip: "Trans people are safe here"
       },
+      {
+        name: "Homegrown Website",
+        url: "https://homebody.eu/chimes/",
+        img: "homegrown.png",
+        alt: "A black circle with \"AI\" in white text being crossed out in red, meaning that this site does not approve of generative AI, nor does was it made from using it",
+        tooltip: "No AI was used in the making of this site"
+      },
     ],
     [
       {
@@ -185,8 +188,72 @@ export default {
         img: "yojimbo.png",
         alt: "Yojimbo as he appears in Final Fantasy Brave Exvius",
         mobile: { left: "Grand Summoning", center: "::", right: "Yojimbo" }
-      }
+      },
+      {
+        img: "computer_angel.png",
+        url: "https://bungle.online/clique/",
+        alt: "An angel with long hair, a halo, and large wings perched on top of computer monitor and keyboard"
+      },
     ]
+  ],
+  images: [
+    {
+      img: "freehugs.gif",
+      url: "https://kel.rainbow-muffin.org/cliques.html",
+      alt: "Small text that reads, \"free hugs!\" and fades in and out.",
+      cls: "freezeframe",
+    },
+    {
+      url: "https://moonflowerpetz.neocities.org/moonflower",
+      img: "loveislove.gif",
+      alt: "A button that says \"Love is Love\" with an animated pastel rainbow background",
+      cls: "freezeframe",
+    },
+    {
+      url: "https://fan.lysandre.me/starters",
+      img: "first_partner_pkmn.gif",
+      alt: "A sprite of Totodile, the water starter of the Johto region"
+    },
+    {
+      name: "Starwoven",
+      tooltip: "Aquarius",
+      url: "https://zodiac.aquarel.nu/",
+      img: "starwoven.png",
+      alt: "A woman with long blue wavy hair wearing a white dress. She is holding a large blue vase with water pouring out of it, representing Aquarius"
+    },
+    {
+      url: "https://gekiyaku.org/clique",
+      img: "love_dove.gif",
+      alt: "A pixel image of a pigeon"
+    },
+    {
+      img: "ilovehellokitty.gif",
+      url: "https://sd.silentears.net/",
+      alt: "Hello Kitty next to a red telephone. The blinking text below her reads \"I ❤️ Hello Kitty\"",
+      cls: "freezeframe",
+    },
+    {
+      img: "rainydays.gif",
+      url: "https://moonflowerpetz.neocities.org/moonflower",
+      alt: 'A dark cloud with rain falling from it. There is text below the cloud that says, "❤️ rainy days."',
+      cls: "freezeframe",
+    },
+    {
+      img: "iloveclippy.gif",
+      url: "https://lukkypenniedal.wixsite.com/justdandypetz/cliques",
+      alt: "A rectangle button with a rainbow gradient background and text that says, \"I ❤️ Clippy\". On the right is Clippy, the former mascot of Microsoft Word."
+    },
+    {
+      img: "days_of_the_week.gif",
+      url: "https://homebody.eu/chimes/",
+      alt: "A stamp that says, \"Thank god it's Friday\". \"Friday\" is in yellow and curly text."
+    },
+    {
+      name: "Slay the Princess",
+      img: "princess_thorn.png",
+      url: "https://ephemeri.neocities.org/cliques",
+      tooltip: "The Thorn",
+    },
   ],
   more: [
     {
@@ -201,22 +268,22 @@ export default {
     },
     {
       left: { url: "https://cliqued.wings.nu/fandom.php", text: "OTF" },
-      center: { img: "otf.png" },
+      center: "otf.png",
       right: "Digimon & Monster Hunter"
     },
     {
       left: { url: "https://reef.kingdra.net/", text: "greenery" },
-      center: { img: "greenery.png" },
+      center: "greenery.png",
       right: "cacti"
     },
     {
       left: { url: "https://reef.kingdra.net/", text: "gemstone" },
-      center: { img: "gemstone.png" },
+      center: "gemstone.png",
       right: "amethyst"
     },
     {
       left: { url: "https://lazer-bunny.neocities.org/Cliques", text: "Crispy" },
-      center: { img: "crispy.png" },
+      center: "crispy.png",
       right: "Silent Salt Cookie"
     },
     {
@@ -225,7 +292,7 @@ export default {
     },
     {
       left: { url: "https://lazer-bunny.neocities.org/Cliques", text: "My OTP" },
-      center: { img: "my-otp.png" },
+      center: "my-otp.png",
       right: "Siduri x Gilgamesh (FF7R)"
     },
     {
@@ -250,7 +317,7 @@ export default {
     },
     {
       left: { url: "https://key.aquarels.net/", text: "Keyblade" },
-      center: { img: "keyblade.png" },
+      center: "keyblade.png",
       right: "Guardian's Soul"
     },
     {
@@ -265,7 +332,7 @@ export default {
     },
     {
       left: "Gilgamesh",
-      center: { img: "materia.png" },
+      center: "materia.png",
       right: { text: "materia", url: "https://www.garden.cainhurst.org/" }
     },
     {
@@ -284,7 +351,7 @@ export default {
     },
     {
       left: { text: "support", url: "https://reef.kingdra.net" },
-      center: { img: "splatoon.png" },
+      center: "splatoon.png" ,
       right: "heavy splatling"
     },
     {
@@ -294,19 +361,54 @@ export default {
     },
     {
       left: { text: "LINKED!", url: "https://ballonlea.net/trickyfox/" },
-      center: { img: "linked.png" },
+      center: "linked.png" ,
       right: "Miss Kobayashi"
     },
     {
       cls: "balls",
       left: { text: "balls", url: "https://icirr.us/balls/" },
-      center: { img: "balls.png" },
+      center: "balls.png" ,
       right: "master"
     },
     {
       left: { text: "unexpected song", url: "https://cliqued.wings.nu/fandom.php"},
-      center: { img: "unexpected-song.png" },
+      center: "unexpected-song.png" ,
       right: "Neptunemon"
+    },
+    {
+      left: { text: "spooky", url: "https://sweet-pea.neocities.org/cliques/textcliques" },
+      center: "spooky.png",
+      right: "i love halloween!"
+    },
+    {
+      left: { text: "Special Interest", url: "https://musictelevision.neocities.org/widgets/textcliques" },
+      center: "⦂",
+      right: "Digimon"
+    },
+    {
+      left: { text: "phrases", url: "https://ephemeri.neocities.org/cliques" },
+      center: "✦",
+      right: "\"I have a plan. We just need money.\""
+    },
+    {
+      left: { text: "Menhera", url: "https://frammyjammy.com/cliques/menhera" },
+      center: "menhera.png",
+      right: "Anxiety"
+    },
+    {
+      left: { text: "Bubblelicious", url: "https://boba.aquarel.nu/" },
+      center: "bubblelicious.gif",
+      right: "Taro milk tea"
+    },
+    {
+      left: { text: "just can't get enough", url: "https://ohmydarling.org/food/" },
+      center: "»",
+      right: "bún bò Huế"
+    },
+    {
+      left: { text: "Freaky Fabulous", url: "https://slushiecafe.neocities.org/cliques" },
+      center: "💀🎀",
+      right: "Draculaura"
     },
   ],
 }

@@ -4,6 +4,7 @@ shortTitle: Joined
 summary: "**Warning:** Be cautious of any flashing colors and images when navigating away from this page."
 displayOrder: 2
 permalink: 'joined/index.html'
+freezeframe: true
 ---
 {% import 'components/joined/macros_webrings.html' as webrings with context %}
 {% import 'components/joined/macros_cliques.html' as clique with context %}
@@ -12,6 +13,9 @@ permalink: 'joined/index.html'
 <div class="position-relative d-flex flex-column flex-gap-4">
   {% include "partials/loading-sidebar.html" %}
   {% galleryBox { title: "More Cliques", cls: "cliques", subCls: "row g-0 w-100 text-center" } %}
+    <div class="d-flex flex-center flex-gap-3 mb-3">
+      {% for item in cliques.images %}{{ clique.img(item) }}{% endfor %}
+    </div>
     {% for items in cliques.more | slice(2) %}
       <div class="col-md-6 col-12 d-flex flex-column align-items-center flex-gap-2">
         {% for item in items %}

@@ -7,8 +7,8 @@ prism: true
 permalink: /tutorials/freezeframe/index.html
 redirectFrom: [/resources/tut_freezeframe, /resources/freezeframe, /resources/tutorials/freezeframe]
 summary: "**NOTE:** The examples will not work if JavaScript is disabled."
+toc: true
 ---
-==toc
 
 ## Intro
 

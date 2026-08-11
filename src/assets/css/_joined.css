@@ -1,4 +1,13 @@
 /* General styles*/
+#more-cliques {
+  .d-flex > img,
+  .d-flex > canvas,
+  .d-flex > * > img,
+  .d-flex > * > canvas {
+    align-self: center;
+    max-width: unset;
+  }
+}
 .webrings a:not(.pending-link) {
   border: 0 !important;
   text-decoration: underline !important;

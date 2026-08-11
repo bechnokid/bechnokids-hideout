@@ -12,7 +12,7 @@ permalink: faq/index.html
   - My sister and her friend group came up with several nicknames for themselves. As a lonely middle-schooler, I always wanted a cool name. I originally went with "Techno Kid" but somewhere along the way, I started using "Bechno Kid".
 - **What does "Bechno" mean?**
   - It doesn't mean anything! It's a word I made up, but I think it sounds pretty neat!
-- **What's that thing on your head!**
+- **What's that thing on your head?**
   - It's my mask! It's based off of the cute masks you can give to your Chao in the Sonic Adventure games!
 
 ## Art

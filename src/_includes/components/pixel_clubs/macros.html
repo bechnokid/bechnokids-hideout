@@ -30,16 +30,20 @@
 {% macro detailed(params) %}
   <section class="{{ params.id or (params.name | slugify )}} detailed">
     <h2>{{ params.name }}</h2>
-    <p>Created by {% link params.url, { text: params.owner } %}</p>
+    <p>Created by {% link params.url, { text: params.owner } %}!</p>
     <div class="sidebar d-flex flex-wrap justify-content-center flex-gap-2 py-3 mt-3">
       {% for item in params.arr %}
         <div class="item d-flex flex-column flex-gap-1">
           {% set options = { url: item.url, alt: item.alt, freezeframe: item.freezeframe } %}
           <div class="img">{% img img_path + (params.id or (params.name | slugify)) + "/" + item.src, options %}</div>
-          <details class="desc text-xs text-center w-100">
-            <summary class="heading-stitch rounded mb-1">{{ params.summary }}</summary>
-            {{ item.desc or params.desc or "N/A" }}
-          </details>
+          {% if params.summary %}
+            <details class="desc text-xs text-center w-100">
+              <summary class="heading-stitch rounded mb-1">{{ params.summary }}</summary>
+              {{ item.desc or params.desc or "N/A" }}
+            </details>
+          {% else %}
+            <p class="desc heading-stitch rounded">{{ item.desc or params.desc }}</p>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
@@ -54,6 +58,17 @@
     url: "https://lostletters.neocities.org/afternoontea/",
     arr: goodies.pixel_clubs.tea,
     summary: "Tastes like..."
+  }) }}
+{% endmacro %}
+
+{% macro angelical() %}
+  {{ basic({
+    name: "Angelical",
+    owner: "Altair",
+    url: "https://butteroncookies.neocities.org/angelical",
+    arr: goodies.pixel_clubs.angelical,
+    center: true,
+    gap: 2
   }) }}
 {% endmacro %}
 
@@ -92,6 +107,7 @@
 {% macro charm() %}
   {{ basic({
     name: "Charm Ring",
+    id: "charms",
     owner: "Lapin",
     url: "https://charm-ring.valentinely.cc/",
     arr: goodies.pixel_clubs.charms,
@@ -134,6 +150,17 @@
   }) }}
 {% endmacro %}
 
+{% macro sip() %}
+  {{ detailed({
+      name: "Sip Clique",
+      id: "sip",
+      owner: "Nevere",
+      url: "https://peachlantern.neocities.org/sipclique",
+      arr: goodies.pixel_clubs.sip
+    })
+  }}
+{% endmacro %}
+
 {% macro stickerSheet(mine) %}
   {% set stickerAlt = "A pixel sticker that resembles " %}
   {% set stickerImgPath = img_path + "/stickers/" %}
@@ -166,7 +193,7 @@
 {% endmacro %}
 
 {% macro yysTable(mine) %}
-  {% if not mine %}<h3>Shopping Cart</h3>{% endif %}
+  {% if not mine %}<p class="h3">Shopping Cart</p>{% endif %}
   <table>
     <thead>
       <tr>

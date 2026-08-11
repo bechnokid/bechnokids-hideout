@@ -51,7 +51,7 @@ article.home {
     li:not(:last-child):after {
       content: var(--icon-list);
       margin-left: .75rem;
-      font-size: .8rem;
+      font-size: 1.25rem;
     }
 
     a {

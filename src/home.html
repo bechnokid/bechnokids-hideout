@@ -6,7 +6,6 @@ tags:
   - main
 displayOrder: 1
 noScroll: true
-freezeframe: true
 ---
 {% set contentBlock %}
 Hello and welcome to **Bechno Kid's Hideout!**{.intro .ms-1} {.d-flex .flex-gap-1}
@@ -28,7 +27,7 @@ Webrings and fanlistings can be found in [/joined](/joined)!
   <div class="home-row row d-flex flex-md-row flex-column flex-md-gap-0 flex-gap-4">
     <div class="status col-md-7">
       <div class="sidebar h-100 overflow-hidden">
-        <div class="h2 p-2">Latest Status</div>
+        <div class="h2 p-2">Latest Status ☀</div>
         {% set status = microblog.microblog[0] %}
         <div id="status-cafe-widget" class="js-required status-container d-flex flex-gap-3 px-3">
           <div class="p-5 w-100 text-center">Loading...</div>
@@ -40,7 +39,7 @@ Webrings and fanlistings can be found in [/joined](/joined)!
     </div>
     <div class="col-md-5 link-btns">
       <div class="sidebar h-100">
-      <div class="h2 p-2">Link Me!</div>
+      <div class="h2 p-2">Link Me ♬</div>
         <div class="content p-2 text-center d-flex flex-column flex-gap-2">
           <p>Feel free to hotlink!</p>
           <div class="d-flex flex-wrap justify-content-center flex-gap-2 jus">{%- for button in meta.buttons %}{% img button.src, { alt: button.alt + " button for Bechno Kid's hideout"} %}{% endfor %}</div>

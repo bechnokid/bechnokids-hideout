@@ -1,4 +1,5 @@
 {% extends "layouts/base.html" %}
+{% from "partials/toc.html" import toc as table_of_contents %}
 
 {% set page_header_title = title %}
 {% set page_header_summary %}
@@ -9,5 +10,16 @@
 
 {% block content %}
   {% if title != "Home" %}{% include "partials/page-header.html" %}{% endif %}
+  {% if loading %}
+    <div class="position-relative">
+    {% include "partials/loading-sidebar.html" %}
+  {% endif %}
+  {% if toc %}
+    {% set toc_items = content | tableOfContents %}
+    {{ table_of_contents(toc_items, options = toc) }}
+  {% endif %}
   {{ content | safe }}
+  {% if loading %}
+    </div>
+  {% endif %}
 {% endblock %}

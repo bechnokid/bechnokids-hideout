@@ -9,15 +9,11 @@ tags:
   - resources
   - nav
 eleventyExcludeFromCollections: ["snippets"]
+toc:
+  unlisted: true
+  single: true
 ---
 {% set snippets = collections.snippets %}
-<nav class="toc">
-  <ul>
-    {% for item in snippets %}
-      <li>{% link "#" + item.fileSlug, { text: item.data.title or (item.fileSlug | title) } %}</li>
-    {% endfor %}
-  </ul>
-</nav>
 
 {% for item in snippets %}
   <section id="{{ item.fileSlug }}" class="{{ item.fileSlug }}{{ " js-required" if item.data.jsRequired }}">

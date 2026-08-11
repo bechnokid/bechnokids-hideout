@@ -1,4 +1,5 @@
 const env = process.env.ELEVENTY_ENV;
+const slugify = require('slugify');
 
 const collections = require('./config/collections.js');
 const filters = require('./config/filters.js');
@@ -83,6 +84,7 @@ module.exports = async function(eleventyConfig){
   for (key in filters.base) {
     eleventyConfig.addFilter(key, filters.base[key])
   }
+
   for (key in filters.njk) {
     eleventyConfig.addNunjucksFilter(key, filters.njk[key])
   }
@@ -106,6 +108,8 @@ module.exports = async function(eleventyConfig){
 
   eleventyConfig.addPlugin(RenderPlugin);
   eleventyConfig.addPlugin(IdAttributePlugin, {
+    slugify,
+    selector: 'h2, h3, h4',
     filter: function({ page }) {
       const pageUrl = page.inputPath;
       if (pageUrl.includes('now') && !pageUrl.endsWith("index.html")) {

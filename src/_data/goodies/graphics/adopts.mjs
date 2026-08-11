@@ -183,7 +183,6 @@ export default {
           src: 'lacroixhydrangea.gif',
           alt: 'A hydrangea plant in a La Croix can',
           url: 'https://www.lejlart.com/apple.html',
-          freezeframe: true
         },
         {
           src: "hydrangea.gif",
@@ -234,7 +233,6 @@ export default {
           src: "monster_mango.gif",
           alt: "A can of Mango Loco flavored Monster Juice",
           url: "https://velvetmoth.neocities.org/",
-          freezeframe: true,
         },
         {
           src: "wee-strange.gif",
@@ -331,7 +329,6 @@ export default {
           src: "great-white.gif",
           alt: "A great white shark",
           url: "http://whimsical.heartette.net/",
-          freezeframe: true
         },
       ]
     },

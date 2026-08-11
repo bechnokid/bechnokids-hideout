@@ -1,6 +1,8 @@
 const { format } = require('date-fns');
 const { minify } = require("html-minifier-terser");
 const markdownLib = require('./markdownlib.js');
+const cheerio = require('cheerio');
+const slugify = require('slugify');
 
 // Converts date to local timezone
 const local = value => {
@@ -69,12 +71,66 @@ const getPageLinks = value => {
   return resultArray;
 }
 
+// Generates table of contents
+const tableOfContents = html => {
+  if (!html || typeof html !== 'string') return []
+
+	const $ = cheerio.load(html, null, false)
+	const headings = $('h2, h3, h4').toArray()
+
+	return headings.length < 2 ? [] : buildTocTree($, headings)
+}
+
 // helper methods
 function parseDate (value, timeValue = null) {
   let timeStr = "00:00";
   if (timeValue) timeStr = timeValue;
   let dateStr = `${value} ${timeStr}`;
   return new Date(dateStr);
+}
+
+function buildTocTree ($, headings) {
+  const tree = [];
+  let currentList2 = null;
+  let currentList3 = null;
+
+  for (const heading of headings) {
+    const data = getHeadingData($, heading);
+    if (!data) continue;
+    const node = { ...data, children: [] };
+
+    if (node.level === 2) {
+      tree.push(node);
+      currentList2 = node;
+      currentList3 = null;
+    } else if (node.level === 3) {
+      if (currentList2) {
+        currentList2.children.push(node);
+      } else {
+        tree.push(node);
+      }
+      currentList3 = node;
+    } else {
+      if (currentList3) currentList3.children.push(node);
+      else if (currentList2) {
+        currentList2.children.push(node);
+      } else {
+        tree.push(node);
+      }
+    }
+  }
+  return tree;
+}
+
+function getHeadingData($, heading) {
+  const text = $(heading).text().trim();
+
+  if (!text) return null;
+
+  const element = heading?.name ?? '';
+  const level = Number(element.match(/^h([1-6])$/i)?.[1] ?? 2);
+  const id = heading?.attribs?.id ?? slugify(text);
+  return { id, level, text };
 }
 
 module.exports = {
@@ -89,6 +145,7 @@ module.exports = {
     htmlMinify,
     sortCollectionByDisplayOrder,
     getPageLinks,
+    tableOfContents
   },
   njk: {
     limit,

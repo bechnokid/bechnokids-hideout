@@ -12,18 +12,6 @@
   }
 }
 
-.pet-click {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-
-  .ff-container {
-    display: inline-flex;
-  }
-}
-
 .orphaned-adopts {
   .ff-container {
     display: flex;
@@ -33,6 +21,12 @@
   img,
   canvas {
     align-self: end;
+  }
+}
+
+article.pixel-clubs {
+  section {
+    margin-bottom: 3rem;
   }
 }
 
@@ -117,6 +111,17 @@
 
 .fzv .img {
   min-height: 80px;
+}
+
+.sip {
+  .item {
+    font-size: .8em;
+    text-align: center;
+  }
+
+  .img {
+    height: 0;
+  }
 }
 
 .comb-row {

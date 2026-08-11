@@ -32,6 +32,13 @@ nav {
     height: 18px;
     background-position: -19px 0;
   }
+
+  .nav-link-item::marker {
+    content: var(--icon-list);
+    font-family: 'TamaFont';
+    color: var(--text-secondary);
+    font-size: .75rem;
+  }
 }
 
 .skip-link {
@@ -60,12 +67,6 @@ nav {
   }
 
   ul.section-list {
-    li.nav-link-item::marker {
-      content: var(--icon-list);
-      color: var(--text-secondary);
-      font-size: .55rem;
-    }
-
     li ul li.mobile::marker {
       content: var(--icon-sublist);
       font-size: .85rem;
@@ -90,10 +91,6 @@ nav {
         color: var(--text-link-hover);
         text-decoration: underline;
       }
-    }
-
-    .nav-link-item {
-      margin-left: 1rem;
     }
   }
 
@@ -206,13 +203,6 @@ li.mobile {
     }
   }
 
-  .nav-link-item img {
-    transform: scale(2);
-    image-rendering: pixelated;
-    margin-left: 1rem;
-    vertical-align: middle;
-  }
-
   li {
     &.desktop {
       display: none;
@@ -240,6 +230,21 @@ li.mobile {
 
     .page {
       margin-top: 3.75rem;
+    }
+
+    div[role='img'] {
+      transform: scale(2);
+      image-rendering: pixelated;
+      margin: 0 1rem;
+      vertical-align: middle;
+    }
+
+    .nav-link-item {
+      padding-left: .25rem;
+
+      &::marker {
+        font-size: 1.25rem;
+      }
     }
   }
 }
