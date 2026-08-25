@@ -45,6 +45,52 @@
   </section>
 {% endmacro %}
 
+{% macro afternoonTea() %}
+  {{ detailed({
+    name: "Afternoon Tea",
+    id: "tea",
+    owner: "Lost Letters",
+    url: "https://lostletters.neocities.org/afternoontea/",
+    arr: goodies.pixel_clubs.tea,
+    summary: "Tastes like...",
+    btn: "girlwithnojob.gif",
+    btnCls: "freezeframe"
+  }) }}
+{% endmacro %}
+
+{% macro angelical() %}
+  {{ basic({
+    name: "Angelical",
+    owner: "Altair",
+    url: "https://butteroncookies.neocities.org/angelical",
+    arr: goodies.pixel_clubs.angelical,
+    cls: "justify-content-center flex-md-gap-1 flex-gap-2",
+    btn: "button.gif",
+    btnCls: "freezeframe"
+  }) }}
+{% endmacro %}
+
+{% macro bottlecaps() %}
+  {{ basic({
+    name: "Bottlecaps",
+    owner: "Karla",
+    url: "https://miserabledolly.net/bottlecaps",
+    arr: goodies.pixel_clubs.bottlecaps,
+    cls: "justify-content-center flex-md-gap-1 flex-gap-5"
+  }) }}
+{% endmacro %}
+
+{% macro call() %}
+  {{ basic({
+    name: "Call Me!",
+    id: "call",
+    owner: "ChaoticGoode",
+    url: "https://chaoticgoode.com/",
+    arr: goodies.pixel_clubs.call,
+    cls: "justify-content-center align-items-center flex-gap-3"
+  })}}
+{% endmacro %}
+
 {% macro cdw() %}
   <section class="cdw">
     <h2 class="bg-dots d-flex align-items-center flex-gap-3">CDwORLD {% img "/assets/images/goodies/cliques/cdw/button.jpg" %}</h2>

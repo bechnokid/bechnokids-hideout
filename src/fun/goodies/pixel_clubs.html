@@ -4,7 +4,6 @@ displayOrder: 4
 pagination:
   data: collections.pixelClubs
   size: 5
-  alias: pixel_club
 permalink: goodies/pixel-clubs{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html
 paginationPrevText: Previous page
 paginationNextText: Next page
@@ -17,21 +16,13 @@ freezeframe: true
 hasLinks: true
 flashing: true
 loading: true
-eleventyExcludeFromCollections: true
 ---
 
-{% import 'components/pixel_clubs/macros.html' as pixelClub %}
+{% import 'components/pixel_clubs/macros.html' %}
 
-{% for item in pixel_club.items %}
-  {% if item.basic %}
-    {{ pixelClub.basic(item) }}
-  {% elif item.detailed %}
-    {{ pixelClub.detailed(item) }}
-  {% else %}
-  {% endif %}
+{% for name, item in pagination.items %}
+  {{ getContext(name)(item) }}
 {% endfor %}
-
-{{ pixelClub.charm() }}
 
 <hr class="small">
 <nav class="pagination mt-3 text-xxl" aria-label="Pagination links">

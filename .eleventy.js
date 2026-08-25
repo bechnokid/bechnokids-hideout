@@ -142,6 +142,10 @@ module.exports = async function(eleventyConfig){
     }
   })
 
+  eleventyConfig.addNunjucksGlobal("getContext", function(name) {
+    return (name) ? this.ctx[name] : this.ctx;
+  });
+
   eleventyConfig.setLibrary('md', markdownLib);
 
   const output_dir = (env === "neocities") ? "neocities" : "public";

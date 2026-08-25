@@ -41,7 +41,7 @@ const pocketBishies = collection => {
 
 const pixelClubs = collection => {
   const pixelClubsCollection = collection.getAll()[0].data.goodies.pixel_clubs
-  return Object.values(pixelClubsCollection).flat();
+  return Object.entries(pixelClubsCollection);
 }
 
 const microblog = collection => {

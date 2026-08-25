@@ -1,7 +1,6 @@
 export default {
   angelical: {
     basic: true,
-    name: "Angelical",
     owner: "Altair",
     url: "https://butteroncookies.neocities.org/angelical",
     cls: "justify-content-center flex-md-gap-1 flex-gap-2",
