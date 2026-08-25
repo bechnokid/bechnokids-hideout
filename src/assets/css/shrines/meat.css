@@ -1,0 +1,66 @@
+@import "../_reset.css";
+
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/playpen-sans:vf@5.3.0/latin-wght-normal.woff2) format(woff2) tech(variations);
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --text-color: #704e4a;
+  --border-color: #5b5dcf;
+  --img-link: url(/assets/images/link.svg)
+}
+
+header {
+  border-bottom: 5px ridge var(--border-color);
+}
+
+.content {
+  color: var(--text-color);
+  background-color: #fffff9;
+  font-family: "Playpen Sans", Tahoma;
+  max-width: 900px;
+  border-radius: 1rem;
+  border: 5px ridge var(--border-color);
+
+  h2 {
+    border-top: 1px dashed var(--text-color);
+    border-bottom: 1px dashed var(--text-color);
+    background-color: #d1f2dc;
+    margin: .75rem 0;
+    padding-left: .75rem;
+  }
+
+  img[class^="float"] {
+    &.hunter {
+      transform: rotate(10deg);
+    }
+
+    &.gon {
+      transform: rotate(-10deg);
+      margin: 1.5rem 1.5rem 1rem 0;
+    }
+  }
+
+  a[href*="http"]:not(:has(img, [role="img"])) {
+    &::after {
+      content: "";
+      display: inline-block;
+      align-self: center;
+      width: .8rem;
+      height: .8rem;
+      margin-left: .25rem;
+      margin-bottom: -.1rem;
+      background-image: var(--img-link);
+      background-size: cover;
+    }
+  }
+}
+
+footer {
+  border-top: 5px ridge var(--border-color);
+}

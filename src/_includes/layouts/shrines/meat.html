@@ -1,0 +1,26 @@
+{% set navigation = ["Link1", "Link2", "Credits"] %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block css %}<link rel="stylesheet" href="{{ meta.cssUrl }}/shrines/meat.css" type="text/css" media="all">{% endblock css %}
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <title>{{ meta.name }}{% if title != null %} - {{ title }}{% endif %}</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="content my-4 mx-auto overflow-hidden">
+      <header><img src="/assets/images/shrines/meat/header.png" aria-hidden="true" alt=""></header>
+      <main class="p-4">
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+      </main>
+      <footer class="px-4 text-center">
+        <p>"Mmm...So Tasty!" is a fan-made site and is not affiliated with any of the companies that the above properties belong to.<br>© Bechno Kid 2026</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
