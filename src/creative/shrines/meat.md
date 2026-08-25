@@ -1,5 +1,5 @@
 ---
-title: Mmm...So Tasty!
+title: '"Mmm...So Tasty!"'
 shortTitle: Tasty
 displayOrder: 5
 layout: layouts/shrines/meat.html
