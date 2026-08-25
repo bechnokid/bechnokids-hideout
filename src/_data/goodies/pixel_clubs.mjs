@@ -61,56 +61,71 @@ export default {
       },
     ]
   },
-  bottlecaps: [
-    { src: "gallantmon.gif", alt: "A red bottle cap with Gallantmon's sprite by SomaKiryuu", freezeframe: true },
-    { src: "beelzemon.gif", alt: "A purple bottle cap with Beelzemon's sprite by tortoisehel", freezeframe: true },
-    { src: "neptunemon.gif", alt: "A blue bottle cap with Neptunemon's sprite by phrogmentado", freezeframe: true },
-    { src: "venusmon.gif", alt: "A yellow bottle cap with Venusmon's sprite by phrogmentado", freezeframe: true },
-    { src: "steak.gif", alt: "A beige bottle cap of a Well-Done Steak from Monster Hunter. The text says \"So tasty!\"" },
-    { src: "computerguts-gay_sheher.png", alt: "A magenta bottle cap that says \"she her\"", url: "https://computerguts.gay/graphics" },
-    { src: "averageshrimp.png", alt: "A light green bottle cap with a tabby cat and text that says \"Average Shrimp\"", url: "https://averageshrimp.neocities.org/" },
-    { src: "miserabledolly-net_cd.png", alt: "A grey bottle cap with a CD printed on it", url: "https://miserabledolly.net/bottlecaps" },
-    { src: "miserabledolly-net_orange.png", alt: "An orange bottle cap with a picture of an orange and text that says \"Orange\"", url: "https://miserabledolly.net/bottlecaps" },
-    { src: "sakuradreams_peach.png", alt: "A peach bottle cap with a picture of a peach and text that says \"Peach\"", url: "https://sakuradreams.neocities.org/" },
-  ],
-  call: [
-    {
-      src: "bechno.png",
-      alt: "A Tamagotchi-based PHS (Personal Handy-phone System) called the Tamapitchi. It is orange with yellow, red, and purple buttons. On the screen is a sprite of Maskutchi.",
-    },
-    {
-      src: "artwork.gif",
-      alt: "A pink phone with pink and blue buttons with several flower stickers on it. In the screen are alternating pictures of Usahana",
-      url: "https://artwork.neocities.org/cliques",
-      freezeframe: true,
-    },
-    {
-      src: "chaoticgoode.png",
-      alt: "A vintage and bronze-colored rotary telephone",
-      url: "https://chaoticgoode.neocities.org",
-    },
-    {
-      src: "cozyghostly.png",
-      alt: "A Garfield-shaped phone",
-      url: "https://cozyghostly.neocities.org/club"
-    },
-    {
-      src: "fishblob.gif",
-      alt: "A blue flip phone with a green sheen",
-      url: "https://fishblob.neocities.org/",
-      freezeframe: true,
-    },
-    {
-      src: "peachlantern.png",
-      alt: "A pink phone shaped like a seashell. It has a beaded charm hanging from the side.",
-      url: "https://peachlantern.neocities.org/pixelcliques"
-    },
-    {
-      src: "qtbeans.gif",
-      alt: "A pink and white phone with yellow, pink, and blue buttons. The blue buttons are shaped like hearts.",
-      url: "https://qtbeans.neocities.org/goodies"
-    },
-  ],
+  bottlecaps: {
+    basic: true,
+    name: "Bottlecaps",
+    owner: "Karla",
+    url: "https://miserabledolly.net/bottlecaps",
+    cls: "justify-content-center flex-md-gap-1 flex-gap-5",
+    items: [
+     { src: "gallantmon.gif", alt: "A red bottle cap with Gallantmon's sprite by SomaKiryuu", freezeframe: true },
+     { src: "beelzemon.gif", alt: "A purple bottle cap with Beelzemon's sprite by tortoisehel", freezeframe: true },
+     { src: "neptunemon.gif", alt: "A blue bottle cap with Neptunemon's sprite by phrogmentado", freezeframe: true },
+     { src: "venusmon.gif", alt: "A yellow bottle cap with Venusmon's sprite by phrogmentado", freezeframe: true },
+     { src: "steak.gif", alt: "A beige bottle cap of a Well-Done Steak from Monster Hunter. The text says \"So tasty!\"" },
+     { src: "computerguts-gay_sheher.png", alt: "A magenta bottle cap that says \"she her\"", url: "https://computerguts.gay/graphics" },
+     { src: "averageshrimp.png", alt: "A light green bottle cap with a tabby cat and text that says \"Average Shrimp\"", url: "https://averageshrimp.neocities.org/" },
+     { src: "miserabledolly-net_cd.png", alt: "A grey bottle cap with a CD printed on it", url: "https://miserabledolly.net/bottlecaps" },
+     { src: "miserabledolly-net_orange.png", alt: "An orange bottle cap with a picture of an orange and text that says \"Orange\"", url: "https://miserabledolly.net/bottlecaps" },
+     { src: "sakuradreams_peach.png", alt: "A peach bottle cap with a picture of a peach and text that says \"Peach\"", url: "https://sakuradreams.neocities.org/" },
+   ],
+  },
+  call: {
+    basic: true,
+    name: "Call Me!",
+    id: "call",
+    owner: "ChaoticGoode",
+    url: "https://chaoticgoode.com/",
+    cls: "justify-content-center align-items-center flex-gap-3",
+    items: [
+      {
+        src: "bechno.png",
+        alt: "A Tamagotchi-based PHS (Personal Handy-phone System) called the Tamapitchi. It is orange with yellow, red, and purple buttons. On the screen is a sprite of Maskutchi.",
+      },
+      {
+        src: "artwork.gif",
+        alt: "A pink phone with pink and blue buttons with several flower stickers on it. In the screen are alternating pictures of Usahana",
+        url: "https://artwork.neocities.org/cliques",
+        freezeframe: true,
+      },
+      {
+        src: "chaoticgoode.png",
+        alt: "A vintage and bronze-colored rotary telephone",
+        url: "https://chaoticgoode.neocities.org",
+      },
+      {
+        src: "cozyghostly.png",
+        alt: "A Garfield-shaped phone",
+        url: "https://cozyghostly.neocities.org/club"
+      },
+      {
+        src: "fishblob.gif",
+        alt: "A blue flip phone with a green sheen",
+        url: "https://fishblob.neocities.org/",
+        freezeframe: true,
+      },
+      {
+        src: "peachlantern.png",
+        alt: "A pink phone shaped like a seashell. It has a beaded charm hanging from the side.",
+        url: "https://peachlantern.neocities.org/pixelcliques"
+      },
+      {
+        src: "qtbeans.gif",
+        alt: "A pink and white phone with yellow, pink, and blue buttons. The blue buttons are shaped like hearts.",
+        url: "https://qtbeans.neocities.org/goodies"
+      },
+    ],
+  },
   charms: [
     {
       src: "bechno.png",

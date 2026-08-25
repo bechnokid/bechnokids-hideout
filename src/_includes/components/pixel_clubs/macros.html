@@ -13,7 +13,7 @@
     <h2 class="d-flex align-items-center flex-gap-2">{{ params.name }}{% if params.btn %}{% img img_path + (params.id or (params.name | slugify)) + "/" + params.btn, { alt: "Button for the " + params.name, cls: params.btnCls } %}{% endif %}</h2>
     <p>Created by <a href="{{ params.url }}">{{ params.owner }}</a>!</p>
     <div class="sidebar d-flex flex-wrap p-3 {{ params.cls }} mt-3">
-      {%- for item in params.arr %}
+      {%- for item in params.items %}
         {% set alt_text = (params.alt + item.alt) if params.alt else item.alt %}
         {% set options = { url: item.url, alt: (alt_text or ""), freezeframe: item.freezeframe } %}
         {% img img_path + (params.id or (params.name | slugify)) + "/" + item.src, options %}
@@ -27,7 +27,7 @@
     <h2 class="d-flex align-items-center flex-gap-2">{{ params.name }}{% if params.btn %}{% img img_path + (params.id or (params.name | slugify)) + "/" + params.btn, { alt: "Button for the " + params.name, cls: params.btnCls } %}{% endif %}</h2>
     <p>Created by {% link params.url, { text: params.owner } %}!</p>
     <div class="sidebar d-flex flex-wrap justify-content-center flex-gap-2 py-3 mt-3">
-      {% for item in params.arr %}
+      {% for item in params.items %}
         <div class="item d-flex flex-column flex-gap-1">
           {% set options = { url: item.url, alt: item.alt, freezeframe: item.freezeframe } %}
           <div class="img">{% img img_path + (params.id or (params.name | slugify)) + "/" + item.src, options %}</div>
@@ -43,52 +43,6 @@
       {% endfor %}
     </div>
   </section>
-{% endmacro %}
-
-{% macro afternoonTea() %}
-  {{ detailed({
-    name: "Afternoon Tea",
-    id: "tea",
-    owner: "Lost Letters",
-    url: "https://lostletters.neocities.org/afternoontea/",
-    arr: goodies.pixel_clubs.tea,
-    summary: "Tastes like...",
-    btn: "girlwithnojob.gif",
-    btnCls: "freezeframe"
-  }) }}
-{% endmacro %}
-
-{% macro angelical() %}
-  {{ basic({
-    name: "Angelical",
-    owner: "Altair",
-    url: "https://butteroncookies.neocities.org/angelical",
-    arr: goodies.pixel_clubs.angelical,
-    cls: "justify-content-center flex-md-gap-1 flex-gap-2",
-    btn: "button.gif",
-    btnCls: "freezeframe"
-  }) }}
-{% endmacro %}
-
-{% macro bottlecaps() %}
-  {{ basic({
-    name: "Bottlecaps",
-    owner: "Karla",
-    url: "https://miserabledolly.net/bottlecaps",
-    arr: goodies.pixel_clubs.bottlecaps,
-    cls: "justify-content-center flex-md-gap-1 flex-gap-5"
-  }) }}
-{% endmacro %}
-
-{% macro call() %}
-  {{ basic({
-    name: "Call Me!",
-    id: "call",
-    owner: "ChaoticGoode",
-    url: "https://chaoticgoode.com/",
-    arr: goodies.pixel_clubs.call,
-    cls: "justify-content-center align-items-center flex-gap-3"
-  })}}
 {% endmacro %}
 
 {% macro cdw() %}

@@ -16,8 +16,7 @@ noScroll: true
 {% set post_list_items = pagination.items %}
 {% set last_updated = (collections.feed | reverse)[0].fileSlug | monthDayYear %}
 
-{% block content %}
-  {%- for item in post_list_items %}
+{% for item in post_list_items %}
   {% set blog_date = item.fileSlug | monthDayYear %}
   <div class="blog row py-1">
     <div class="col-md-8 col-7">
@@ -28,6 +27,5 @@ noScroll: true
     </div>
     <div class="col-md-4 col-5">{{ blog_date }}</div>
   </div>
-  {% endfor %}
-  {% include "partials/pagination.html" %}
-{% endblock %}
+{% endfor %}
+{% include "partials/pagination.html" %}

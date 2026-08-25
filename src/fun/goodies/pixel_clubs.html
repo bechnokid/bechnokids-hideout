@@ -20,15 +20,17 @@ loading: true
 eleventyExcludeFromCollections: true
 ---
 
-{% block content %}
-{% endblock %}
+{% import 'components/pixel_clubs/macros.html' as pixelClub %}
 
-{% import 'components/pixel_clubs/macros.html' as pixelClub with context %}
+{% for item in pixel_club.items %}
+  {% if item.basic %}
+    {{ pixelClub.basic(item) }}
+  {% elif item.detailed %}
+    {{ pixelClub.detailed(item) }}
+  {% else %}
+  {% endif %}
+{% endfor %}
 
-{{ pixelClub.afternoonTea() }}
-{{ pixelClub.angelical() }}
-{{ pixelClub.bottlecaps() }}
-{{ pixelClub.call() }}
 {{ pixelClub.charm() }}
 
 <hr class="small">
