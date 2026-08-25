@@ -13,9 +13,11 @@ freezeframe: true
 <div class="position-relative d-flex flex-column flex-gap-4">
   {% include "partials/loading-sidebar.html" %}
   {% galleryBox { title: "More Cliques", cls: "cliques", subCls: "row g-0 w-100 text-center" } %}
-    <div class="d-flex flex-center flex-gap-3 mb-3">
-      {% for item in cliques.images %}{{ clique.img(item) }}{% endfor %}
-    </div>
+    {% for items in cliques.images | slice(2) %}
+      <div class="d-flex flex-wrap flex-center flex-gap-3{{ " mb-3" if loop.last }}">
+        {% for item in items %}{{ clique.img(item) }}{% endfor %}
+      </div>
+    {% endfor %}
     {% for items in cliques.more | slice(2) %}
       <div class="col-md-6 col-12 d-flex flex-column align-items-center flex-gap-2">
         {% for item in items %}
@@ -33,7 +35,7 @@ freezeframe: true
   {% galleryBox { title: "Webrings/Directories", cls: "webrings", subCls: "justify-content-center flex-gap-2" } %}
     {% set debug = false if meta.env == "prod" else true %}
     <p class="mobile-only mb-4">I'm so sorry the widgets are so small on mobile! One day, I'll find a way to make them easy to navigate, but for now, please zoom in!</p>
-    <div class="d-flex flex-wrap flex-center flex-gap-2">
+    <div class="d-flex flex-wrap flex-center flex-gap-3">
       {% for item in outgoing.joined.directories %}
         {% img "/assets/images/webrings/" + item.src, { url: item.url, alt: "Button to &quot;" + item.name + "&quot;"} %}
       {% endfor %}
@@ -46,6 +48,7 @@ freezeframe: true
       {{ webrings.resource() }}
       {{ webrings.neocreatives() }}
       {{ webrings.gummy() }}
+      {{ webrings.wol() }}
       {{ webrings.gfdkris() }}
       {{ webrings.amiga() }}
       {{ webrings.wii() }}
@@ -65,10 +68,7 @@ freezeframe: true
     <p>These webrings are either inactive or are not letting people join even though the option to become a member is still available. So, I cheated a bit to make myself an "honorary member", like a rascal. Yes, these are all functional!</p>
     <p>If you're the owner of any of these webrings and you want me to take these down, then please go back to updating your webrings or at least say applications are closed!</p>
     <div class="d-flex flex-md-row flex-column align-items-center justify-content-center flex-gap-3 mt-3">
-      <div class="d-flex flex-column align-items-center flex-gap-1">
-        {{ webrings.wol(true) }}
-        {{ webrings.pokering(true) }}
-      </div>
+      {{ webrings.pokering(true) }}
       {{ webrings.jelly() }}
     </div>
   {% endgalleryBox %}

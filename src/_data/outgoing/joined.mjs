@@ -21,7 +21,7 @@ export default {
       { src: "senku.jpg", url: "https://www.marheavenj.net/senku/", alt: "Senku Ishigami from Dr. STONE" },
       { src: "power.jpg", url: "https://www.marheavenj.net/power/", alt: "Power from Chainsaw Man" },
       { src: "tifa.jpg", url: "https://www.celes.net/tifa/", alt: "Tifa Lockhart from Final Fantasy VII" },
-      { url: "https://naiad.nu/doc/", src: "docbrown.jpg", alt: "Doc Brown from Back to the Future" },
+      { url: "https://fan.midnight-rain.net/doc/", src: "docbrown.jpg", alt: "Doc Brown from Back to the Future" },
       { url: "https://fan.glast-heim.net/davy/", src: "davy_jones.png", alt: "Davy Jones from Pirates of the Caribbean" },
       { url: "https://www.celes.net/luigi/", src: "luigi.gif", alt: "Luigi from the Mario Bros. series" },
       { url: "https://hellokitty.i-heart-you.net/", src: "hello_kitty.gif", alt: "Hello Kitty" },

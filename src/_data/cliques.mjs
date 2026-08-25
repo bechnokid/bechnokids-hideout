@@ -43,7 +43,7 @@ export default {
         cls: "flower-clique",
       },
       center: { text: "ꕤ", url: "https://reef.kingdra.net" },
-      right: `hydrangeas <a href='https://web.archive.org/web/20250621102731/http://jbrr.fc2web.com/material.html'><img class='ms-1 inline-img' src=${imgPath + 'hydrangea.gif'} aria-hidden='true' alt=''></a>`,
+      right: `hydrangeas <a href='https://web.archive.org/web/20250621102731/http://jbrr.fc2web.com/material.html' target="_blank" rel="noreferrer"><img class='ms-1 inline-img' src=${imgPath + 'hydrangea.gif'} aria-hidden='true' alt=''></a>`,
     },
     {
       left: { text: "Crystallizing", url: "https://crystallizing.neocities.org" },
@@ -215,6 +215,11 @@ export default {
       alt: "A sprite of Totodile, the water starter of the Johto region"
     },
     {
+      url: "https://web.archive.org/web/20041209084731/http://www.mitsuzo.net/tea/",
+      img: "green_tea.gif",
+      alt: "A cup of green tea"
+    },
+    {
       name: "Starwoven",
       tooltip: "Aquarius",
       url: "https://zodiac.aquarel.nu/",
@@ -233,6 +238,12 @@ export default {
       cls: "freezeframe",
     },
     {
+      img: "angel-666.png",
+      url: "https://angel.valentinely.cc/",
+      alt: "The numbers \"666\" with angel wings next to them, representing \"reflection\".",
+      tooltip: "Reflect (666)"
+    },
+    {
       img: "rainydays.gif",
       url: "https://moonflowerpetz.neocities.org/moonflower",
       alt: 'A dark cloud with rain falling from it. There is text below the cloud that says, "❤️ rainy days."',
@@ -247,6 +258,11 @@ export default {
       img: "days_of_the_week.gif",
       url: "https://homebody.eu/chimes/",
       alt: "A stamp that says, \"Thank god it's Friday\". \"Friday\" is in yellow and curly text."
+    },
+    {
+      img: "segalove.png",
+      url: "https://mouseling.net/sega/",
+      alt: "Sonic the Hedgehog happily holding a cartoon heart. The next next to him reads, \"I ❤️ SEGA\"."
     },
     {
       name: "Slay the Princess",
@@ -347,7 +363,7 @@ export default {
     },
     {
       cls: "type-master",
-      custom: `<img src=${imgPath + 'dark.png'}> I am a <span class='font-weight-bold'>dark</span> type <a href='https://seafare.neocities.org/cliques/'>master</a>! <img src=${imgPath + 'dark.png'}>`,
+      custom: `<img src=${imgPath + 'dark.png'}> I am a <span class='font-weight-bold'>dark</span> type <a href='https://seafare.neocities.org/cliques/' target="_blank" rel="noreferrer">master</a>! <img src=${imgPath + 'dark.png'}>`,
     },
     {
       left: { text: "support", url: "https://reef.kingdra.net" },

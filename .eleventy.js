@@ -15,6 +15,12 @@ const TEMPLATE_ENGINE = 'njk';
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = async function(eleventyConfig){
+  eleventyConfig.addPreprocessor("neocities", "*", (data, content) => {
+    if (!data.neocities && env === "neocities") {
+      return false;
+    }
+  });
+
   const { IdAttributePlugin, RenderPlugin } = await import("@11ty/eleventy");
   const { EleventyPluginCodeDemo } = await import('eleventy-plugin-code-demo');
 
@@ -70,7 +76,7 @@ module.exports = async function(eleventyConfig){
   })
 
   // Transform
-  if (env === "prod") eleventyConfig.addTransform("html-minifier-next", async function(content) {
+  if (env === "prod" || env === "neocities" ) eleventyConfig.addTransform("html-minifier-next", async function(content) {
     if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {
       let minified = await htmlMin.minify(content, {
         preset: 'comprehensive',
@@ -138,13 +144,15 @@ module.exports = async function(eleventyConfig){
 
   eleventyConfig.setLibrary('md', markdownLib);
 
+  const output_dir = (env === "neocities") ? "neocities" : "public";
+
   return {
     markdownTemplateEngine: TEMPLATE_ENGINE,
     dataTemplateEngine: TEMPLATE_ENGINE,
     htmlTemplateEngine: TEMPLATE_ENGINE,
     dir: {
       input: 'src',
-      output: 'public',
+      output: output_dir,
       includes: '_includes',
       assets: 'assets',
     }

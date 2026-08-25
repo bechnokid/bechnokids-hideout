@@ -40,7 +40,8 @@ const link = function (url, options = {}) {
     return `[${linkContent}](${url})${linkCls}`
   } else {
     if (options.cls || options.urlCls) linkCls = ` class='${options.cls || options.urlCls}'`;
-    return `<a href='${url}'${linkCls + desc + alt}>${linkContent}</a>`;
+    const attrs = (url.match(/^https?:\/\//)) ? ` target="_blank" rel="noreferrer"` : "";
+    return `<a href='${url}'${linkCls + desc + alt + attrs}>${linkContent}</a>`;
   }
 }
 
@@ -74,7 +75,8 @@ const img = function(src, options = {}) {
     if (options.url) {
       const urlCls = (options.urlCls) ? ` class='${options.urlCls}'` : '';
       const urlId = (options.urlId) ? ` id='${options.urlId}'` : '';
-      resultString = `<a${urlId} href="${options.url}"${urlCls}>${resultString}</a>`;
+      const urlAttrs = (options.url.match(/^https?:\/\//)) ? ` target="_blank" rel="noreferrer"` : "";
+      resultString = `<a href="${options.url}"${urlCls + urlId + urlAttrs}>${resultString}</a>`;
     }
   }
   return resultString;
@@ -86,7 +88,8 @@ const imgDiv = function(params) {
   let results = `<div ${divCls} role="img" ${divAlt}></div>`;
   if (params.url) {
     const urlCls = (params.urlCls) ? ` class="${params.urlCls}"` : "";
-    results = `<a href="${params.url}"${urlCls}>${results}</a>`
+    const urlAttrs = (params.url.match(/^https?:\/\//)) ? ` target="_blank" rel="noreferrer"` : "";
+    results = `<a href="${params.url}"${urlCls + urlAttrs}>${results}</a>`
   }
   return results;
 }

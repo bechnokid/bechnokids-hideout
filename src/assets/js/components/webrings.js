@@ -22,24 +22,46 @@ function setWebringLink(ringId, type, site) {
   const element = $(`.${ringId} a.${type}`);
   if (element.length > 0) {
     element.attr('href', site);
+    element.attr('target', "_blank");
+    element.attr('rel', "noreferrer");
   }
 }
 
 function updateWebringLinks(params) {
   const sites = params.sites;
-  const override = params.override === "true" || params.override === true ? true : false;
-  const idx = sites.findIndex((site) => site.includes('bechnokid'));
+  const override = (params.override === "true" || params.override === true);
+  const idx = sites.findIndex((site) => {
+    let siteToCheck = typeof site == "string" ? site : site['url'];
+    let siteExists = siteToCheck.includes('bechnokid');
+    return siteExists;
+  });
   if (!override && idx < 0) {
     $(`.${params.id}`).html(`<div class="pending-ring"><p>Waiting to join the <a class="pending-link" href="${params.url}">${params.name}</a> webring.</p></div>`);
     return;
   };
-  const prev = (idx > 0) ? sites[idx - 1] : sites[sites.length - 1];
-  const next = (idx > 0) ? sites[(idx + 1) % sites.length] : (sites[0].includes(params.url) ? sites[1] : sites[0]);
-  const rand = sites[getRandomIndex(sites)];
+  const prev = () => {
+    let site = (idx > 0) ? sites[idx - 1] : sites[sites.length - 1]
+    return (typeof site == "string") ? site : site['url'];
+  };
+  const next = () => {
+    let nextIdx = (idx > 0) ? ((idx + 1) % sites.length) : 0;
+    let site;
+    if (typeof sites[nextIdx] == "string") {
+      site = sites[nextIdx].includes(params.url) ? sites[1] : sites[0];
+    } else {
+      site = sites[nextIdx]['url'].includes(params.url) ? sites[1]['url'] : sites[0]['url']
+    }
+    return site;
+  }
+  const rand = () => {
+    let randIdx = getRandomIndex(sites);
+    let site = (typeof sites[randIdx] == "string") ? sites[randIdx] : sites[randIdx]['url'];
+    return site;
+  };
 
-  setWebringLink(params.id, "prev", prev);
-  setWebringLink(params.id, "rand", rand);
-  setWebringLink(params.id, "next", next);
+  setWebringLink(params.id, "prev", prev());
+  setWebringLink(params.id, "rand", rand());
+  setWebringLink(params.id, "next", next());
 }
 
 export function loadWebrings(webringLinks) {

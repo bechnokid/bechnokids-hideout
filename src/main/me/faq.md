@@ -4,6 +4,8 @@ summary: I've gotten a lot of questions over the years. Many of them are asked p
 description: Short for "frequently asked questions", here are some questions that I've been asked a lot over the years!
 displayOrder: 3
 permalink: faq/index.html
+toc:
+  unlisted: true
 ---
 
 ## Me

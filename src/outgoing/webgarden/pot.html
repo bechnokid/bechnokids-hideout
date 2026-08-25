@@ -3,6 +3,7 @@ title: 'Beet Garden'
 permalink: 'webgarden.html'
 layout: false
 eleventyExcludeFromCollections: true
+neocities: true
 ---
 {% set garden_image = '/assets/images/webgarden_head.png' %}
 {% set graden_img_alt = 'Image of Bechno Kid for her webgarden pot' %}
@@ -13,7 +14,7 @@ eleventyExcludeFromCollections: true
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ meta.cssUrl }}/webgarden.css" type="text/css" media="all">
-    <link rel="shortcut icon" href="{{ meta.favicon.prod if meta.env == "prod" else meta.favicon.dev }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ meta.favicon.dev if meta.env == "dev" else meta.favicon.prod }}" type="image/x-icon">
     <title>{{ meta.name }}{% if title != null %} - {{ title }}{% endif %}</title>
   </head>
 <body>
@@ -23,7 +24,7 @@ eleventyExcludeFromCollections: true
       <hr>
       <div class="desc">
         <p>art, blog, resources, and more?!</p>
-        <a href="http://bechnokid.com" target="_blank" rel="noopener noreferrer"><img src="{{ garden_image }}" alt="{{ graden_img_alt }}"></a>
+        <a href="https://bechnokid.com" target="_blank" rel="noreferrer noreferrer"><img src="{{ garden_image }}" alt="{{ graden_img_alt }}"></a>
         <p class="last-updated">Last updated: {{ last_updated }}</p>
       </div>
     </div>

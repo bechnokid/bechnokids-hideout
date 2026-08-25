@@ -15,7 +15,7 @@ cls: status-cafe-theme
     <section class="preview">
   {% endif %}
     <button id="copy-btn" type="button" class="js-required">Copy code</button>
-    <a class="button" href="/resources/status-cafe/preview/{{ page.fileSlug }}.html" target="_blank" rel="noopener noreferrer">Open preview in new tab</a>
+    <a class="button" href="/resources/status-cafe/preview/{{ page.fileSlug }}.html" target="_blank" rel="noreferrer noreferrer">Open preview in new tab</a>
     <iframe src="/resources/status-cafe/preview/{{ page.fileSlug }}.html" frameborder="0"></iframe>
     <noscript>
       {% details { title: "Show/hide Code", cls: "mx-2", summaryCls: "button mt-3"} %}

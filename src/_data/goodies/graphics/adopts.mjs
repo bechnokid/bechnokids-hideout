@@ -135,189 +135,14 @@ export default {
       cls: "align-items-end",
       items: [
         {
-          src: "gossharag.png",
-          alt: "Goss Harag from Monster Hunter Rise",
-          url: "https://www.deviantart.com/egg-nonamedummy/art/Monster-Hunter-Sprite-GossHarag-893389694"
+          src: "omamori.png",
+          alt: "A black omamori charm with periwinkle text and stars. This charm is meant to provide protection from evil",
+          url: "https://snowvalley.online/adopt/omamori/",
         },
         {
-          src: "auron2.gif",
-          alt: "Auron as he appears in Kingdom Hearts II",
-          url: "http://sweetskingdom.web.fc2.com/dot_icon/index.html"
-        },
-        {
-          src: "starloft_thyme.png",
-          alt: 'A white house with pink details and a sign that reads "Thyme" in capital letters.',
-          url: "https://starloft.neocities.org"
-        },
-        {
-          src: "heru.gif",
-          alt: "A hercules beetle",
-          url: "http://www.anne-box.com/"
-        },
-        {
-          src: "cupcake_peachnuts.png",
-          alt: "A cupcake made in the Pixel Cupcake Decorator on Peachnuts",
-          url: "https://peachnuts.neocities.org/"
-        },
-        {
-          src: "heartcat.png",
-          alt: 'A pink cat with a cream-colored body and light pink markings. Its ears and tail have darker pink tips, and its rear has a pink heart',
-          url: 'https://spiders.neocities.org/z-adopts'
-        },
-        {
-          src: "last-unicorn.png",
-          alt: "The titular unicorn from \"The Last Unicorn\"",
-          url: "https://vampirevalentine.neocities.org/",
-        },
-        {
-          src: "santagotchi.gif",
-          alt: "A red Santaclautchi device",
-          url: "https://web.archive.org/web/20071231194352/http://tarakana.net/?page=toys",
-        },
-        {
-          src: "heartsoup.png",
-          alt: "A bowl of Creamy Heart Soup from Legend of Zelda: Breath of the Wild",
-          url: "https://cloudcover.neocities.org/digital/adopts"
-        },
-        {
-          src: 'lacroixhydrangea.gif',
-          alt: 'A hydrangea plant in a La Croix can',
-          url: 'https://www.lejlart.com/apple.html',
-        },
-        {
-          src: "hydrangea.gif",
-          alt: "A bushel of hydrangea flowers",
-          url: "https://lastsecret.net/bitmapdreams/"
-        },
-        {
-          src: "february.gif",
-          alt: "A jar with a purple ribbon and two white marbles. The text below the jar reads, \"February\"",
-          url: "https://web.archive.org/web/20120727084933/http://petal-tea.net/wordpress/"
-        },
-        {
-          src: "yarnfish_skein_pink.png",
-          alt: "A skein of pink yarn",
-          url: "https://yarnfish.neocities.org/toybox"
-        },
-        {
-          src: "vash.gif",
-          alt: "Kuroneko-sama and Vash the Stampede from Trigun. Vash is holding a sign that reads, \"Will work for donuts\"",
-          url: "http://www.sailorenergy.net/AnimeGIFs/TRSEIMGKawaiiAnimesT.html"
-        },
-        {
-          src: "pickledog-joroki.png",
-          alt: "A hot dog made of pickles and a pickle spear sandwiched within a bun.",
-          url: "https://joro.nu/hotdogs/"
-        },
-        {
-          src: "magpiesprite.png",
-          alt: "A magpie",
-          url: "https://yogomagpie.neocities.org/souvenirs"
-        },
-        {
-          src: "beelzebumon2.gif",
-          alt: "Beelzemon from Digimon Tamers",
-          url: "http://digistar.db-destiny.net/rpixels/index2.html"
-        },
-        {
-          src: "dukemon2.gif",
-          alt: "Gallantmon from Digimon Tamers",
-          url: "http://digistar.db-destiny.net/rpixels/index2.html"
-        },
-        {
-          src: "bobateapeach.gif",
-          alt: "A cup of pink peach-flavored boba tea",
-          url: "https://www.jellyfishforest.com/duckyfeet/",
-        },
-        {
-          src: "monster_mango.gif",
-          alt: "A can of Mango Loco flavored Monster Juice",
-          url: "https://velvetmoth.neocities.org/",
-        },
-        {
-          src: "wee-strange.gif",
-          alt: "Doctor Strange",
-          url: "https://pixels.elfwink.net/objects.php"
-        },
-        {
-          src: "milk_strawberry.gif",
-          alt: "A carton of strawberry milk",
-          url: "https://web.archive.org/web/20081012071808/http://www.juice.dalcomie.net/",
-        },
-        {
-          src: "bananasplit.gif",
-          alt: "A banana split sundae with strawberries, oranges, and two Pocky sticks topped with strawberry ice cream and whipped cream",
-          url: "https://web.archive.org/web/20070628200245/http://scribbleland.net/"
-        },
-        {
-          src: "bear_donut_pixel-ragious.gif",
-          alt: "A pink-frosted donut that resembles a bear",
-          url: "https://web.archive.org/web/20070502184203/http://ava.sugar-machine.org/index2.html",
-        },
-        {
-          src: "maca_strawb.png",
-          alt: "A pink macacon with white creme in the center with a dollop of cream and a slice of a strawberry on top",
-          url: "https://www.lejlart.com/apple.html"
-        },
-        {
-          src: "donut_mirukuma.gif",
-          alt: "A donut with sprinkles and a cute face",
-          url: "https://mirukuma.blogspot.com/p/sozai.html"
-        },
-        {
-          src: "donut_kaleidoscrap.gif",
-          alt: "A donut with strawberry frosting and chocolate sprinkles",
-          url: "https://web.archive.org/web/20101225200819/http://kaleidoscrap.net/"
-        },
-        {
-          src: "donut_chocogoodies.gif",
-          alt: "A donut with pink frosting",
-          url: "https://web.archive.org/web/20130401014701/http://thechocogoodies.blogspot.com/"
-        },
-        {
-          src: "a-nya.png",
-          alt: "Meowth from Pokemon",
-          url: "http://www1.tcnet.ne.jp/t-emori/poke/aikon.htm"
-        },
-        {
-          src: "a-koiru.png",
-          alt: "Magnemite from Pokemon",
-          url: "http://www1.tcnet.ne.jp/t-emori/poke/aikon.htm"
-        },
-        {
-          src: "hannaritofu_pink.gif",
-          alt: "A pink Hannari Tofu",
-          url: "https://soda.bake-neko.net/PixelAdoptables.html"
-        },
-        {
-          src: "creamcheese.gif",
-          alt: "Cream from the Cheese Family",
-          url: "https://cupped-expressions.net/cheese/"
-        },
-        {
-          src: 'coffee.png',
-          alt: 'A cup of coffee with a happy face',
-          url: 'https://mostlypixels.com/foryou/'
-        },
-        {
-          src: 'nudibranch.png',
-          alt: 'A blue nudibranch with orange protrusions on its body',
-          url: 'https://newlambda.neocities.org/stuff/adopt'
-        },
-        {
-          src: "tamaplanet.png",
-          alt: "A green sleeping tamagotchi with some drool in its mouth. It also has a cloud in the upper right",
-          url: "https://lostletters.neocities.org/toybox/",
-        },
-        {
-          src: "donut_shabna.gif",
-          alt: "A donut with rainbow frosting",
-          url: "https://web.archive.org/web/20110815053126/http://yummi.phoophie.com/",
-        },
-        {
-          src: "purplegarlic.png",
-          alt: "A purple garlic",
-          url: "https://joro.nu/garlic/",
+          src: "great-white.gif",
+          alt: "A great white shark",
+          url: "http://whimsical.heartette.net/",
         },
         {
           src: "icecream_daniberry.gif",
@@ -326,9 +151,189 @@ export default {
           freezeframe: true,
         },
         {
-          src: "great-white.gif",
-          alt: "A great white shark",
-          url: "http://whimsical.heartette.net/",
+          src: "purplegarlic.png",
+          alt: "A purple garlic",
+          url: "https://joro.nu/garlic/",
+        },
+        {
+          src: "donut_shabna.gif",
+          alt: "A donut with rainbow frosting",
+          url: "https://web.archive.org/web/20110815053126/http://yummi.phoophie.com/",
+        },
+        {
+          src: "tamaplanet.png",
+          alt: "A green sleeping tamagotchi with some drool in its mouth. It also has a cloud in the upper right",
+          url: "https://lostletters.neocities.org/toybox/",
+        },
+        {
+          src: 'nudibranch.png',
+          alt: 'A blue nudibranch with orange protrusions on its body',
+          url: 'https://newlambda.neocities.org/stuff/adopt'
+        },
+        {
+          src: 'coffee.png',
+          alt: 'A cup of coffee with a happy face',
+          url: 'https://mostlypixels.com/foryou/'
+        },
+        {
+          src: "creamcheese.gif",
+          alt: "Cream from the Cheese Family",
+          url: "https://cupped-expressions.net/cheese/"
+        },
+        {
+          src: "hannaritofu_pink.gif",
+          alt: "A pink Hannari Tofu",
+          url: "https://soda.bake-neko.net/PixelAdoptables.html"
+        },
+        {
+          src: "a-koiru.png",
+          alt: "Magnemite from Pokemon",
+          url: "http://www1.tcnet.ne.jp/t-emori/poke/aikon.htm"
+        },
+        {
+          src: "a-nya.png",
+          alt: "Meowth from Pokemon",
+          url: "http://www1.tcnet.ne.jp/t-emori/poke/aikon.htm"
+        },
+        {
+          src: "donut_chocogoodies.gif",
+          alt: "A donut with pink frosting",
+          url: "https://web.archive.org/web/20130401014701/http://thechocogoodies.blogspot.com/"
+        },
+        {
+          src: "donut_kaleidoscrap.gif",
+          alt: "A donut with strawberry frosting and chocolate sprinkles",
+          url: "https://web.archive.org/web/20101225200819/http://kaleidoscrap.net/"
+        },
+        {
+          src: "donut_mirukuma.gif",
+          alt: "A donut with sprinkles and a cute face",
+          url: "https://mirukuma.blogspot.com/p/sozai.html"
+        },
+        {
+          src: "maca_strawb.png",
+          alt: "A pink macacon with white creme in the center with a dollop of cream and a slice of a strawberry on top",
+          url: "https://www.lejlart.com/apple.html"
+        },
+        {
+          src: "bear_donut_pixel-ragious.gif",
+          alt: "A pink-frosted donut that resembles a bear",
+          url: "https://web.archive.org/web/20070502184203/http://ava.sugar-machine.org/index2.html",
+        },
+        {
+          src: "bananasplit.gif",
+          alt: "A banana split sundae with strawberries, oranges, and two Pocky sticks topped with strawberry ice cream and whipped cream",
+          url: "https://web.archive.org/web/20070628200245/http://scribbleland.net/"
+        },
+        {
+          src: "milk_strawberry.gif",
+          alt: "A carton of strawberry milk",
+          url: "https://web.archive.org/web/20081012071808/http://www.juice.dalcomie.net/",
+        },
+        {
+          src: "wee-strange.gif",
+          alt: "Doctor Strange",
+          url: "https://pixels.elfwink.net/objects.php"
+        },
+        {
+          src: "monster_mango.gif",
+          alt: "A can of Mango Loco flavored Monster Juice",
+          url: "https://velvetmoth.neocities.org/",
+        },
+        {
+          src: "bobateapeach.gif",
+          alt: "A cup of pink peach-flavored boba tea",
+          url: "https://www.jellyfishforest.com/duckyfeet/",
+        },
+        {
+          src: "dukemon2.gif",
+          alt: "Gallantmon from Digimon Tamers",
+          url: "http://digistar.db-destiny.net/rpixels/index2.html"
+        },
+        {
+          src: "beelzebumon2.gif",
+          alt: "Beelzemon from Digimon Tamers",
+          url: "http://digistar.db-destiny.net/rpixels/index2.html"
+        },
+        {
+          src: "magpiesprite.png",
+          alt: "A magpie",
+          url: "https://yogomagpie.neocities.org/souvenirs"
+        },
+        {
+          src: "pickledog-joroki.png",
+          alt: "A hot dog made of pickles and a pickle spear sandwiched within a bun.",
+          url: "https://joro.nu/hotdogs/"
+        },
+        {
+          src: "vash.gif",
+          alt: "Kuroneko-sama and Vash the Stampede from Trigun. Vash is holding a sign that reads, \"Will work for donuts\"",
+          url: "http://www.sailorenergy.net/AnimeGIFs/TRSEIMGKawaiiAnimesT.html"
+        },
+        {
+          src: "yarnfish_skein_pink.png",
+          alt: "A skein of pink yarn",
+          url: "https://yarnfish.neocities.org/toybox"
+        },
+        {
+          src: "february.gif",
+          alt: "A jar with a purple ribbon and two white marbles. The text below the jar reads, \"February\"",
+          url: "https://web.archive.org/web/20120727084933/http://petal-tea.net/wordpress/"
+        },
+        {
+          src: "hydrangea.gif",
+          alt: "A bushel of hydrangea flowers",
+          url: "https://lastsecret.net/bitmapdreams/"
+        },
+        {
+          src: 'lacroixhydrangea.gif',
+          alt: 'A hydrangea plant in a La Croix can',
+          url: 'https://www.lejlart.com/apple.html',
+        },
+        {
+          src: "heartsoup.png",
+          alt: "A bowl of Creamy Heart Soup from Legend of Zelda: Breath of the Wild",
+          url: "https://cloudcover.neocities.org/digital/adopts"
+        },
+        {
+          src: "santagotchi.gif",
+          alt: "A red Santaclautchi device",
+          url: "https://web.archive.org/web/20071231194352/http://tarakana.net/?page=toys",
+        },
+        {
+          src: "last-unicorn.png",
+          alt: "The titular unicorn from \"The Last Unicorn\"",
+          url: "https://vampirevalentine.neocities.org/",
+        },
+        {
+          src: "heartcat.png",
+          alt: 'A pink cat with a cream-colored body and light pink markings. Its ears and tail have darker pink tips, and its rear has a pink heart',
+          url: 'https://spiders.neocities.org/z-adopts'
+        },
+        {
+          src: "cupcake_peachnuts.png",
+          alt: "A cupcake made in the Pixel Cupcake Decorator on Peachnuts",
+          url: "https://peachnuts.neocities.org/"
+        },
+        {
+          src: "heru.gif",
+          alt: "A hercules beetle",
+          url: "http://www.anne-box.com/"
+        },
+        {
+          src: "starloft_thyme.png",
+          alt: 'A white house with pink details and a sign that reads "Thyme" in capital letters.',
+          url: "https://starloft.neocities.org"
+        },
+        {
+          src: "auron2.gif",
+          alt: "Auron as he appears in Kingdom Hearts II",
+          url: "http://sweetskingdom.web.fc2.com/dot_icon/index.html"
+        },
+        {
+          src: "gossharag.png",
+          alt: "Goss Harag from Monster Hunter Rise",
+          url: "https://www.deviantart.com/egg-nonamedummy/art/Monster-Hunter-Sprite-GossHarag-893389694"
         },
       ]
     },

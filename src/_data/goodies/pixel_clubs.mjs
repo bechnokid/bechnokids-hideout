@@ -64,6 +64,44 @@ export default {
     { src: "miserabledolly-net_orange.png", alt: "An orange bottle cap with a picture of an orange and text that says \"Orange\"", url: "https://miserabledolly.net/bottlecaps" },
     { src: "sakuradreams_peach.png", alt: "A peach bottle cap with a picture of a peach and text that says \"Peach\"", url: "https://sakuradreams.neocities.org/" },
   ],
+  call: [
+    {
+      src: "bechno.png",
+      alt: "A Tamagotchi-based PHS (Personal Handy-phone System) called the Tamapitchi. It is orange with yellow, red, and purple buttons. On the screen is a sprite of Maskutchi.",
+    },
+    {
+      src: "artwork.gif",
+      alt: "A pink phone with pink and blue buttons with several flower stickers on it. In the screen are alternating pictures of Usahana",
+      url: "https://artwork.neocities.org/cliques",
+      freezeframe: true,
+    },
+    {
+      src: "chaoticgoode.png",
+      alt: "A vintage and bronze-colored rotary telephone",
+      url: "https://chaoticgoode.neocities.org",
+    },
+    {
+      src: "cozyghostly.png",
+      alt: "A Garfield-shaped phone",
+      url: "https://cozyghostly.neocities.org/club"
+    },
+    {
+      src: "fishblob.gif",
+      alt: "A blue flip phone with a green sheen",
+      url: "https://fishblob.neocities.org/",
+      freezeframe: true,
+    },
+    {
+      src: "peachlantern.png",
+      alt: "A pink phone shaped like a seashell. It has a beaded charm hanging from the side.",
+      url: "https://peachlantern.neocities.org/pixelcliques"
+    },
+    {
+      src: "qtbeans.gif",
+      alt: "A pink and white phone with yellow, pink, and blue buttons. The blue buttons are shaped like hearts.",
+      url: "https://qtbeans.neocities.org/goodies"
+    },
+  ],
   charms: [
     {
       src: "bechno.png",
@@ -253,16 +291,11 @@ export default {
   ],
   jarjam: [
     {
-      src: "bechnokid_potion.png",
+      src: "bechno.png",
       alt: "that is shaped like a potion bottle from Monster Hunter"
     },
     {
-      src: "blissnet_jam.png",
-      alt: "of strawberry jam",
-      url: "https://blissnet.neocities.org/toybox/JJ"
-    },
-    {
-      src: "blissnet_lonlonmilk.png",
+      src: "blissnet.png",
       alt: "of Lon Lon Milk from the Legend of Zelda",
       url: "https://blissnet.neocities.org/toybox/JJ"
     },
@@ -280,6 +313,49 @@ export default {
       src: "sakuradreams.png",
       alt: "of honey with a picture of a bee on the label",
       url: "https://sakuradreams.neocities.org/"
-    }
+    },
+    {
+      src: "trainsarecool.png",
+      alt: "of pickles",
+      url: "https://trainsarecool.neocities.org/",
+    },
+    {
+      src: "scrapsite.png",
+      alt: "of white grape jam",
+      url: "https://scrapsite.nekoweb.org/",
+    },
+    {
+      src: "butteroncookies.gif",
+      alt: "of Cinnamaroll atop a white cloud with a rainbow and some balloons in the background",
+      url: "https://butteroncookies.neocities.org",
+      freezeframe: true,
+    },
+    {
+      src: "peachnuts.png",
+      alt: "of stars in the night sky",
+      url: "https://peachnuts.neocities.org",
+      freezeframe: true,
+    },
+    {
+      src: "peachlantern.png",
+      alt: "with a pink hibiscus flower inside it",
+      url: "https://peachlantern.neocities.org",
+    },
+    {
+      src: "permanentlyblurry.gif",
+      alt: "with plants sprouting",
+      url: "https://permanentlyblurry.neocities.org",
+    },
+    {
+      src: "gloomygoose13.gif",
+      alt: "of a crescent moon and stars in the liquidy night sky",
+      url: "https://gloomygoose13.neocities.org",
+      freezeframe: true
+    },
+    {
+      src: "coolhotnerd.gif",
+      alt: "with a pink liquid. Its label reads \"Love\", indicating that it is a love potion",
+      url: "https://coolhotnerd.neocities.org",
+    },
   ],
 }

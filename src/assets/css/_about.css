@@ -101,6 +101,13 @@
       max-height: 345px;
       overflow-y: auto;
     }
+
+    img {
+      -webkit-mask-image: url(/assets/images/about/favs/_frame.png);
+      -webkit-mask-size: 100%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+    }
   }
 
   section:has(h2#ships) {

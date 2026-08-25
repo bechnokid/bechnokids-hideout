@@ -219,7 +219,7 @@ for (i = 0; i < STATUS_LIMIT; i++) {
     ${content}
   `;
 }
-html += `<p><a href='https://status.cafe/users/m15o'>See more at StatusCafe</a></p>`;
+html += `<p><a href='https://status.cafe/users/m15o' target="_blank" rel="noreferrer">See more at StatusCafe</a></p>`;
 document.getElementById("feed-reader").innerHTML = html;
 ```
 
@@ -251,7 +251,7 @@ fetch(feedURL)
         dateString = entries[i].querySelector("published").innerHTML.slice(0, 10);
         html += `<p>${title} - ${dateString}<p><p>${content}</p>`;
       }
-      html += `<p><a href='https://status.cafe/users/m15o'>See more at StatusCafe</a></p>`;
+      html += `<p><a href='https://status.cafe/users/m15o' target="_blank" rel="noreferrer">See more at StatusCafe</a></p>`;
     }
     document.getElementById("feed-reader").innerHTML = html;
   });

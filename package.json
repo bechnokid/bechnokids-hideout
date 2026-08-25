@@ -6,6 +6,7 @@
     "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
     "dev": "cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve --quiet",
     "dev:build": "cross-env ELEVENTY_ENV=dev npx @11ty/eleventy",
+    "neocities": "cross-env ELEVENTY_ENV=neocities npx @11ty/eleventy",
     "prod": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy --serve --quiet",
     "prod:build": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy",
     "check-links": "cross-env ELEVENTY_ENV=checkLinks npx @11ty/eleventy --quiet"
@@ -140,6 +141,7 @@
     "markdown-it-deflist": "^2.1.0",
     "markdown-it-expandable": "^1.0.2",
     "markdown-it-header-sections": "^1.0.0",
+    "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-task-lists": "^2.1.1",
     "maximatch": "^0.1.0",
     "mdurl": "^1.0.1",

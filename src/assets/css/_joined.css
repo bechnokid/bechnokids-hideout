@@ -1,5 +1,5 @@
 /* General styles*/
-#more-cliques {
+.more-cliques {
   .d-flex > img,
   .d-flex > canvas,
   .d-flex > * > img,
@@ -258,12 +258,12 @@
   }
 
   a,
-  a.index,
   a.link-glow {
     text-decoration: none !important;
   }
 
   & > .index {
+    text-decoration: none !important;
     font-weight: bold;
     filter: drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff);
   }
@@ -278,6 +278,14 @@
 
     img {
       height: 64px;
+    }
+  }
+
+  .links {
+    font-size: .8rem;
+
+    li:not(:first-child)::before {
+      content: "| "
     }
   }
 }
@@ -811,9 +819,9 @@
   }
 
   .img-index {
-    width: 110px;
-    height: 52px;
-    background: url(/assets/images/webrings/wol.png) -20px 0;
+    width: 91px;
+    height: 88px;
+    background: url(/assets/images/goodies/cliques/_main/x-gilgamesh.png);
   }
 }
 

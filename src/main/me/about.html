@@ -5,8 +5,7 @@ displayOrder: 1
 prism: true
 permalink: about/index.html
 description: (Almost) everything you need to know about the webmaster!
-freezeframe:
-  noNav: true
+freezeframe: true
 ---
 
 {% set profile_text %}
@@ -102,7 +101,7 @@ The little guys next to me are **Numemon**, a shy Champion-level Digimon, and **
           <div class="text-widget sidebar d-flex{{ " flex-column" if item.alignment == "vertical" }} flex-gap-3 p-3{{ " " + item.cls if item.cls }}">
             <div class="img d-flex align-items-center justify-content-center">{% img img_path + item.src, { alt: item.alt } %}</div>
             <div class="desc">
-              <p class="title text-center"><a href="{{ item.url }}">{{ item.title }}</a></p>
+              <p class="title text-center"><a href="{{ item.url }}" target="_blank" rel="noreferrer">{{ item.title }}</a></p>
               <p class="text{{ " text-center" if item.alignment == "vertical" }}">{{ item.desc }}</p>
             </div>
           </div>

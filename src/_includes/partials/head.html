@@ -12,6 +12,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:dnt" content="on">
 {% if redirect.to %}<meta http-equiv="refresh" content="2; url={{ redirect.to | url }}"/>{% endif %}
-<link rel="shortcut icon" href="{{ meta.favicon.prod if meta.env == "prod" else meta.favicon.dev }}" type="image/x-icon">
+<link rel="shortcut icon" href="{{ meta.favicon.dev if meta.env == "dev" else meta.favicon.prod }}" type="image/x-icon">
 <link rel="canonical" href="{{ meta.url }}">
 <link rel="alternate" type="application/rss+xml" href="{{ meta.url }}/feed.xml">

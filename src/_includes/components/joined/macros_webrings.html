@@ -18,16 +18,19 @@
       </script>
     {% else %}
       <script type="text/javascript" src="{{ script_url }}"></script>
-      {% if "evehibi" in params.url %}
+      {% if "doodlering" in params.url %}
         <script type="text/javascript">
-          ringSites = sites.map(site => (site.includes("https") ? site[0] : "https://" + site[0]));
-          webringLinks["{{ ring_id }}"] = { url: "{{ params.url }}", name: "{{ params.name }}", sites: ringSites, override: ("{{ params.override }}" === "true" ? true : false) }
-          delete ringSites;
+          webringLinks["{{ ring_id }}"] = { url: "{{ params.url }}", name: "{{ params.name }}", sites: doodles.map(site => site[0]), override: ("{{ params.override }}" === "true" ? true : false) }
         </script>
       {% else %}
-        <script type="text/javascript">webringLinks["{{ ring_id }}"] = {
-          url: "{{ params.url }}", name: "{{ params.name }}", sites: sites, override: ("{{ params.override }}" === "true" ? true : false)
-        }</script>
+        <script type="text/javascript">
+          {% if "ishgard.fan" in params.url %}
+            sites = window.membersData;
+          {% endif %}
+          webringLinks["{{ ring_id }}"] = {
+            url: "{{ params.url }}", name: "{{ params.name }}", sites: sites, override: ("{{ params.override }}" === "true" ? true : false)
+          }
+        </script>
       {% endif %}
     {% endif %}
   {% else %}
@@ -38,10 +41,19 @@
 {% endmacro %}
 
 {% macro widget(params) %}
+  {% if params.rand %}
+  <div class="{{ set_ring_id(params) }}">
+    <div class="d-flex align-items-center flex-gap-2">
+  {% else %}
   <div class="{{ set_ring_id(params) }} d-flex align-items-center flex-gap-2">
+  {% endif %}
     {% imgDiv { cls: "img-prev", alt: alt_prev + params.name + " webring", url: params.prev_url, urlCls: "prev js-required" if params.prev_url == "#" else "prev" } %}
     {% imgDiv { cls: "img-index", alt: alt_index + params.name + " webring", url: params.url, urlCls: "index" } %}
     {% imgDiv { cls: "img-next", alt: alt_next + params.name + " webring", url: params.next_url, urlCls: "next js-required" if params.next_url == "#" else "next" } %}
+  {% if params.rand %}
+    </div>
+    <div class="text-center text-xs">{% link "#", { text: "random", cls: "rand" } %}</div>
+  {% endif %}
   </div>
 {% endmacro %}
 
@@ -119,8 +131,8 @@
       {% imgDiv { cls: "img-next", alt: alt_next + webring_params.name + " webring", url: "#", urlCls: "next js-required"} %}
     </div>
     <ul class="links js-required inline-list justify-content-center flex-gap-1">
-      <li><a href="" class="rand link-glow" aria-label="{{ alt_rand + webring_params.name }} webring">🎲</a></li>
-      <li><a href="{{ webring_params.url }}/members" class="index link-glow" aria-label="{{ alt_list + webring_params.name }} webring">➕</a></li>
+      <li><a href="" class="rand" aria-label="{{ alt_rand + webring_params.name }} webring">random</a></li>
+      <li><a href="{{ webring_params.url }}/members" class="index" aria-label="{{ alt_list + webring_params.name }} webring">join</a></li>
       <li><a href="{{ onionring_url }}" class="onion link-glow" aria-label="Go to the onionring website">🧅</a></li>
     </ul>
   </div>
@@ -212,7 +224,7 @@
 {% endmacro %}
 
 {% macro no_ai() %}
-  <div class="no-ai">
+  <div class="no-ai d-flex">
     <a href="https://baccyflap.com/noai/?prv&s=bkh" target="_top"><img src="https://baccyflap.com/noai/valywidget0.gif" alt="previous no ai webring site" title="previous no ai webring site"></a>
     <a href="https://baccyflap.com/noai" target="_blank"><img src="https://baccyflap.com/noai/valywidget1.gif" alt="no ai webring" title="no ai webring"></a>
     <a href="https://baccyflap.com/noai/?rnd" target="_top"><img src="https://baccyflap.com/noai/valywidget2.gif" alt="random no ai webring site" title="random no ai webring site"></a>
@@ -326,8 +338,6 @@
   {{ set_ring_sites(webring_params) }}
 {% endmacro %}
 
-{# PENDING WEBRINGS #}
-
 {% macro yume(override = false) %}
   {% set webring_params = {
     name: 'yume-ring',
@@ -346,6 +356,23 @@
   {{ set_ring_sites(webring_params) }}
 {% endmacro %}
 
+{% macro wol(override = false) %}
+  {% set webring_params = {
+    id: "wol",
+    name: "Webring of Light",
+    url: "https://ishgard.fan/webring/",
+    vars: "https://cdn.jsdelivr.net/gh/vivarism/wolring@latest/wolring-config.js",
+    prev_url: "#",
+    next_url: "#",
+    rand: true
+  } %}
+  {{ widget(webring_params) }}
+  {{ set_ring_sites(webring_params) }}
+{% endmacro %}
+
+{# PENDING WEBRINGS #}
+
+
 {# INACTIVE WEBRINGS #}
 
 {% macro jelly() %}
@@ -358,20 +385,6 @@
     <img src="{{ img_path }}/jw_steak.png" alt="{{ alt_main + webring_name }}" title="Mmm...so tasty!">
     <p class="jw-desc">This jelly has the ability to boost your health and stamina! Mmm...so tasty!</p>
   </div>
-{% endmacro %}
-
-{% macro wol(override = false) %}
-  {% set webring_params = {
-    id: "wol",
-    name: "Warriors of Light",
-    url: "https://wolwebring.neocities.org",
-    vars: "/onionring-variables.js",
-    prev_url: "#",
-    next_url: "#",
-    override: override
-  } %}
-  {{ widget(webring_params) }}
-  {{ set_ring_sites(webring_params) }}
 {% endmacro %}
 
 {% macro pokering(override = false) %}

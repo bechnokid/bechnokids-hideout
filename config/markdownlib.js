@@ -4,6 +4,8 @@ const markdownItAttrs = require('markdown-it-attrs');
 const markdownItDefList = require('markdown-it-deflist');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItTaskList = require('markdown-it-task-lists');
+const markdownItLinkAttrs = require('markdown-it-link-attributes');
+const markdownItLinkAttributes = require('markdown-it-link-attributes');
 
 module.exports = markdownIt({
   // Use of HTML tags in Markdown
@@ -20,3 +22,12 @@ module.exports = markdownIt({
 .use(markdownItAnchor)
 .use(markdownItDefList)
 .use(markdownItTaskList)
+.use(markdownItLinkAttributes, {
+  matcher(href) {
+    return href.match(/^https?:\/\//);
+  },
+  attrs: {
+    target: "_blank",
+    rel: "noreferrer",
+  },
+})

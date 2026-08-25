@@ -75,8 +75,8 @@
   --border-sidebar: light-dark(var(--main-pink-10), var(--dark-purple-50));
   --border-glow: light-dark( var(--mint-20), var(--mint-30));
 
-  --scroll-bg: light-dark(var(--bg-footer), var(--dark-purple-10));
-  --scroll-tab: light-dark(var(--bg-primary), var(--dark-purple-50));
+  --scroll-bg: light-dark(var(--bg-footer), var(--dark-purple-20));
+  --scroll-tab: light-dark(var(--bg-primary), var(--light-purple-50));
 
   --text-accent: light-dark(var(--mint-40), var(--mint-10));
   --text-body: light-dark(var(--black), var(--white));
@@ -91,7 +91,7 @@
 
   --dots-color: light-dark(#ffffff4d 2px, #ffffff0d 2px);
   --line-color: light-dark(var(--main-pink-10), var(--light-purple-40));
-  --svg-color: light-dark(brightness(0) saturate(100%) invert(35%) sepia(42%) saturate(5910%) hue-rotate(258deg) brightness(81%) contrast(90%), brightness(0) saturate(100%) invert(77%) sepia(12%) saturate(2354%) hue-rotate(211deg) brightness(105%) contrast(95%));
+  --svg-color: light-dark(brightness(0) saturate(100%) invert(14%) sepia(81%) saturate(7490%) hue-rotate(276deg) brightness(70%) contrast(83%), brightness(0) saturate(100%) invert(71%) sepia(20%) saturate(600%) hue-rotate(282deg) brightness(109%) contrast(99%));
 
   /* Info box */
   --bg-info: light-dark(#fff3c3, #7b5e39);
@@ -154,13 +154,14 @@
 }
 
 .heading-stitch {
-  --border-stitch: light-dark(var(--main-purple-30), var(--main-pink-40));
+  --border-stitch: light-dark(var(--main-purple-30), var(--light-purple-50));
+  --bg-stitch: light-dark(var(--bg-secondary), var(--dark-purple-30));
   color: var(--text-secondary);
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-stitch);
   border: 1px dashed var(--border-stitch);
-  outline: 2px solid var(--bg-secondary);
+  outline: 2px solid var(--bg-stitch);
   font-weight: bold;
-  padding: 0 .5rem;
+  padding: 0.1rem .5rem;
 }
 
 .text-background {
@@ -845,6 +846,23 @@ position: absolute;
     height: 187px;
     background-image: url('/assets/images/meat_loading.png');
     animation: steakRotate 1s steps(2) infinite;
+  }
+}
+
+.pagination {
+  font-family: 'TamaFont';
+  font-size: 1.25em;
+  margin-bottom: 1rem;
+  color: light-dark(var(--main-pink-10), var(--light-purple-40));
+
+  a {
+    color: var(--text-link-visited);
+    text-decoration: none;
+    border-bottom-color: transparent !important;
+
+    &:hover span {
+      text-decoration: underline;
+    }
   }
 }
 

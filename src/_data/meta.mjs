@@ -27,7 +27,6 @@ export default {
     dev: "/assets/images/icon_meat.png"
   },
   updated: [
-    "Now"
   ],
   new: [
   ],

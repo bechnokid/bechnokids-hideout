@@ -3,7 +3,7 @@
 {% macro clique_text(text, options = {}) %}
   {% set safe_text = text | safe %}
   {% if options.url %}
-    <a href="{{ options.url }}" {% if options.cls %}class="{{ options.cls | trim }}" {% endif %}>{{ safe_text }}</a>
+    <a href="{{ options.url }}" {% if options.cls %}class="{{ options.cls | trim }}" {% endif %} target="_blank" rel="noreferrer">{{ safe_text }}</a>
   {% elif options.cls != undefined %}
     <span class="{{ options.cls }}">{{ safe_text }}</span>
   {% else %}
