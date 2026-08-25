@@ -61,8 +61,9 @@ freezeframe: true
     </div>
   {% endgalleryBox %}
 
-  {#{% galleryBox { title: "Pending", cls: "webrings", subCls: "justify-content-center align-items-center flex-gap-3" } %}
-  {% endgalleryBox %}#}
+  {% galleryBox { title: "Pending", cls: "webrings", subCls: "justify-content-center align-items-center flex-gap-3" } %}
+    {{ webrings.wol() }}
+  {% endgalleryBox %}
 
   {% galleryBox { title: "Webrings?", cls: 'js-required', subCls: "webrings", simple: true } %}
     <p>These webrings are either inactive or are not letting people join even though the option to become a member is still available. So, I cheated a bit to make myself an "honorary member", like a rascal. Yes, these are all functional!</p>
