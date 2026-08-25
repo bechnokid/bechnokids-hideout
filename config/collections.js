@@ -39,8 +39,20 @@ const pocketBishies = collection => {
   return Object.values(bishieCollection).flat();
 }
 
+const pixelClubs = collection => {
+  const pixelClubsCollection = collection.getAll()[0].data.goodies.pixel_clubs
+  return Object.values(pixelClubsCollection).flat();
+}
+
+const microblog = collection => {
+  const microblogCollection = collection.getAll()[0].data.blog.microblog
+  return Object.values(microblogCollection).flat();
+}
+
 module.exports = {
   gallery,
   artPages,
   pocketBishies,
+  pixelClubs,
+  microblog,
 }

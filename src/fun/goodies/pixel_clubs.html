@@ -1,0 +1,37 @@
+---
+title: Pixel Clubs
+displayOrder: 4
+pagination:
+  data: collections.pixelClubs
+  size: 5
+  alias: pixel_club
+permalink: goodies/pixel-clubs{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html
+paginationPrevText: Previous page
+paginationNextText: Next page
+paginationAnchor: '#pixel-club-list'
+description: Various pixel clubs that I have joined with my own pixel art.
+summary: Here's a collection of some pixel clubs/cliques that I joined or am in the process of joining! Any pixels that don't have a link are mine.
+toc:
+  unlisted: true
+freezeframe: true
+hasLinks: true
+flashing: true
+loading: true
+eleventyExcludeFromCollections: true
+---
+
+{% block content %}
+{% endblock %}
+
+{% import 'components/pixel_clubs/macros.html' as pixelClub with context %}
+
+{{ pixelClub.afternoonTea() }}
+{{ pixelClub.angelical() }}
+{{ pixelClub.bottlecaps() }}
+{{ pixelClub.call() }}
+{{ pixelClub.charm() }}
+
+<hr class="small">
+<nav class="pagination mt-3 text-xxl" aria-label="Pagination links">
+  <a href="/goodies/pixel-clubs/2"><span class="me-2">Next page</span> {% icon 'arrow-right' %}</a>
+</nav>
