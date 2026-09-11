@@ -1,11 +1,41 @@
 <hr class="small">
-{{ page.url }}
-{{ pagination.pageNumber + 1 }}
-<nav class="pagination mt-3 text-xxl d-flex justify-content-center" aria-label="Pagination links">
+<nav class="pagination numbered mt-3 text-xxl d-flex justify-content-center" aria-label="Pagination links">
+  {# First page button #}
+  {% if page.url == pagination.href.first %}
+    {% icon "chevrons-left", { cls: 'button pagination-btn d-flex flex-center'} %}
+  {% else %}
+    <a class="button pagination-btn" href="{{ pagination.href.first }}" aria-label="First page">{% icon "chevrons-left" %}</a>
+  {% endif %}
+
+  {# Prev page button #}
+  {% if pagination.href.previous %}
+    <a class="button pagination-btn" href="{{ pagination.href.previous }}" aria-label="Previous page">{% icon "chevron-left" %}</a>
+  {% else %}
+    {% icon "chevron-left", { cls: 'button pagination-btn d-flex flex-center'} %}
+  {% endif %}
+
+  {# Page number btns #}
   {% for page_link in pagination.hrefs %}
-    {{ loop.index }}
-    <button class="pagination-num{% if page.url == pagination.hrefs[loop.index0] %} active{% endif %}" aria-label="Page {{ loop.index }} button">{{ loop.index }}</button>
+    {% if page.url == pagination.hrefs[loop.index0] %}
+      <button type="button" class="pagination-num text-center active" aria-label="Currently on page {{ loop.index }}">{{ loop.index }}</button>
+    {% else %}
+      <a href="{{ page_link }}" class="button pagination-num text-center" aria-label="Page {{ loop.index }}"> {{ loop.index }}</a>
+    {% endif %}
   {% endfor %}
+
+  {# Next page button #}
+  {% if pagination.href.next %}
+    <a class="button pagination-btn" href="{{ pagination.href.next }}" aria-label="Next page">{% icon "chevron-right" %}</a>
+  {% else %}
+    {% icon "chevron-right", { cls: 'button pagination-btn d-flex flex-center'} %}
+  {% endif %}
+
+  {# Last page button #}
+  {% if page.url == pagination.href.last %}
+    {% icon "chevrons-right", { cls: 'button pagination-btn d-flex flex-center'} %}
+  {% else %}
+    <a class="button pagination-btn" href="{{ pagination.href.last }}" aria-label="Last page">{% icon "chevrons-right" %}</a>
+  {% endif %}
 </nav>
 
 {#
