@@ -227,7 +227,7 @@ export default {
       alt: "A woman with long blue wavy hair wearing a white dress. She is holding a large blue vase with water pouring out of it, representing Aquarius"
     },
     {
-      url: "https://gekiyaku.org/clique",
+      url: "https://gekiyaku.org/pages/clique",
       img: "love_dove.gif",
       alt: "A pixel image of a pigeon"
     },
@@ -298,7 +298,7 @@ export default {
       right: "amethyst"
     },
     {
-      left: { url: "https://lazer-bunny.neocities.org/Cliques", text: "Crispy" },
+      left: { url: "https://lazer-bunny.neocities.org/cliques", text: "Crispy" },
       center: "crispy.png",
       right: "Silent Salt Cookie"
     },
@@ -307,7 +307,7 @@ export default {
       right: " is my Deadly Sin"
     },
     {
-      left: { url: "https://lazer-bunny.neocities.org/Cliques", text: "My OTP" },
+      left: { url: "https://lazer-bunny.neocities.org/cliques", text: "My OTP" },
       center: "my-otp.png",
       right: "Siduri x Gilgamesh (FF7R)"
     },
@@ -392,7 +392,7 @@ export default {
       right: "Neptunemon"
     },
     {
-      left: { text: "spooky", url: "https://sweet-pea.neocities.org/cliques/textcliques" },
+      left: { text: "spooky", url: "https://sweet-pea.neocities.org/cliques/spooky" },
       center: "spooky.png",
       right: "i love halloween!"
     },

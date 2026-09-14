@@ -1,0 +1,47 @@
+<hr class="small">
+<nav class="pagination numbered mt-3 d-flex flex-wrap justify-content-center flex-gap-2" aria-label="Pagination links">
+  {# First page button #}
+  {% if page.url == pagination.href.first %}
+    {% icon "chevrons-left", { cls: 'button pagination-btn d-flex flex-center'} %}
+  {% else %}
+    <a class="button pagination-btn" href="{{ pagination.href.first }}" aria-label="First page">{% icon "chevrons-left" %}</a>
+  {% endif %}
+
+  {# Prev page button #}
+  {% if pagination.href.previous %}
+    <a class="button pagination-btn" href="{{ pagination.href.previous }}" aria-label="Previous page">{% icon "chevron-left" %}</a>
+  {% else %}
+    {% icon "chevron-left", { cls: 'button pagination-btn d-flex flex-center'} %}
+  {% endif %}
+
+  {# Page number btns #}
+  {% for page_link in pagination.hrefs %}
+    {% if page.url == pagination.hrefs[loop.index0] %}
+      <button type="button" class="pagination-num text-center active" aria-label="Currently on page {{ loop.index }}">{{ loop.index }}</button>
+    {% else %}
+      <a href="{{ page_link }}" class="button pagination-num text-center" aria-label="Page {{ loop.index }}"> {{ loop.index }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {# Next page button #}
+  {% if pagination.href.next %}
+    <a class="button pagination-btn" href="{{ pagination.href.next }}" aria-label="Next page">{% icon "chevron-right" %}</a>
+  {% else %}
+    {% icon "chevron-right", { cls: 'button pagination-btn d-flex flex-center'} %}
+  {% endif %}
+
+  {# Last page button #}
+  {% if page.url == pagination.href.last %}
+    {% icon "chevrons-right", { cls: 'button pagination-btn d-flex flex-center'} %}
+  {% else %}
+    <a class="button pagination-btn" href="{{ pagination.href.last }}" aria-label="Last page">{% icon "chevrons-right" %}</a>
+  {% endif %}
+</nav>
+
+{#
+<div id="guestbook-pagination" class="mt-4 d-flex flex-wrap justify-content-center">
+  <button type="button" class="pagination-btn" id="prev-btn" aria-label="Previous page">&lt;</button>
+  <div id="pagination-numbers" data-num-of-pages="8"><button class="pagination-num active" data-page-index="1" aria-label="Page 1">1</button><button class="pagination-num" data-page-index="2" aria-label="Page 2">2</button><button class="pagination-num" data-page-index="3" aria-label="Page 3">3</button><button class="pagination-num" data-page-index="4" aria-label="Page 4">4</button><button class="pagination-num" data-page-index="5" aria-label="Page 5">5</button><button class="pagination-num" data-page-index="6" aria-label="Page 6">6</button><button class="pagination-num" data-page-index="7" aria-label="Page 7">7</button><button class="pagination-num" data-page-index="8" aria-label="Page 8">8</button></div>
+  <button type="button" class="pagination-btn" id="next-btn" aria-label="Next page">&gt;</button>
+</div>
+#}

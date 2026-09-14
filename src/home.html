@@ -28,13 +28,14 @@ Webrings and fanlistings can be found in [/joined](/joined)!
     <div class="status col-md-7">
       <div class="sidebar h-100 overflow-hidden">
         <div class="h2 p-2">Latest Status ☀</div>
-        {% set status = microblog.microblog[0] %}
-        <div id="status-cafe-widget" class="js-required status-container d-flex flex-gap-3 px-3">
-          <div class="p-5 w-100 text-center">Loading...</div>
+        {% set status = blog.microblog[0] %}
+        <div id="status-cafe-widget" class="status-container d-flex flex-gap-3 px-3">
+          <div class="flex-shrink-0 d-flex align-items-center">{% emoticon status.mood %}</div>
+          <div class="d-flex flex-column justify-content-center flex-gap-1">
+            <p class="status-date h3 text-accent">{{ status.date | monDayYear }}</p>
+            <p class="status-text">{{ status.content }}</p>
+          </div>
         </div>
-        <noscript>
-          <p class="p-4 text-center">Find me over at <a href="https://status.cafe/users/bechnokid" target="_blank" rel="noreferrer">Status Cafe</a>!</p>
-        </noscript>
       </div>
     </div>
     <div class="col-md-5 link-btns">

@@ -5,20 +5,17 @@ pagination:
   data: collections.blog
   size: 15
   reverse: true
-permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
-paginationPrevText: 'Newer posts'
-paginationNextText: 'Older posts'
-paginationAnchor: '#post-list'
+permalink: blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber + 1 }}{% endif %}/index.html
+paginationPrevText: Newer posts
+paginationNextText: Older posts
 description: Not unlike a diary or journal, longer entries can be found here.
 summary: There will be times where I just want to keep rambling about things I've experienced, good or bad! Hopefully, mostly good!
-noScroll: true
 ---
 {% set post_list_items = pagination.items %}
 {% set last_updated = (collections.feed | reverse)[0].fileSlug | monthDayYear %}
 
-{% block content %}
-  {%- for item in post_list_items %}
-  {% set blog_date = item.fileSlug | monthDayYear %}
+{% for item in post_list_items %}
+  {% set blog_date = (item.date or item.fileSlug) | monthDayYear %}
   <div class="blog row py-1">
     <div class="col-md-8 col-7">
       <a href="{{ item.url }}">{{ item.data.title | markdownifyInline | safe }}</a>
@@ -28,6 +25,5 @@ noScroll: true
     </div>
     <div class="col-md-4 col-5">{{ blog_date }}</div>
   </div>
-  {% endfor %}
-  {% include "partials/pagination.html" %}
-{% endblock %}
+{% endfor %}
+{% include "partials/pagination.html" %}

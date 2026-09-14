@@ -1,7 +1,6 @@
 /* Imports */
 import { loadWebrings } from "./components/webrings.js";
 import { loadFreeze } from "./components/freeze.js";
-import { STATUS_CONTAINER, loadMicroblog } from "./components/microblog.js";
 import { loadGuestbook } from "./components/guestbook.js";
 import { loadBishieQuiz } from "./components/bishie.js";
 
@@ -18,7 +17,6 @@ $(document).ready(function() {
   updateButton(currentTheme === 'dark');
 
   if ($('.freezeframe').length > 0) loadFreeze();
-  if ($(`#${STATUS_CONTAINER}`).length > 0) loadMicroblog();
   if ($('.webrings').length > 0) loadWebrings(webringLinks);
   if ($('#bishie-btn-submit').length > 0) loadBishieQuiz();
   if ($('button#copy-btn').length > 0) loadCopyTextBtn();

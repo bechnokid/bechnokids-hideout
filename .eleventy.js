@@ -15,7 +15,7 @@ const TEMPLATE_ENGINE = 'njk';
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = async function(eleventyConfig){
-  eleventyConfig.addPreprocessor("neocities", "*", (data, content) => {
+  eleventyConfig.addPreprocessor("neocities", "*", (data) => {
     if (!data.neocities && env === "neocities") {
       return false;
     }
@@ -141,6 +141,20 @@ module.exports = async function(eleventyConfig){
       frameborder: '0',
     }
   })
+
+  eleventyConfig.addNunjucksGlobal("getContext", function(macroName, name, params) {
+    let macroResults;
+    if (macroName == 'pixelClub') {
+      if (params.basic) {
+        macroResults = this.ctx[macroName]['basic'](params);
+      } else if (params.detailed) {
+        macroResults = this.ctx[macroName]['detailed'](params);
+      } else {
+        macroResults = this.ctx[macroName][name](params);
+      }
+    };
+    return macroResults;
+  });
 
   eleventyConfig.setLibrary('md', markdownLib);
 

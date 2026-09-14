@@ -6,30 +6,30 @@ const slugify = require('slugify');
 
 // Converts date to local timezone
 const local = value => {
-  return (value instanceof Date) ? value.setHours(value.getHours() + 4) : value;
+  return (value instanceof Date) ? value.setHours(value.getHours() + 5) : value;
 }
 
 // Formats date into YYYY-MM-DD (2025-01-01)
 const dateToIso8601 = value => {
-  const dateObj = (value instanceof Date) ? value : parseDate(value);
-  return dateObj.toLocaleDateString();
+  const dateObj = (value instanceof Date) ? value.setHours(value.getHours() + 5) : parseDate(value);
+  return format(dateObj, "yyyy-MM-dd");
 }
 
 // Formats the date into Day of Month Year (01 of January 2000)
 const dayOfMonth = value => {
-  const dateObj = (value instanceof Date) ? value.setHours(value.getHours() + 4) : parseDate(value);
+  const dateObj = (value instanceof Date) ? value.setHours(value.getHours() + 5) : parseDate(value);
   return `${format(dateObj, 'do')} of ${format(dateObj, 'MMMM yyyy')}`;
 }
 
 // Formats the date into Month Day, Year (January 01, 2000)
 const monthDayYear = value => {
-  const dateObj = (value instanceof Date) ? value.setHours(value.getHours() + 4) : parseDate(value);
+  const dateObj = (value instanceof Date) ? value.setHours(value.getHours() + 5) : parseDate(value);
   return `${format(dateObj, 'PPP')}`;
 }
 
 // Formats the date into Mon Day, Year (Jan 01, 2000)
 const monDayYear = value => {
-  const dateObj = (value instanceof Date) ? value.setHours(value.getHours() + 4) : parseDate(value);
+  const dateObj = (value instanceof Date) ? value.setHours(value.getHours() + 5) : parseDate(value);
   return `${format(dateObj, 'PP')}`;
 }
 
