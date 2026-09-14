@@ -215,6 +215,11 @@ export default {
       alt: "A sprite of Totodile, the water starter of the Johto region"
     },
     {
+      url: "https://sweet-pea.neocities.org/cliques/whosdere",
+      img: "hajidere.gif",
+      alt: "Green text that reads, \"hajidere\", an archetype that mostly applies to anime characters who are shy and blush easily from embarrassment when near their love, but eventually overcome their shyness and become affectionate."
+    },
+    {
       url: "https://web.archive.org/web/20041209084731/http://www.mitsuzo.net/tea/",
       img: "green_tea.gif",
       alt: "A cup of green tea"
@@ -426,5 +431,23 @@ export default {
       center: "💀🎀",
       right: "Draculaura"
     },
+    {
+      left: { text: "RAINBOW GIRL", url: "https://firstastronomicalvelocity.nekoweb.org/cliques" },
+      center: "💾",
+      right: "Nadia (Monster Hunter)"
+    },
+    {
+      left: { text: "shougo manga", url: "https://starlitmarmalade.neocities.org/minicliques" },
+      center: "💕",
+      right: "Ore Monogatari!!"
+    },
+    {
+      left: { text: "tea lover", url: "https://starlitmarmalade.neocities.org/minicliques" },
+      center: "🍵",
+      right: "green tea"
+    },
+    {
+      custom: `✧ <a href="" target="_blank" rel="noreferrer">Hype Boy</a> 🎧 ✧「Arthur Morgan」`
+    }
   ],
 }
