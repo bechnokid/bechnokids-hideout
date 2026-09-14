@@ -4,9 +4,9 @@ date: 2026-09-13
 ---
 In June, I started my own game of *Red Dead Redemption 2* on the PS5 after watching my wife's own endeavors while playing the game.
 
-This will not be a detailed review since thousands of other writers have conveyed the same feelings I have for the game much better than I ever could, but I just wanted to express my love for a game that I never thought I'd enjoy, especially not from the same company that made the *Grand Theft Auto* series.
+This will not be a detailed review since thousands of other writers conveyed the same feelings I have for the game much better than I ever could, but I just wanted to express my love for a game that I never thought I'd enjoy, especially not from the same company that made the *Grand Theft Auto* series.
 
-I remember being unsure about playing it at first, assuming that its gameplay will require "high-tier gamer skills" since there's so much to keep track of. However, I decided to bite the bullet (heh), and play it anyway because I wanted to experience it myself, newbie mistakes be damned.
+I remember being unsure about playing it at first, assuming that its gameplay would require "high-tier gamer skills" since there was so much to keep track of. However, I decided to bite the bullet (heh), and play it anyway because I wanted to experience it myself, newbie mistakes be damned.
 
 Suffice to say, I was *hooked*, having played consistently every day instead of updating my website or drawing as much as I wanted. {% emote 'embarrassed' %} I'm sure people would say that I took a "hiatus", but in all honesty, I just got distracted playing this game about a cowboy who loves taking care of horses more than he likes dealing with people.
 

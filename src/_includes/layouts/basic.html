@@ -3,7 +3,7 @@
 
 {% set page_header_title = title %}
 {% set page_header_summary %}
-  {% if imgDate %}<time datetime="{{ imgDate }}" class="text-primary">{{ imgDate | monthDayYear }}</time>{% endif %}
+  {% if imgDate %}<time datetime="{{ imgDate }}" class="text-primary font-weight-bold">{{ imgDate | monthDayYear }}</time>{% endif %}
   {% if summary %}{{ summary | markdownify | safe }}{% endif %}
 {% endset %}
 {% set outgoing_page_warning = hasLinks %}

@@ -19,7 +19,7 @@ summary: Thoughts and ramblings that are otherwise too small to make into a blog
     </div>
     <div class="status-content d-flex flex-column flex-gap-1">
       <p class="status-date text-accent h3 pt-2 pb-0">{{ item.date | monDayYear }}</p>
-      <p class="status-text">{{ item.content }}</p>
+      <p class="status-text">{{ item.content | markdownifyInline | safe }}</p>
     </div>
   </div>
   {% endfor %}
