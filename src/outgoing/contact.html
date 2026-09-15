@@ -8,6 +8,8 @@ noScroll: true
 {% set description %}
 ## Some Reasons to Contact Me
 
+{% img meta.imgUrl + "/links/_email.png", { urlCls: "d-flex flex-center", url: "mailto:bechnokid@yahoo.com", alt: "Send me an email!"} %}
+
 - There's something broken or a bug on my site.
 - You need help with coding that not even [W3Schools](https://www.w3schools.com/) can help with.
   - You can use [Code Images](https://ray.so/) (preferred) or take a screenshot of your code.
@@ -23,13 +25,9 @@ noScroll: true
 - I **prefer email** more than instant messaging in apps such as Discord, WhatsApp, etc.
 - Talking about anything remotely NSFW is out of the question. I'd rather you not tell me things you wouldn't tell your grandparents.
 - Although English is my first language, I grew up with parents with English as their second/third language, so there's a lot of slang that I don't know but am willing to learn!
+- If you're ok with what's listed, then click the image above!
 {% endset %}
-{% set img_path = "/assets/images/links/" %}
 <section class="bech-links">
-  <div class="d-flex flex-wrap justify-content-evenly p-3 flex-gap-3">
-    {% img img_path + "_email.png", { cls: 'link-img', url: "mailto:bechnokid@yahoo.com", alt: "Send me an email!"} %}
-    {% img img_path + "_guestbook.png", { cls: 'link-img', url: "/guestbook", alt: "Leave a message in my guestbook!"} %}
-  </div>
   {{ description | markdownify | safe }}
 </section>
 <section class="tama-links">

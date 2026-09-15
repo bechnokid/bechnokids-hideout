@@ -26,16 +26,9 @@ Webrings and fanlistings can be found in [/joined](/joined)!
   </ul>
   <div class="home-row row d-flex flex-md-row flex-column flex-md-gap-0 flex-gap-4">
     <div class="status col-md-7">
-      <div class="sidebar h-100 overflow-hidden">
-        <div class="h2 p-2">Latest Status ☀</div>
-        {% set status = blog.microblog[0] %}
-        <div id="status-cafe-widget" class="status-container d-flex flex-gap-3 px-3">
-          <div class="flex-shrink-0 d-flex align-items-center">{% emoticon status.mood %}</div>
-          <div class="d-flex flex-column justify-content-center flex-gap-1">
-            <p class="status-date h3 text-accent">{{ status.date | monDayYear }}</p>
-            <p class="status-text">{{ status.content }}</p>
-          </div>
-        </div>
+      <div class="sidebar h-100">
+        <div class="h2 p-2">Sign my Guestbook! ☀</div>
+        {% img meta.imgUrl + "/links/_guestbook.png", { url: "/guestbook", alt: "Link to the guestbook", urlCls: "d-flex justify-content-center py-2 mt-1" } %}
       </div>
     </div>
     <div class="col-md-5 link-btns">
@@ -43,7 +36,7 @@ Webrings and fanlistings can be found in [/joined](/joined)!
       <div class="h2 p-2">Link Me ♬</div>
         <div class="content p-2 text-center d-flex flex-column flex-gap-2">
           <p>Feel free to hotlink!</p>
-          <div class="d-flex flex-wrap justify-content-center flex-gap-2 jus">{%- for button in meta.buttons %}{% img button.src, { alt: button.alt + " button for Bechno Kid's hideout"} %}{% endfor %}</div>
+          <div class="d-flex flex-wrap justify-content-center flex-gap-2">{%- for button in meta.buttons %}{% img button.src, { alt: button.alt + " button for Bechno Kid's hideout"} %}{% endfor %}</div>
         </div>
       </div>
     </div>
