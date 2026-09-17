@@ -75,8 +75,8 @@
   --border-sidebar: light-dark(var(--main-pink-10), var(--dark-purple-50));
   --border-glow: light-dark( var(--mint-20), var(--mint-30));
 
-  --scroll-bg: light-dark(var(--bg-footer), var(--dark-purple-20));
-  --scroll-tab: light-dark(var(--bg-primary), var(--light-purple-50));
+  --scroll-bg: light-dark(var(--light-pink-30), var(--main-purple-40));
+  --scroll-tab: light-dark(var(--white), var(--dark-purple-10));
 
   --text-accent: light-dark(var(--mint-40), var(--mint-10));
   --text-body: light-dark(var(--black), var(--white));
@@ -207,18 +207,6 @@ body {
   height: 100vh;
   scrollbar-color: var(--scroll-tab) var(--scroll-bg);
   cursor: var(--img-cursor), auto;
-}
-
-::-webkit-scrollbar {
-  width: 8px
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--scroll-bg)
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-tab);
 }
 
 ::selection {

@@ -21,20 +21,8 @@
 
 html,
 body {
-  scrollbar-width: thin;
+  scrollbar-width: 10px;
   line-height: 1.5;
-}
-
-::-webkit-scrollbar {
-  width: 8px
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
 }
 
 img,
