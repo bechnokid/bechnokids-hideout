@@ -23,7 +23,7 @@ export default {
       right: "bánh bò"
     },
     {
-      left: { cls: "rainbow clique", text: "rainbow", url: "https://cliqued.wings.nu/various.php" },
+      left: { cls: "rainbow clique", text: "rainbow", url: "https://cliqued.wings.nu/" },
       center: "🌈",
       right: { cls: "rainbow fav", text: "Mint Green" }
     },
@@ -288,7 +288,7 @@ export default {
       right: "Chi-yu"
     },
     {
-      left: { url: "https://cliqued.wings.nu/fandom.php", text: "OTF" },
+      left: { url: "https://cliqued.wings.nu/", text: "OTF" },
       center: "otf.png",
       right: "Digimon & Monster Hunter"
     },
@@ -392,7 +392,7 @@ export default {
       right: "master"
     },
     {
-      left: { text: "unexpected song", url: "https://cliqued.wings.nu/fandom.php"},
+      left: { text: "unexpected song", url: "https://cliqued.wings.nu/"},
       center: "unexpected-song.png" ,
       right: "Neptunemon"
     },
@@ -448,6 +448,11 @@ export default {
     },
     {
       custom: `✧ <a href="" target="_blank" rel="noreferrer">Hype Boy</a> 🎧 ✧「Arthur Morgan」`
+    },
+    {
+      left: { text: "NPC", url: "https://cliqued.wings.nu/" },
+      center: "npc_heart.png",
+      right: "Sadie Adler"
     }
   ],
 }

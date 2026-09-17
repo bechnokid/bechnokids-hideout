@@ -13,9 +13,9 @@ export default {
     email: "bechnokid@yahoo.com"
   },
   buttons:  [
-    { alt: "88 by 31", src: "https://raw.githubusercontent.com/bechnokid/neocities/refs/heads/master/public/assets/images/button.png"},
-    { alt: "32 by 32", src: "https://raw.githubusercontent.com/bechnokid/neocities/refs/heads/master/public/assets/images/button32x32.gif"},
-    { alt: "200 by 40", src: "https://raw.githubusercontent.com/bechnokid/neocities/refs/heads/master/public/assets/images/button200x40.png"}
+    { alt: "88 by 31", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button.png"},
+    { alt: "32 by 32", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button32x32.gif"},
+    { alt: "200 by 40", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button200x40.png"}
   ],
   introLinks: [
     { name: 'Sitemap', url: '/sitemap' },
@@ -27,10 +27,9 @@ export default {
     dev: "/assets/images/icon_meat.png"
   },
   updated: [
+    "Cliques",
   ],
   new: [
-    "Digimon",
-    "Games"
   ],
   emotes: [
     "angry",

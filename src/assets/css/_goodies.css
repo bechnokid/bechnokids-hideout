@@ -189,6 +189,13 @@ section.train {
   width: 200px;
 }
 
+article.cliques {
+  code[class*="language-"] {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .jarjam img,
   .jarjam .ff-canvas,
