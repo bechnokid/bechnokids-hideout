@@ -1,0 +1,61 @@
+---
+title: Guestbook
+pagination:
+  data: collections.guestbookMsgs
+  size: 5
+permalink: guestbook{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber + 1 }}{% endif %}/index.html
+displayOrder: 3
+description: A guestbook to leave messages, comments, and/or feedback.
+summary: Thanks for stopping by! You can leave a message, comment, and/or some feedback if you'd like!
+tags:
+  - main
+  - nav
+---
+<div id="guestbook">
+  <form id="guestbook" action="https://guestbooks.meadow.cafe/guestbook/484/submit" method="post" name="guestbook" class="d-flex flex-column">
+    <input type="hidden" name="redirect_to_url" id="redirect_to_url" value="https://bechnokid.com/guestbook/success">
+    <fieldset>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" eneterkeyhint="next" placeholder="Mametchi" class="guestbook-input-field wide-field bg-sidebar px-2 py-1 mb-2" required>
+    </fieldset>
+    <fieldset>
+      <label for="website">Website (optional)</label>
+      <input type="text" name="website" id="website" eneterkeyhint="next" placeholder="https://tamagotchi.com" class="guestbook-input-field wide-field bg-sidebar px-2 py-1 mb-2">
+    </fieldset>
+    <fieldset>
+      <label for="text">Say something nice? (Plain text only, please!)</label>
+      <textarea name="text" id="text" placeholder="Type here..." class="guestbook-msg-field guestbook-input-field w-100 bg-sidebar px-2 py-1 mb-2" required></textarea>
+    </fieldset>
+    <div id="guestbooks___challenge-answer-container">
+      <div class="guestbooks___input-container">
+        <fieldset>
+          <label for="challengeQuestionAnswer">What is 5 + 3?</label>
+          <input type="text" id="question" class="px-2 py-1 mb-4 guestbook-input-field bg-sidebar" name="challengeQuestionAnswer" id="challengeQuestionAnswer" inputmode="numeric" eneterkeyhint="done" required>
+        </fieldset>
+      </div>
+    </div>
+    <div id="guestbook-submit-button">
+      <button type="submit" class="button">Submit</button>
+    </div>
+    <div id="guestbooks___error-message" class="guestbook-error-msg sidebar mt-2 p-3 d-none" aria-live="polite"></div>
+  </form>
+  <div class="guestbook-messages">
+    <hr class="small">
+    <h2 class="bg-dots">Messages</h2>
+    <div class="guestbook-msg-container d-flex flex-column flex-gap-3">
+      {% for item in pagination.items %}
+        <div class="guestbook-msg-div sidebar p-3 pb-2">
+          <div class="guestbook-msg-header">
+            <p><strong>Name: </strong>{{ item.name }}</p>
+            <p><strong>Sent: </strong>{{ item.date | monDayYear }}</p>
+            {% if item.url %}
+              <p><strong>Website: </strong><a href='{{ item.url }}' rel="noreferrer" target="_blank">{{ item.url }}</a></p>
+            {% endif %}
+          </div>
+          <div class="guestbook-msg-body"><p>{{ item.content }}</p></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% include 'partials/pagination_num.html' %}
+</div>

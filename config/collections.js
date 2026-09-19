@@ -49,10 +49,16 @@ const microblog = collection => {
   return Object.values(microblogCollection).flat();
 }
 
+const guestbookMsgs = collection => {
+  const guestbookCollection = collection.getAll()[0].data.guestbook;
+  return Object.values(guestbookCollection);
+}
+
 module.exports = {
   gallery,
   artPages,
   pocketBishies,
   pixelClubs,
   microblog,
+  guestbookMsgs,
 }

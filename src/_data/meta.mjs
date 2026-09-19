@@ -1,5 +1,6 @@
 export default {
   env: process.env.ELEVENTY_ENV,
+  guestbook: "484",
   name: "Bechno Kid's Hideout",
   url: "https://bechnokid.com",
   cssUrl: "/assets/css",
@@ -12,10 +13,10 @@ export default {
     name: "Bechno Kid",
     email: "bechnokid@yahoo.com"
   },
-  buttons:  [
-    { alt: "88 by 31", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button.png"},
-    { alt: "32 by 32", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button32x32.gif"},
-    { alt: "200 by 40", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button200x40.png"}
+  buttons: [
+    { alt: "88 by 31", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button.png" },
+    { alt: "32 by 32", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button32x32.gif" },
+    { alt: "200 by 40", src: "https://cdn.jsdelivr.net/gh/bechnokid/neocities@latest/public/assets/images/button200x40.png" }
   ],
   introLinks: [
     { name: 'Sitemap', url: '/sitemap' },
