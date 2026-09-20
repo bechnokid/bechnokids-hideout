@@ -1,3 +1,60 @@
+import EleventyFetch from '@11ty/eleventy-fetch';
+import { DOMParser } from 'xmldom';
+
+const EMOJI_HASH = {
+  'normal': ['🙂'],
+  'happy': ['😀','😛', '🥳'],
+  'calm': ['😌'],
+  'excited': ['😄'],
+  'love': ['🥰', '❤️', '😍'],
+  'sad': ['😢','😔', '😩'],
+  'sobbing': ['😭'],
+  'worried': ['😟', '😰', '🥺'],
+  'embarrassed': [ '😂', '😅' ],
+  'confused': ['❓'],
+  'surprised': ['😮','😦','😧','😱'],
+  'annoyed': ['😒','🫤'],
+  'angry': ['😠'],
+  'furious': ['😡','🤬'],
+  'thinking': ['🤔'],
+  'skeptical': ['🤨','🙄'],
+  'dead': ['💀'],
+  'hehe': ['😏'],
+  'laugh': ['😆','🤣','😂'],
+  'sigh': ['😑']
+};
+
+const findEmoticon = (obj, fn) =>
+  Object.keys(obj).find(key => fn(obj[key], key, obj));
+
+export default async () => {
+  try {
+    let url = 'https://status.cafe/users/bechnokid.atom';
+    let response = await EleventyFetch(url, {
+      duration: '1d',
+      type: 'xml',
+    });
+    const data = new DOMParser().parseFromString(response, "text/xml");
+    const entriesXML = data.getElementsByTagName("entry");
+    if (entriesXML.length > 1) {
+      let statusCafeEntries = [];
+      for (let i = 0; i < entriesXML.length; i++) {
+        const e = entriesXML[i];
+        let entry = {};
+        entry.mood = findEmoticon(EMOJI_HASH, x => x.includes(e.getElementsByTagName("title")[0].textContent.slice(10, 13).trim()));
+        entry.date = e.getElementsByTagName("published")[0].textContent.slice(0, 10);
+        entry.content = e.getElementsByTagName("content")[0].textContent.trim();
+        statusCafeEntries.push(entry);
+      }
+      return statusCafeEntries;
+    } else {
+      return [];
+    }
+  } catch (err) {
+    return [];
+  }
+}
+
 const template =
 {
   date: "YYYY-MM-DD",
@@ -6,131 +63,7 @@ const template =
   content: ""
 }
 
-export default [
-  {
-    mood: "sigh",
-    date: "2026-09-13",
-    content: "Didn't mean to sleep all day again, oops! Though, I guess I needed it after last week being so hectic lol"
-  },
-  {
-    mood: "sobbing",
-    date: "2026-08-12",
-    time: "14:41:26+00:00",
-    content: "A few months late, but I found out my guestbook service deleted a few messages when it was down for a few days... I'm so sorry!!"
-  },
-  {
-    mood: "embarrassed",
-    date: "2026-07-09",
-    time: "13:20:06+00:00",
-    content: "Not Team Mystery being the losing team so far! That's ok, though. I'm having fun!"
-  },
-  {
-    mood: "embarrassed",
-    date: "2026-05-20",
-    time: "12:33:16+00:00",
-    content: "Picked up CRK again even though I said I wouldn't pick it up again, oops. I guess I'm curious to see where the story goes!"
-  },
-  {
-    mood: "dead",
-    date: "2026-05-04",
-    time: "23:24:34+00:00",
-    content: "I have been informed that my guestbook is not working! Apologies for the inconvenience!!"
-  },
-  {
-    mood: "sigh",
-    date: "2026-04-27",
-    time: "13:07:56+00:00",
-    content: "I realize that my social filter is practically nonexistent when I'm groggy, and I end up saying some really hurtful things! Gotta fix this."
-  },
-  {
-    mood: "sobbing",
-    date: "2026-04-20",
-    time: "19:34:31+00:00",
-    content: "Seeing Neptunemon in the Xros Wars Digimon Color has me wanting an actual device based on the Olympos XII. Please Bandai, I'm begging you!!"
-  },
-  {
-    mood: "excited",
-    date: "2026-03-23",
-    time: "11:15:33+00:00",
-    content: "Getting an \"A\" in the AT Arkveld Free Challenge requires finishing the quest in 22', and I completed it in 15'30\"!!! I'M A REAL HUNTER NOW!!"
-  },
-  {
-    mood: "embarrassed",
-    date: "2026-03-13",
-    time: "01:45:00+00:00",
-    content: "Weather is absolutely crazy this week! My body is definitely feeling the negative effects!"
-  },
-  {
-    mood: "sad",
-    date: "2026-03-12",
-    time: "00:25:25+00:00",
-    content: "Found out that I'm the target of some gossip at my workplace over something that's completely out of my control. Feels bad, man."
-  },
-  {
-    mood: "dead",
-    date: "2026-03-01",
-    time: "14:51:23+00:00",
-    content: "Having an entire week of passing out immediately after getting home is not fun! Hopefully this won't be permanent!"
-  },
-  {
-    mood: "happy",
-    date: "2026-02-15",
-    time: "00:39:31+00:00",
-    content: "Posted some art on my Pixiv after 500+ years. +10 confidence!"
-  },
-  {
-    mood: "excited",
-    date: "2026-02-11",
-    time: "20:47:02+00:00",
-    content: "The \"bechnokid.com\" domain is back in my hands after 21 years! \"bechnokid.neocities.org\" will still work, though!"
-  },
-  {
-    mood: "hehe",
-    date: "2026-02-09",
-    time: "15:44:24+00:00",
-    content: "Replaced the font in my code editor with one called \"Comic Mono\", hehehe. I might end up making a whole page with this font. >:)"
-  },
-  {
-    mood: "sobbing",
-    date: "2026-02-07",
-    time: "23:43:57+00:00",
-    content: "Oh my Gog, I just need one more Wartorn Dragongem auuuugh! Thankfully, I've been having a good streak so far. Gotta keep it going!"
-  },
-  {
-    date: "2026-02-06",
-    time: "22:23:29+00:00",
-    content: "Closing my Atabook guestbook for now! I'm currently in the process of getting my old one back up! Thank you for your patience!"
-  },
-  {
-    mood: "love",
-    date: "2026-02-06",
-    time: "00:12:33+00:00",
-    content: "I love coconut water!! I'm a little surprised I don't drink it more often!"
-  },
-  {
-    mood: "happy",
-    date: "2026-01-15",
-    time: "17:52:35+00:00",
-    content: "I am being a good girl and taking the new ACNH update day by day, so I can discover new things by myself!"
-  },
-  {
-    mood: "dead",
-    date: "2026-01-06",
-    time: "21:05:50+00:00",
-    content: "I really tried to get esbuild to work with my Eleventy setup, but man, JavaScript is just not easy to bundle like with CSS!"
-  },
-  {
-    mood: "happy",
-    date: "2025-12-26",
-    time: "13:03:59+00:00",
-    content: "Even though I had some health issues come up, I'm grateful to have had a wonderful Christmas!"
-  },
-  {
-    mood: "love",
-    date: "2025-12-17",
-    time: "05:14:41+00:00",
-    content: "The Gogmazios weapons look so scary and beautiful!! It feels great to have hunted such a classic monster!"
-  },
+const microblogEntries = [
   {
     date: "2025-05-04",
     mood: "worried",
