@@ -16,7 +16,7 @@ eleventyComputed:
   <title>bechnokid - Status Cafe</title>
   <meta name="description" content="your friends' updates">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>">
-  <link rel="stylesheet" href="https://status.cafe/assets/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://status.cafe/assets/style.css{{ meta.nocache }}" type="text/css" media="all">
   {% if statusTheme.data.noPlaceholderText == true %}<style>.placeholder-text { display: none }</style>{% endif %}
 </head>
 <body>

@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% block css %}<link rel="stylesheet" href="{{ meta.cssUrl }}/shrines/gilgamesh.css" type="text/css" media="all">{% endblock css %}
+  {% block css %}<link rel="stylesheet" href="{{ meta.cssUrl }}/shrines/gilgamesh.css{{ meta.nocache }}" type="text/css" media="all">{% endblock css %}
   <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
   <title>{{ meta.name }}{% if title != null %} - {{ title }}{% endif %}</title>
 </head>

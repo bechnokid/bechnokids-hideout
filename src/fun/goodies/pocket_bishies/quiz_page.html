@@ -13,9 +13,9 @@ eleventyComputed:
 <html lang={{ meta.lang }} data-theme="light">
 <head>
   {% include "partials/head.html" %}
-  <script type="text/javascript" src="{{ meta.jsUrl }}/components/jquery.js" crossorigin="anonymous"></script>
-  <script type="module" src="{{ meta.jsUrl }}/script.js"></script>
-  <link rel="stylesheet" href="{{ meta.cssUrl }}/pocket_bishie.css" type="text/css" media="all">
+  <script type="text/javascript" src="{{ meta.jsUrl }}/components/jquery.js{{ meta.nocache }}" crossorigin="anonymous"></script>
+  <script type="module" src="{{ meta.jsUrl }}/script.js{{ meta.nocache }}"></script>
+  <link rel="stylesheet" href="{{ meta.cssUrl }}/pocket_bishie.css{{ meta.nocache }}" type="text/css" media="all">
   <title>{{ title }} (Pocket Bi{{ bishie.type }}) - {{ meta.name }}</title>
 </head>
 <body>

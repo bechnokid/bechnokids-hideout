@@ -9,7 +9,7 @@ displayOrder: 4
 <html lang={{ meta.lang }}>
 <head>
   {% include 'partials/head.html' %}
-  <link rel="stylesheet" href="{{ meta.cssUrl }}/error.css" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ meta.cssUrl }}/error.css{{ meta.nocache }}" type="text/css" media="all">
   <title>{{ title }}</title>
 </head>
 <body data-theme="light" class="vh-100">

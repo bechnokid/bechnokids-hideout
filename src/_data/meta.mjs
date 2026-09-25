@@ -1,4 +1,5 @@
 export default {
+  nocache: "?nocache=" + Date.now(),
   env: process.env.ELEVENTY_ENV,
   guestbook: "484",
   name: "Bechno Kid's Hideout",
