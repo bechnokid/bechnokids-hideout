@@ -30,7 +30,7 @@ const template = {
     ]
   }
 }
-export default [
+const test = [
   {
     oc: {
       name: "Stella Aiba",
@@ -98,6 +98,41 @@ export default [
       media: "Invader Zim",
       content: [
         `*Note*: Takes place some time after the events of *Invader Zim: Enter the Florpus*`,
+      ],
+      readMore: [
+        `CHANGEME`
+      ]
+    },
+    relationship: {
+      tropes: [
+        "CHANGEME",
+      ],
+      content: [
+        "CHANGEME",
+      ]
+    }
+  }
+]
+
+export default [
+  {
+    oc: {
+      name: "CHANGEME",
+      age: 34,
+      img: "CHANGEME",
+      info: "CHANGEME",
+      trivia: "CHANGEME"
+    },
+    canon: {
+      name: "CHANGEME",
+      age: 34,
+      img: "",
+      info: "CHANGEME",
+    },
+    lore: {
+      media: "CHANGEME",
+      content: [
+        `CHANGEME`,
       ],
       readMore: [
         `CHANGEME`

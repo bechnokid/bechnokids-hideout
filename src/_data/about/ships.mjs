@@ -139,6 +139,7 @@ export default {
       {
         name: "Cookie Run",
         items: [
+          { ship: "Mogra x Burning Spice", emoji: "💖"},
           "White Lily x Silent Salt",
           "White Lily x Pure Vanilla",
           "Black Raisin x Pure Vanilla",
