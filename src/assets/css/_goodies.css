@@ -25,6 +25,10 @@
 }
 
 article.pixel-clubs {
+  a > img {
+    max-width: unset !important;
+  }
+
   section {
     margin-bottom: 3rem;
   }
@@ -48,10 +52,6 @@ article.pixel-clubs {
     display: flex;
     align-items: baseline;
   }
-
-  .library .sidebar > * {
-      border-bottom: 8px double var(--border-sidebar);
-    }
 
   .kindnessrocks .d-flex {
     align-items: baseline;
@@ -207,10 +207,11 @@ article.cliques {
   .kindnessrocks .ff-canvas {
     transform: scale(2);
     image-rendering: pixelated;
+    max-width: unset;
   }
 
-  .kindnessrocks .d-flex,
-  .jarjam .d-flex {
+  .kindnessrocks .sidebar .d-flex,
+  .jarjam .sidebar .d-flex {
     padding: 2rem 0 !important;
   }
 
@@ -227,5 +228,9 @@ article.cliques {
       transform: scale(2);
       image-rendering: pixelated;
     }
+  }
+
+  .duck > .sidebar {
+    background: radial-gradient(light-dark(#a5e1d8, #706ce9), light-dark(#5492e3, #0c0656)) !important;
   }
 }

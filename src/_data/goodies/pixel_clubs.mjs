@@ -181,6 +181,52 @@ export default {
       },
     ],
   },
+  deltaplushie: {
+    basic: true,
+    name: "Deltaplushie",
+    owner: "Crush",
+    url: "https://crushpunchh.neocities.org/othersites/deltaplushie/",
+    cls: "align-items-end flex-gap-2",
+    btn: "button.gif",
+    btnCls: "freezeframe",
+    alt: "A small plushie of ",
+    items: [
+      {
+        src: "bechno.png",
+        alt: "Arthur Morgan from Red Dead Redemption II",
+      },
+      {
+        src: "paradise-paradise.png",
+        alt: "Spamton from Deltarune",
+        url: "https://deltaruneboards.net/index.php?showuser=216",
+      },
+      {
+        src: "crushcircuit.png",
+        alt: "Shovel Knight",
+        url: "https://crushpunchh.neocities.org/othersites/deltaplushie/?member=crushcircuit",
+      },
+      {
+        src: "blingee.png",
+        alt: "Maria Robotnik from the Sonic the Hedgehog game franchise",
+        url: "https://blingee.neocities.org/plushcollection",
+      },
+      {
+        src: "redbonesandinks.png",
+        alt: "Shadow the Hedgehog from the Sonic the Hedgehog game franchise",
+        url: "https://redbonesandinks.neocities.org/",
+      },
+      {
+        src: "rabbitcore.png",
+        alt: "Marina from the Splatoon game franchise",
+        url: "https://deltaruneboards.net/index.php?showuser=1753",
+      },
+      {
+        src: "nookisms.png",
+        alt: "Kirby from the Kirby game franchise",
+        url: "https://crushpunchh.neocities.org/othersites/deltaplushie/?member=Nookisms",
+      },
+    ]
+  },
   duck: {
     basic: true,
     id: "duck",
@@ -243,10 +289,12 @@ export default {
     ],
   },
   jar_jams: {
+    basic: true,
     id: "jarjam",
     name: "Jar Jams",
     owner: "Blissnet",
     url: "https://blissnet.neocities.org/toybox/JJ",
+    cls: "flex-md-gap-2 flex-gap-5 p-md-3 p-5 justify-content-md-start justify-content-center",
     items: [
       {
         src: "bechno.png",
@@ -323,7 +371,7 @@ export default {
     id: "kindnessrocks",
     owner: "PixelRevival",
     url: "https://pixelrevival.xyz/kindnessrocks/",
-    cls: "flex-md-gap-1 flex-gap-5",
+    cls: "flex-md-gap-1 flex-gap-5 p-md-3 p-5 justify-content-md-start justify-content-center",
     items: [
       {
         src: "bechnokid_beet.png",
@@ -382,7 +430,7 @@ export default {
     owner: "Andrea",
     url: "https://chaoticgoode.com/cliques/parade/",
     alt: "A pokeball that resembles ",
-    cls: "align-items-center flex-md-gap-2 flex-gap-5",
+    cls: "align-items-end flex-md-gap-2 flex-gap-5",
     btn: "button.png",
     items: [
       {
@@ -407,6 +455,18 @@ export default {
         url: "https://v0idspace.neocities.org",
         freezeframe: true,
       },
+      {
+        src: "wonderingwillow.gif",
+        alt: "Popplio from the Pokemon game franchise. The top half of the ball is blue with two floppy ears hanging on each side. The bottom half of the ball is white, the band is light blue, and the button is bright pink, with markings resembling whiskers above it",
+        url: "https://www.deviantart.com/wonderingwellow/",
+        freezeframe: true,
+      },
+      {
+        src: "snowcape.gif",
+        alt: "Ralts from the Pokemon game franchise. The top half of the ball resembles Ralts' iconic cap with two red protrusions on the front and back. The front protrusion occasionally emits a magenta glow. The rest of the Pokeball resembles a regular Pokemon, but the pink button occasionally emits a blue glow.",
+        url: "https://snowcape.neocities.org/",
+        freezeframe: true,
+      }
     ],
   },
   sip: {
