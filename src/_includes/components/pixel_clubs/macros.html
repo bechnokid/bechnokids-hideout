@@ -22,6 +22,30 @@
   </section>
 {% endmacro %}
 
+{% macro basic2(params) %}
+  <section class="{{ params.id or (params.name | slugify) }}">
+    <h2 class="d-flex align-items-center flex-gap-2">{{ params.name }}{% if params.btn %}{% img img_path + (params.id or (params.name | slugify)) + "/" + params.btn, { alt: "Button for the " + params.name, cls: params.btnCls, url: params.url } %}{% endif %}</h2>
+    <p>Created by <a href="{{ params.url }}">{{ params.owner }}</a>!</p>
+    <div class="sidebar d-flex flex-wrap p-3 mt-3 {{ params.cls }}">
+      {%- for item in params.items %}
+        {% if item.url == "neocities" %}
+          {% set item_url = "neocities.org" %}
+        {% elif item.url == "nekoweb" %}
+          {% set item_url = "nekoweb.org" %}
+        {% else %}
+          {% set item_url = item.url %}
+        {% endif %}
+        {% set alt_text = (params.alt + item.alt) if params.alt else item.alt %}
+        {% set options = {
+          url: ( "https://" + item.src.split(".")[0] + "." + item_url) if item.url,
+          alt: (alt_text or ""),
+          freezeframe: item.freezeframe } %}
+        {% img img_path + (params.id or (params.name | slugify)) + "/" + item.src, options %}
+      {% endfor %}
+    </div>
+  </section>
+{% endmacro %}
+
 {% macro detailed(params) %}
   <section class="{{ params.id or (params.name | slugify )}} detailed">
     <h2 class="d-flex align-items-center flex-gap-2">{{ params.name }}{% if params.btn %}{% img img_path + (params.id or (params.name | slugify)) + "/" + params.btn, { alt: "Button for the " + params.name, cls: params.btnCls, url: params.url } %}{% endif %}</h2>

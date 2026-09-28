@@ -10,6 +10,7 @@ const pairedShortcodes = require('./config/shortcodesPaired.js');
 const htmlMin =  require('html-minifier-next');
 const markdownLib = require('./config/markdownlib.js');
 const csvParse = require('./config/csvparse.js');
+const { parseModule } = require('esprima');
 
 const TEMPLATE_ENGINE = 'njk';
 
@@ -143,17 +144,21 @@ module.exports = async function(eleventyConfig){
   })
 
   eleventyConfig.addNunjucksGlobal("getContext", function(macroName, name, params) {
-    let macroResults;
-    if (macroName == 'pixelClub') {
-      if (params.basic) {
-        macroResults = this.ctx[macroName]['basic'](params);
-      } else if (params.detailed) {
-        macroResults = this.ctx[macroName]['detailed'](params);
-      } else {
-        macroResults = this.ctx[macroName][name](params);
-      }
-    };
-    return macroResults;
+      let macroResults;
+      if (macroName == 'pixelClub') {
+        if (params.basic) {
+          macroResults = this.ctx[macroName]['basic'](params);
+        } else if (params.detailed) {
+          macroResults = this.ctx[macroName]['detailed'](params);
+        } else {
+          macroResults = this.ctx[macroName][name](params);
+        }
+      };
+      return macroResults;
+    });
+
+  eleventyConfig.addNunjucksGlobal("getPixelClub", function(params) {
+    return this.ctx['pixelClub'][params.type](params);
   });
 
   eleventyConfig.setLibrary('md', markdownLib);

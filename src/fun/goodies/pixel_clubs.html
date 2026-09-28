@@ -21,8 +21,11 @@ loading: true
 
 {% import 'components/pixel_clubs/macros.html' as pixelClub with context %}
 
-{% for name, item in pagination.items %}
+{{ getPixelClub(goodies.pixel_clubs.star) }}
+
+{#{% for name, item in pagination.items %}
   {{ getContext("pixelClub", name, item) }}
 {% endfor %}
+#}
 
 {% include "partials/pagination_num.html" %}
