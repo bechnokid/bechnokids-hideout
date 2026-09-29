@@ -1,5 +1,5 @@
 export default {
-  detailed: true,
+  type: "detailed",
   name: "Fizzy Vendor",
   id: "fzv",
   owner: "Fizzsea",
@@ -14,78 +14,78 @@ export default {
     },
     {
       src: "fizzsea.png",
-      url: "https://fizzsea.net/",
+      url: "net",
       alt: "An orange Ramune glass bottle with the logo fizzsea printed on it. Sitting next to it is half of an orange with a smile on its face.",
       desc: "lemonade but pink!",
     },
     {
       src: "cloudcover.png",
-      url: "https://cloudcover.neocities.org/digital/fan",
+      url: "neocities",
       alt: "A bottle with a purple cap and label. Inside is soda that contains several berries and slices of lime.",
       desc: "fresh berries, limes, and summer",
     },
     {
       src: "joroki.png",
-      url: "https://joroki.neocities.org/",
+      url: "neocities",
       alt: "A slim can with a turquoise label and a lychee printed on it. The text reads, \"Lychee Pop\".",
       desc: "like lychee and is super caffeinated",
     },
     {
       src: "bloopywoopy.png",
-      url: "https://bloopywoopy.neocities.org/cool-stuff/collections/",
+      url: "neocities",
       alt: "A bottle of water with a label that reads, \"Water\"",
       desc: "just regular normal water",
     },
     {
       src: "flowercentral.png",
-      url: "https://flowercentral.art/",
+      url: "art",
       alt: "A bottle of peach-colored Sunkist.",
       desc: "orange, so the packaging is deceptive"
     },
     {
       src: "insqueeration.webp",
-      url: "https://insqueeration.neocities.org/pixels",
+      url: "neocities",
       alt: "A transparent can of a rainbow-colored drink",
       desc: "sparkling Skittles",
     },
     {
       src: "percevalprintpress.png",
-      url: "https://percevalprintpress.neocities.org/",
+      url: "neocities",
       alt: "A bottle of glue with a label that reads, \"Paste\"",
       desc: "month old unrefridgerated book paste -archival quality-"
     },
     {
       src: "spaceshanty.png",
-      url: "https://thespaceshanty.neocities.org/Cliques/",
+      url: "neocities",
       alt: "A bottle of a purple-colored drink with a green label",
       desc: "battery acid and sugar",
     },
     {
       src: "artwork.png",
-      url: "https://artwork.neocities.org/cliques",
+      url: "neocities",
       alt: "A milk carton that looks like Korilakkuma with text that reads \"strawberry o'lait\" in Japanese."
     },
     {
       src: "button0z.png",
-      url: "https://butt0n-z.neocities.org/funthings",
+      url: "neocities",
       alt: "A can that says \"Hi-C Ectocooler\" based on the drink of the same name based on Ghostbusters",
       desc: "citrus. A nostalgic drink for your ghostly pals!"
     },
     {
       src: "grlrot.gif",
-      url: "https://grlrot.neocities.org/",
+      url: "neocities",
       alt: "A heart-shaped potion with pink liquid",
       freezeframe: true
     },
     {
       src: "furbisms.gif",
-      url: "https://furbisms.neocities.org/clix",
+      url: "neocities",
       alt: "A sparkly purple drink with a heart as the logo",
       freezeframe: true
     },
     {
       src: "keysklubhouse.gif",
-      url: "https://keysklubhouse.com",
+      url: "com",
       alt: "A green Ramune bottle with carbonated bubbles",
       freezeframe: true,
       desc: "a melon-flavored version of that soda that's stoppered with a marble!"

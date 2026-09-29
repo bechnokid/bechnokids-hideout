@@ -8,6 +8,7 @@
     - arr: array (array of items for pixel club)
     - gap: int (gap between items)
 #}
+{#
 {% macro basic(params) %}
   <section class="{{ params.id or (params.name | slugify) }}">
     <h2 class="d-flex align-items-center flex-gap-2">{{ params.name }}{% if params.btn %}{% img img_path + (params.id or (params.name | slugify)) + "/" + params.btn, { alt: "Button for the " + params.name, cls: params.btnCls, url: params.url } %}{% endif %}</h2>
@@ -21,8 +22,9 @@
     </div>
   </section>
 {% endmacro %}
+#}
 
-{% macro basic2(params) %}
+{% macro basic(params) %}
   <section class="{{ params.id or (params.name | slugify) }}">
     <h2 class="d-flex align-items-center flex-gap-2">{{ params.name }}{% if params.btn %}{% img img_path + (params.id or (params.name | slugify)) + "/" + params.btn, { alt: "Button for the " + params.name, cls: params.btnCls, url: params.url } %}{% endif %}</h2>
     <p>Created by <a href="{{ params.url }}">{{ params.owner }}</a>!</p>
@@ -37,7 +39,7 @@
         {% endif %}
         {% set alt_text = (params.alt + item.alt) if params.alt else item.alt %}
         {% set options = {
-          url: ( "https://" + item.src.split(".")[0] + "." + item_url) if item.url,
+          url: ("https://" + item.src.split(".")[0] + "." + item_url) if item.url and "https" not in item.url else item.url,
           alt: (alt_text or ""),
           freezeframe: item.freezeframe } %}
         {% img img_path + (params.id or (params.name | slugify)) + "/" + item.src, options %}
@@ -52,8 +54,15 @@
     <p>Created by {% link params.url, { text: params.owner } %}!</p>
     <div class="sidebar d-flex flex-wrap justify-content-center flex-gap-2 py-3 mt-3">
       {% for item in params.items %}
+        {% if item.url == "neocities" %}
+          {% set item_url = "neocities.org" %}
+        {% elif item.url == "nekoweb" %}
+          {% set item_url = "nekoweb.org" %}
+        {% else %}
+          {% set item_url = item.url %}
+        {% endif %}
         <div class="item d-flex flex-column flex-gap-1">
-          {% set options = { url: item.url, alt: item.alt, freezeframe: item.freezeframe } %}
+          {% set options = { url: ("https://" + item.src.split(".")[0] + "." + item_url) if item.url and "https" not in item.url else item.url, alt: item.alt, freezeframe: item.freezeframe } %}
           <div class="img">{% img img_path + (params.id or (params.name | slugify)) + "/" + item.src, options %}</div>
           {% if params.summary %}
             <details class="desc text-xs text-center w-100">
@@ -75,13 +84,20 @@
     <p>Created by {% link params.url, { text: params.owner } %}</p>
     <div class="d-flex justify-content-md-start justify-content-center align-items-center flex-md-gap-2 flex-gap-4 flex-wrap py-md-0 py-4 mt-2">
       {% for item in params.items %}
+        {% if item.url == "neocities" %}
+          {% set item_url = "neocities.org" %}
+        {% elif item.url == "nekoweb" %}
+          {% set item_url = "nekoweb.org" %}
+        {% else %}
+          {% set item_url = item.url %}
+        {% endif %}
         {% set options = {
           noMarkdown: true,
           cls: 'border-0 text-center m-1 p-1',
           alt: "A pixel image of a CD album containing " + item.alt,
           figCaptionCls: "text-center",
           noLink: (false if item.url else true),
-          imgLink: item.url } %}
+          imgLink: ("https://" + item.src.split(".")[0] + "." + item_url) if item.url and "https" not in item.url else item.url } %}
         {% figure img_path + params.id + "/" + item.src, options %}
           <a class="playlist" href="{{ item.playlist }}">Playlist</a>
         {% endfigure %}
@@ -100,7 +116,14 @@
     </div>
     <div class="body d-flex flex-wrap justify-content-center align-items-center flex-gap-2 p-2">
       {% for item in stickerArr %}
-        {% set options = { alt: stickerAlt + item.alt, url: item.url, freezeframe: item.freezeframe } %}
+        {% if item.url == "neocities" %}
+            {% set item_url = "neocities.org" %}
+          {% elif item.url == "nekoweb" %}
+            {% set item_url = "nekoweb.org" %}
+          {% else %}
+            {% set item_url = item.url %}
+          {% endif %}
+        {% set options = { alt: stickerAlt + item.alt, url: ("https://" + item.src.split(".")[0] + "." + item_url) if item.url and "https" not in item.url else item.url, freezeframe: item.freezeframe } %}
         {% img stickerImgPath + item.src, options %}
       {% endfor %}
     </div>
@@ -128,7 +151,14 @@
     <div class="d-flex sidebar py-3 mt-3 marquee-container overflow-hidden w-100">
       <div class="marquee-content d-flex align-items-baseline">
         {%- for item in params.items %}
-          {% img img_path + params.id + "/" + item.src, { url: item.url, alt: item.alt, freezeframe: item.freezeframe } %}
+          {% if item.url == "neocities" %}
+            {% set item_url = "neocities.org" %}
+          {% elif item.url == "nekoweb" %}
+            {% set item_url = "nekoweb.org" %}
+          {% else %}
+            {% set item_url = item.url %}
+          {% endif %}
+          {% img img_path + params.id + "/" + item.src, { url: ("https://" + item.src.split(".")[0] + "." + item_url) if item.url and "https" not in item.url else item.url, alt: item.alt, freezeframe: item.freezeframe } %}
         {% endfor %}
       </div>
     </div>
@@ -154,7 +184,14 @@
           </td>
           <td>{{ item.desc }}</td>
           {% if not mine %}
-            <td><a href="{{ item.url }}">{{ item.name }}</a></td>
+            {% if item.url == "neocities" %}
+              {% set item_url = "neocities.org" %}
+            {% elif item.url == "nekoweb" %}
+              {% set item_url = "nekoweb.org" %}
+            {% else %}
+              {% set item_url = item.url %}
+            {% endif %}
+            <td><a href="{{ ("https://" + item.src.split(".")[0] + "." + item_url) if item.url and "https" not in item.url else item.url }}">{{ item.name }}</a></td>
           {% endif %}
         </tr>
       {% endfor %}

@@ -13,187 +13,182 @@ export default {
     {
       src: "ballonlea.png",
       alt: "Ran's Egg from Shugo Chara",
-      url: "https://ballonlea.net/"
+      url: "net"
     },
     {
       src: "thespaceshanty.png",
       alt: "A black old-fashioned computer. The monitor has text that reads, \"Hello!\" in all capitals",
-      url: "https://thespaceshanty.neocities.org"
+      url: "neocities"
     },
     {
       src: "thefrugalgamer.png",
       alt: "A narrow pot of several cacti, each in varying types and shades of green",
-      url: "https://thefrugalgamer.net"
+      url: "net"
     },
     {
       src: "strawberryysnow.png",
       alt: "A jar of Jif peanut butter",
-      url: "https://strawberryysnow.neocities.org"
+      url: "neocities"
     },
     {
       src: "slashdiv.png",
       alt: "A cup of brown boba milk tea",
-      url: "https://slashdiv.neocities.org",
+      url: "neocities",
     },
     {
       src: "shades-of-serenity.png",
       alt: "A pink crayon box holding pink, green, yellow, and blue crayons. The label reads, \"Colors\"",
-      url: "https://shades-of-serenity.neocities.org"
+      url: "neocities"
     },
     {
       src: "sakuradreams.png",
       alt: "Miffy in a blue dress",
-      url: "https://sakuradreams.neocities.org"
+      url: "neocities"
     },
     {
       src: "rainboe.png",
       alt: "A four-petaled red flower with a yellow pistil",
-      url: "https://rainboe.nekoweb.org"
+      url: "nekoweb"
     },
     {
       src: "prismatic-pink.gif",
       alt: "The key form of the Star Wand from Cardcaptor Sakura",
-      url: "https://prismatic.pink",
+      url: "pink",
     },
     {
       src: "nickle4apickle.png",
       alt: "A neutral Chao from the Sonic Adventure games",
-      url: "https://nickle4apickle.neocities.org",
+      url: "neocities",
     },
     {
       src: "loandbihold.gif",
       alt: "A rose with a glittering galaxy pattern",
-      url: "https://loandbihold.neocities.org",
+      url: "neocities",
     },
     {
       src: "honeydewmiku.png",
       alt: "Hatsune Miku",
-      url: "https://honeydewmiku.neocities.org",
+      url: "neocities",
     },
     {
       src: "glued-in-roses.png",
       alt: "A pixelated slice of strawberry shortcake",
-      url: "https://glued-in-rose.neocities.org",
+      url: "neocities",
     },
     {
       src: "floralchai.png",
       alt: "Chiikawa riding a star",
-      url: "https://floral-tears.neocities.org/",
+      url: "neocities",
     },
     {
       src: "cco0orn.png",
       alt: "A green bowl of rice with minced pork and half of a hard-boiled egg",
-      url: "https://cco0orn.neocities.org/",
+      url: "neocities",
     },
     {
       src: "solaria.png",
       alt: "A rainbow-striped heart",
-      url: "https://solaria.neocities.org/pixel/"
+      url: "neocities"
     },
     {
       src: "spacedandelion.png",
       alt: "A pocket watch",
-      url: "https://spacedandelion.neocities.org/stamps"
+      url: "neocities"
     },
     {
       src: "the-322nd-void.png",
       alt: "A cherry tied by a ribbon",
-      url: "https://the-322nd-void.neocities.org/art"
+      url: "neocities"
     },
     {
       src: "vampirevalentine.png",
       alt: "A four-eyed calico cat",
-      url: "https://vampirevalentine.neocities.org/"
+      url: "neocities"
     },
     {
       src: "wasongo.png",
       alt: "A toucan",
-      url: "https://wasongo.art/you?z=/sticker"
+      url: "art"
     },
     {
       src: "xmenfan2001.png",
       alt: "letters that read \"BAMF\"!",
-      url: "https://xmenfan2001.neocities.org/stickerclub"
+      url: "neocities"
     },
     {
       src: "mikaorangeart.png",
       alt: "the ouroburos",
-      url: "https://mikaorangeart.neocities.org/webcliques"
+      url: "neocities"
     },
     {
       src: "piranhebula.png",
       alt: "A large star with wings, surrounded by smaller stars",
-      url: "https://piranhebula.neocities.org/Toys/Sticker%20Collection/"
+      url: "neocities"
     },
     {
       src: "pklucky.png",
       alt: "A clownfish",
-      url: "https://pklucky.neocities.org/goodies/"
+      url: "neocities"
     },
     {
       src: "rosedryad.png",
       alt: "A sparkly heart",
-      url: "https://rosedryad.com/"
+      url: "com"
     },
     {
       src: "hillhouse.gif",
       alt: "A Victorian-styled portrait",
-      url: "https://hillhouse.neocities.org/cliques#stickersheetclub"
+      url: "neocities"
     },
     {
       src: "keysklubhouse.png",
       alt: "A blue betta fish",
-      url: "https://keysklubhouse.com"
+      url: "com"
     },
     {
       src: "l-chan.png",
       alt: "A blue mug of coffee",
-      url: "https://l-chan.neocities.org/blinkies/stickersheetclub"
+      url: "neocities"
     },
     {
       src: "magic-boots.png",
       alt: "A rainbow",
-      url: "https://magic-boots.xyz/"
+      url: "xyz"
     },
     {
       src: "cinni.png",
       alt: "An anime wing",
-      url: "https://cinni.net"
+      url: "net"
     },
     {
       src: "antikrist.png",
       alt: "A purple sea star",
-      url: "https://antikrist.lol"
+      url: "lol"
     },
     {
       src: "arlita.png",
       alt: "A dripping lemon",
-      url: "https://arlita.neocities.org/digital"
+      url: "neocities"
     },
     {
       src: "artwork.png",
       alt: "Kerokerokeroppi",
-      url: "https://artwork.neocities.org/cliques"
-    },
-    {
-      src: "ales-playground.gif",
-      alt: "A clear blue diamond",
-      url: "https://ales-playground.neocities.org/cute-stickers",
+      url: "neocities"
     },
     {
       src: "gummywormhydra.png",
       alt: "A blue gummy shark",
-      url: "https://gummywormhydra.online"
+      url: "online"
     },
     {
       src: "thegardenofmadeline.png",
       alt: "A candy heart with colored stripes that match the asexual flag",
-      url: "https://thegardenofmadeline.neocities.org"
+      url: "neocities"
     },
     {
       src: "evegwood.png",
       alt: "A wumpa fruit from Crash Bandicoot",
-      url: "https://evegwood.com/"
+      url: "com"
     },
   ]
 }

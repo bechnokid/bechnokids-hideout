@@ -1,5 +1,5 @@
 export default {
-  type: "basic2",
+  type: "basic",
   id: "star",
   name: "Star Jar",
   owner: "Andrea",

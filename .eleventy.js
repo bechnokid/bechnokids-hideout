@@ -157,8 +157,8 @@ module.exports = async function(eleventyConfig){
       return macroResults;
     });
 
-  eleventyConfig.addNunjucksGlobal("getPixelClub", function(params) {
-    return this.ctx['pixelClub'][params.type](params);
+  eleventyConfig.addNunjucksGlobal("getPixelClub", function(name, params) {
+    return this.ctx['pixelClub'][(params.type ? params.type : name)](params);
   });
 
   eleventyConfig.setLibrary('md', markdownLib);
