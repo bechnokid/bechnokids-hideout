@@ -76,23 +76,13 @@ article.pixel-clubs {
     }
   }
 
-  section.train {
-    .marquee-container {
-      white-space: nowrap;
-    }
+  section.star .resize {
+    height: 31px;
+    image-rendering: pixelated;
+  }
 
-    .marquee-content {
-      animation: marquee 45s steps(400, end) infinite;
-
-      &:hover {
-        animation-play-state: paused;
-      }
-
-      img {
-        align-self: center;
-        max-width: unset;
-      }
-    }
+  section.train .choo-choo {
+    padding: 0 80rem 0 50rem;
   }
 
   .yys {
@@ -143,12 +133,6 @@ article.pixel-clubs {
   }
 
 }
-
-
-@keyframes marquee {
-    0% { transform: translateX(200%); }
-    100% { transform: translateX(-100%); }
-  }
 
 .comb-row {
   margin-left: 1rem;
@@ -201,18 +185,11 @@ article.cliques {
 }
 
 @media screen and (max-width: 767px) {
-  .jarjam img,
-  .jarjam .ff-canvas,
-  .kindnessrocks img,
-  .kindnessrocks .ff-canvas {
+  .mobile-resize img,
+  .mobile-resize .ff-canvas {
     transform: scale(2);
     image-rendering: pixelated;
     max-width: unset;
-  }
-
-  .kindnessrocks .sidebar .d-flex,
-  .jarjam .sidebar .d-flex {
-    padding: 2rem 0 !important;
   }
 
   .cdw .playlist {

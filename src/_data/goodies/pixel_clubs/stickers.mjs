@@ -51,7 +51,7 @@ export default {
       url: "nekoweb"
     },
     {
-      src: "prismatic-pink.gif",
+      src: "prismatic.gif",
       alt: "The key form of the Star Wand from Cardcaptor Sakura",
       url: "pink",
     },
@@ -153,7 +153,7 @@ export default {
     {
       src: "magic-boots.png",
       alt: "A rainbow",
-      url: "xyz"
+      url: "neocities"
     },
     {
       src: "cinni.png",
@@ -174,11 +174,6 @@ export default {
       src: "artwork.png",
       alt: "Kerokerokeroppi",
       url: "neocities"
-    },
-    {
-      src: "gummywormhydra.png",
-      alt: "A blue gummy shark",
-      url: "online"
     },
     {
       src: "thegardenofmadeline.png",

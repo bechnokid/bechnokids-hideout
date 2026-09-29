@@ -38,7 +38,8 @@ const figure = function (children, src, options = {}) {
 
   if (options.noLink != true) {
     const imgLink = (options.imgLink) ? options.imgLink : imgSrc;
-    imgStr = `<a href='${imgLink}'>${imgStr}</a>`;
+    const attrs = (imgLink.match(/^https?:\/\//)) ? ` target="_blank" rel="noreferrer"` : "";
+    imgStr = `<a href='${imgLink}' ${attrs}>${imgStr}</a>`;
   }
 
   const figureCls = (options.cls) ? ` class='${options.cls}'` : '';

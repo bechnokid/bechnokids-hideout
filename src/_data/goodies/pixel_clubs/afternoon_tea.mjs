@@ -5,6 +5,7 @@ export default {
   owner: "Lost Letters",
   url: "https://lostletters.neocities.org/afternoontea/",
   summary: "Tastes like...",
+  cls: "py-3",
   btn: "girlwithnojob.gif",
   btnCls: "freezeframe",
   items: [
@@ -20,10 +21,17 @@ export default {
       desc: "salt water"
     },
     {
+      src: "lostletters.2.png",
+      alt: "A yellow cup with a wide white band that wraps around it. It has three strawberries printed on it. The drink consists of whipped frosting with a single strawberry on top.",
+      url: "neocities",
+      desc: "strawberry shortcake"
+    },
+    {
       src: "maplebear.gif",
       alt: "A gingham-patterned cup with a flower and a button on the saucer. Inside the tea cup is a bear with sparkles next to it",
       url: "neocities",
       desc: "maple syrup matcha latte",
+      freezeframe: true
     },
     {
       src: "cloudcover.png",
@@ -71,7 +79,7 @@ export default {
     {
       src: "fizzsea.png",
       alt: "A blue tea cup with a magenta stripe. It is dripping a black substance with magenta and blue circles and squares",
-      url: "neocities",
+      url: "net",
       desc: "bit-crushed sugar"
     },
     {
@@ -79,12 +87,19 @@ export default {
       url: "com",
       alt: "A cup with a bee pattern. Behind it are some leaves, and some bees are flying above the cup",
       desc: 'honey',
+      freezeframe: true,
     },
     {
       src: "starfighter.png",
       alt: "A rainbow-gradient tea-cup with a large dollop of whipped cream on top with a red and white-striped straw sticking out",
       url: "neocities",
       desc: "a rainbow shake"
+    },
+    {
+      src: "starfighter.2.png",
+      alt: "A brown tea cup shaped like a coconut shell with a saucer shaped like a pineapple slice. In the cup is a pineapple with a face that consists of two dot eyes, blush marks, and a small smile",
+      url: "neocities",
+      desc: "pineapple"
     },
     {
       src: "themby.gif",
@@ -97,6 +112,75 @@ export default {
       alt: "A pink cup with a bunny pattern. On the saucer is a piece of heart-shaped chocolate. Inside the cup is a pink bunny, some whipped cream with sprinkles, and a chocolate stick",
       url: "neocities",
       desc: "pink hot chocolate",
+      freezeframe: true,
     },
+    {
+      src: "porce-lana.gif",
+      alt: "A beige cup with several small pink hearts printed on it. There is a donut with chocolate frosting sitting on the saucer. Inside the cup is a copious amount of whipped cream",
+      url: "blogspot",
+      desc: "chocolate mocha with whipped cream",
+      freezeframe: true,
+    },
+    {
+      src: "labyrinth.png",
+      alt: "A red tea cup with white sparkles and snow printed on it and a brown saucer. Inside the cup is hot chocolate and a candy cane dipped in it",
+      url: "monster",
+      desc: "a candy cane dipped in hot chocolate"
+    },
+    {
+      src: "heart143.gif",
+      alt: "A red tea cup with a simple heart pattern printed on it sitting on a white saucer. Inside the cup is milk",
+      url: "neocities",
+      desc: "warm milk",
+    },
+    {
+      src: "peachlantern.png",
+      alt: "An iridescent tea cup with a seashell shape at the bottom on a sandy saucer. There are several small white sparkles around it.",
+      url: "neocities",
+      desc: "mermaids and dreams"
+    },
+    {
+      src: "nutritionalyeest.gif",
+      alt: "A tea cup shaped like Memetchi from the Tamagotchi franchise, with an orange body and saucer, a curly hair as a handle, and her face with shining bright eyes and smiling open mouth printed on it. Below the saucer are her tiny little legs. In the cup is a pink liquid decorated with a four-leaf clover and pink and blue music notes hovering above it",
+      url: "neocities",
+      desc: "berry Hi-Chew in your lunchbox",
+      freezeframe: true,
+    },
+    {
+      src: "ecila.png",
+      alt: "A white cup and saucer with gold trims, a gold handle, and several card suits printed on it. Inside the cup is some tea, and some cookies are placed on the saucer",
+      url: "nekoweb",
+      desc: "wonderland"
+    },
+    {
+      src: "snowcape.png",
+      alt: "A white cup on a white saucer with a yellow circle along the trim. The cup has the logo of the Roost Cafe from Animal Crossing printed on it. Inside the cup is a dark brown coffee",
+      url: "neocities",
+      desc: "new horizons"
+    },
+    {
+      src: "cozyghostly.png",
+      alt: "A white mug that tapers slightly towards the top and with a gold trim sitting on a yellow saucer. Inside the cup is a copious amount of whipped cream on top of hot chocolate. It resembles the same drink that can be seen in The Amazing Digital Circus",
+      url: "neocities",
+      desc: "just like hot chocolate, you can't even tell it's not real"
+    },
+    {
+      src: "chaoticgoode.png",
+      alt: "A red cup with white dots printed on it to resemble a strawberry. It is covered in chocolate at the bottom, and inside the cup is a green liquid",
+      url: "com",
+      desc: "chocolate-covered strawberries",
+    },
+    {
+      src: "enmity.gif",
+      alt: "A black cup and saucer with cherry blossom petals on the saucer and in the cup. Inside the cup is a dark pink tea with a stirring stick and steam wafting from the cup. There are also some white sparkles hovering to the left side of the cup",
+      url: "neocities",
+      desc: "peach and cherry blossom leaves"
+    },
+    {
+      src: "qtbeans.png",
+      alt: "An elegant porcelain tea cup and saucer with an elaborate handle and rose pattern printed on the cup",
+      url: "neocities",
+      desc: "Grandma's tea"
+    }
   ]
 }

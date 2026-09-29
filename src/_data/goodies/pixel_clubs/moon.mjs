@@ -4,7 +4,7 @@ export default {
   id: "moon",
   owner: "Kelly Ann",
   url: "https://vellumskin.neocities.org/papermoon/info",
-  cls: "flex-center flex-gap-3",
+  cls: "flex-center flex-gap-3 p-3",
   btn: "paper_moon.png",
   items: [
     {
@@ -61,6 +61,7 @@ export default {
       src: "sweetcharm.gif",
       alt: "A yellow and periwinkle paper moon with several pink clouds that resemble ice cream sundaes surrounding it. Within the crescent sits a diner girl in a pink uniform holding two whole cakes.",
       url: "net",
+      freezeframe: true
     },
     {
       src: "kararatorejji.png",

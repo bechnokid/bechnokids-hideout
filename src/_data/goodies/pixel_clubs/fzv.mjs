@@ -37,6 +37,12 @@ export default {
       desc: "just regular normal water",
     },
     {
+      src: "bloopywoopy.2.png",
+      url: "neocities",
+      alt: "A pink soda can with a lemon printed on it",
+      desc: "lemon flavored soda",
+    },
+    {
       src: "flowercentral.png",
       url: "art",
       alt: "A bottle of peach-colored Sunkist.",
@@ -89,6 +95,22 @@ export default {
       alt: "A green Ramune bottle with carbonated bubbles",
       freezeframe: true,
       desc: "a melon-flavored version of that soda that's stoppered with a marble!"
-    }
+    },
+    {
+      src: "sweetcharm.gif",
+      url: "net",
+      alt: "A milk carton with a pastel color scheme of pink, blue, and purple. The carton's label reads, \"Sweet Mermilk\" and has a picture of a mermaid with pink hair and a pink tail in the ocean",
+    },
+    {
+      src: "uranonaut.png",
+      url: "neocities",
+      alt: "A soda bottle with a pink carbonated drink inside. The label reads, \"Witch's Brew\" and has an image of Madoka Kaname from the anime \"Puella Magi Madoka Magica\"",
+    },
+    {
+      src: "thedreadedden.png",
+      url: "nekoweb",
+      alt: "A glass bottle with a carbonaded red orange drink inside. The label is green with yellow stripes at the top and bottom of the label and also has an image of a Leppa berry printed on it.",
+      desc: "a sour apple-flavored drink. You feel energized!",
+    },
   ]
 }

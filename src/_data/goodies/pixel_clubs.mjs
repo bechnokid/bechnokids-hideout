@@ -4,7 +4,7 @@ export default {
     name: "Bottlecaps",
     owner: "Karla",
     url: "https://miserabledolly.net/bottlecaps",
-    cls: "justify-content-center flex-md-gap-4 flex-gap-5",
+    cls: "justify-content-center flex-md-gap-4 flex-gap-5 py-3",
     items: [
      { src: "gallantmon.gif", alt: "A red bottle cap with Gallantmon's sprite by SomaKiryuu", freezeframe: true },
      { src: "beelzemon.gif", alt: "A purple bottle cap with Beelzemon's sprite by tortoisehel", freezeframe: true },
@@ -39,7 +39,7 @@ export default {
     id: "call",
     owner: "Andrea",
     url: "https://chaoticgoode.com/call",
-    cls: "justify-content-center align-items-center flex-gap-3",
+    cls: "justify-content-center align-items-center flex-gap-3 py-3 px-2",
     items: [
       {
         src: "bechno.png",
@@ -54,7 +54,7 @@ export default {
       {
         src: "chaoticgoode.png",
         alt: "A vintage and bronze-colored rotary telephone",
-        url: "neocities",
+        url: "com",
       },
       {
         src: "cozyghostly.png",
@@ -71,6 +71,11 @@ export default {
         src: "peachlantern.png",
         alt: "A pink phone shaped like a seashell. It has a beaded charm hanging from the side.",
         url: "neocities"
+      },
+      {
+        src: "peachlantern.2.png",
+        alt: "A blue LG Lotus phone",
+        url: "neocities",
       },
       {
         src: "qtbeans.gif",
@@ -129,9 +134,21 @@ export default {
       },
       {
         src: "ttaxyy.jpg",
-        alt: "the album \"Plastic Beach\" by Gorillaz, which depics a house on a tower-like island while surrounded by palm trees while against a sky with a sunset",
+        alt: "the album \"Plastic Beach\" by Gorillaz, which depicts a house on a tower-like island while surrounded by palm trees while against a sky with a sunset",
         url: "neocities",
         playlist: "https://www.youtube.com/watch?v=XpY2n_YPv_g&list=OLAK5uy_l2_IrTKMXmIJhXy698EFDYTuUM5VcitBM&index=2",
+      },
+      {
+        src: "shy.jpg",
+        alt: "the album \"pink tape\" by f(x), which depicts a pink VHS tape against a white background in a pink crystal case",
+        url: "house",
+        playlist: "https://www.youtube.com/playlist?list=OLAK5uy_nPch7QcMnlZ-BLy1nNgvpzsTAcvSy29ss"
+      },
+      {
+        src: "wynterskieslife.jpg",
+        alt: "the album \"American Beauty/American Psycho\" by Fall Out Boy, which depicts an adolescent boy with half of his face painted with the stars and stripes of the American flag",
+        url: "neocities",
+        playlist: "https://www.youtube.com/playlist?list=OLAK5uy_lSUrVP8K-w63I5BQyJKXdoxZNkMvU1T6w"
       },
     ]
   },
@@ -201,7 +218,7 @@ export default {
     name: "Deltaplushie",
     owner: "Crush",
     url: "https://crushpunchh.neocities.org/othersites/deltaplushie/",
-    cls: "align-items-end flex-gap-2",
+    cls: "mobile-resize align-items-end flex-md-gap-2 flex-gap-5 p-4 justify-content-md-start justify-content-center",
     btn: "button.gif",
     btnCls: "freezeframe",
     alt: "A small plushie of ",
@@ -226,6 +243,16 @@ export default {
       {
         src: "crushcircuit.png",
         alt: "Shovel Knight",
+        url: "neocities",
+      },
+      {
+        src: "crushcircuit.2.png",
+        alt: "the Long Quiet from the indie game \"Slay the Princess\"",
+        url: "neocities",
+      },
+      {
+        src: "crushcircuit.3.png",
+        alt: "the Princess from the indie game \"Slay the Princess\"",
         url: "neocities",
       },
       {
@@ -256,7 +283,7 @@ export default {
     name: "Duck Pond",
     owner: "Ray",
     url: "https://raygammas.neocities.org/duckpond",
-    cls: "justify-content-center flex-md-gap-2 flex-gap-5",
+    cls: "mobile-resize justify-content-center flex-md-gap-2 flex-gap-5 py-5 px-4",
     btn: "button.gif",
     btnCls: "freezeframe",
     items: [
@@ -317,7 +344,7 @@ export default {
     name: "Jar Jams",
     owner: "Blissnet",
     url: "https://blissnet.neocities.org/toybox/JJ",
-    cls: "flex-md-gap-2 flex-gap-5 p-md-3 p-5 justify-content-md-start justify-content-center",
+    cls: "mobile-resize flex-md-gap-2 flex-gap-5 py-5 px-4 justify-content-md-start justify-content-center",
     items: [
       {
         src: "bechno.png",
@@ -394,7 +421,7 @@ export default {
     id: "kindnessrocks",
     owner: "PixelRevival",
     url: "https://pixelrevival.xyz/kindnessrocks/",
-    cls: "flex-md-gap-1 flex-gap-5 p-md-3 p-5 justify-content-md-start justify-content-center",
+    cls: "mobile-resize flex-md-gap-1 flex-gap-5 justify-content-md-start justify-content-center p-5",
     items: [
       {
         src: "bechnokid_beet.png",
@@ -417,7 +444,7 @@ export default {
       {
         src: "darylsun.png",
         alt: "A blue rock with several paint splatters",
-        url: "https://blog.darylsun.page/joined/cliques"
+        url: "https://blog.darylsun.page"
       },
       {
         src: "divergentrays.png",
@@ -444,6 +471,11 @@ export default {
         alt: "A rock with a painted drawing of a bespectacled worm atop a stack of books. The purple text above it reads, \"read\".",
         url: "neocities",
       },
+      {
+        src: "qtbeans.png",
+        alt: "A rock with eyes, blush marks, and a mouth with lip stick painted on to form a face",
+        url: "neocities"
+      },
     ]
   },
   pokeball: {
@@ -453,7 +485,7 @@ export default {
     owner: "Andrea",
     url: "https://chaoticgoode.com/cliques/parade/",
     alt: "A pokeball that resembles ",
-    cls: "align-items-end flex-md-gap-2 flex-gap-5",
+    cls: "align-items-end flex-md-gap-2 flex-gap-4 justify-content-md-start justify-content-center p-3",
     btn: "button.png",
     items: [
       {
@@ -498,6 +530,7 @@ export default {
     id: "sip",
     owner: "Nevere",
     url: "https://peachlantern.neocities.org/sipclique",
+    cls: "flex-gap-3 py-3 ",
     btn: "button.png",
     items: [
       {
@@ -553,12 +586,43 @@ export default {
         url: "com",
         desc: "Lavender Matcha Boba"
       },
+      {
+        src: "snowcape.png",
+        alt: "A red coffee cup with a blue stopper in the lid",
+        url: "neocities",
+        desc: "Bubble Berry Blend",
+      },
+      {
+        src: "wenkicai.png",
+        alt: "A bottle of Ramune",
+        url: "neocities",
+        desc: "Ramune",
+      },
+      {
+        src: "oktober.png",
+        alt: "A domed cup of a muted orange drink topped with whipped cream and sprinkles. A black and orange striped straw is placed in the hole of the domed lid. There is some autumn foliage near the bottom of the cup",
+        url: "neocities",
+        desc: "Pumpkin Spice and Everything Nice"
+      },
+      {
+        src: "diary98.png",
+        alt: "A sundae cup with a pink ice cream float that is topped with some whipped cream, a cherry, a cookie, and a straw",
+        url: "neocities",
+        desc: "Sugar Cookie Float"
+      },
+      {
+        src: "lydkb.gif",
+        alt: "A sundae cup with an deep pink ice cream parfait topped with whipped cream, raspberries, and a purple straw. Near the bottom of the cup are some pieces of chocolate and a raspberry",
+        url: "neocities",
+        desc: "Choc Berry Blast"
+      },
     ]
   },
   pixelTrain: {
     name: "Pixel Train",
     id: "train",
     owner: "Andrea",
+    cls: "align-items-baseline",
     url: "https://chaoticgoode.com/pixeltrain",
     items: [
       {

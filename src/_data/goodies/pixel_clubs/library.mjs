@@ -5,7 +5,7 @@ export default {
   owner: "Rosemary",
   alt: "The cover for ",
   url: "https://hillhouse.neocities.org/cliques/library",
-  cls: "justify-content-center flex-md-gap-3 flex-gap-5",
+  cls: "justify-content-center flex-md-gap-3 flex-gap-4 p-4",
   btn: "button.png",
   items: [
     {

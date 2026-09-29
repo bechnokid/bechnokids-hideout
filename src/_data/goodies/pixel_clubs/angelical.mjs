@@ -3,7 +3,7 @@ export default {
     name: "Angelical",
     owner: "Altair",
     url: "https://butteroncookies.neocities.org/angelical",
-    cls: "justify-content-center flex-gap-4",
+    cls: "justify-content-center flex-gap-4 p-3",
     btn: "button.gif",
     btnCls: "freezeframe",
     items: [
@@ -76,6 +76,11 @@ export default {
         alt: "Koy Boy, an angel with a black halo and pink wings dripping with a black substance. They have blonde hair in a fade cut, green elf-like ears that fade into his peach-colored skin, three red antennae that poke through their halo, and a large green tail with three red spots on the top. Their outfit consists of a short black top and black pants with red stripes on the side.",
         url: "fish",
         freezeframe: true,
+      },
+      {
+        src: "wenkicai.png",
+        alt: "Orica, an angel with a white and light blue color scheme and a halo with a shining star poking through it. Orca's eyes are blue and her hair is white with a single braid that hangs down the right side of her face and tied with a blue bow. Her outfit consists of a blue dress with a beige corset and lacy trims as well as a pair of blue heeled shoes.",
+        url: "neocities",
       },
     ]
   }

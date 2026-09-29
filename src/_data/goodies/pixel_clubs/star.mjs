@@ -4,7 +4,8 @@ export default {
   name: "Star Jar",
   owner: "Andrea",
   url: "https://chaoticgoode.com/star",
-  cls: "flex-center flex-gap-2",
+  btn: "button.png",
+  cls: "py-5 px-3 flex-center flex-md-gap-2 flex-gap-5 mobile-resize",
   items: [
     {
       src: "bechno.png",
@@ -29,6 +30,7 @@ export default {
       src: "zabnikinthevoid.gif",
       alt: "A bright star surrounded by smaller yellow sparkles. The star has two dot eyes and a large smile",
       url: "neocities",
+      freezeframe: true,
     },
     {
       src: "artwork.gif",
@@ -70,5 +72,47 @@ export default {
       alt: "A metallic golden star that resembles metallic balloons that appear at some parties and celebrations",
       url: "neocities",
     },
+    {
+      src: "cultpartykei.png",
+      alt: "A star that is shaped like a checkered cookie",
+      url: "neocities",
+    },
+    {
+      src: "gloomygoose13.gif",
+      alt: "A pale green paper stare with pink sparkles floating in the top right corner. The pink text reads, \"Bean\"",
+      url: "neocities",
+      cls: "resize"
+    },
+    {
+      src: "snowcape.png",
+      alt: "Icyhuman wearing a purple star costume",
+      url: "neocities",
+    },
+    {
+      src: "mmona.gif",
+      alt: "A very dark purple star that gradually changes colors to white",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "piranhebula.png",
+      alt: "A star that resembles that Paopu fruit from the Kingdom Hearts game series, with leaves sprouting from three of the fruit's points. In the center is a keyhole",
+      url: "neocities",
+    },
+    {
+      src: "lunabelle.png",
+      alt: "A pink star with a white ribbon laced through the center",
+      url: "neocities",
+    },
+    {
+      src: "cr34t0r.png",
+      alt: "A dark purple paper star surrounded by black X's and purple hearts. The star has a smiling face in the center",
+      url: "neocities",
+    },
+    {
+      src: "rice.gif",
+      alt: "A light blue star with several yellow sparkles and two four leaf clovers in front of the star",
+      url: "place",
+    }
   ]
 }
