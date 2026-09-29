@@ -420,7 +420,7 @@ export default {
     name: "Kindness Rocks Pixel Project",
     id: "kindnessrocks",
     owner: "PixelRevival",
-    url: "https://pixelrevival.xyz/kindnessrocks/",
+    url: "https://web.archive.org/web/20260206163624/https://pixelrevival.xyz/kindnessrocks/",
     cls: "mobile-resize flex-md-gap-1 flex-gap-5 justify-content-md-start justify-content-center p-5",
     items: [
       {
@@ -614,7 +614,8 @@ export default {
         src: "lydkb.gif",
         alt: "A sundae cup with an deep pink ice cream parfait topped with whipped cream, raspberries, and a purple straw. Near the bottom of the cup are some pieces of chocolate and a raspberry",
         url: "neocities",
-        desc: "Choc Berry Blast"
+        desc: "Choc Berry Blast",
+        freezeframe: true
       },
     ]
   },
@@ -685,6 +686,40 @@ export default {
         url: "nekoweb",
       },
     ]
+  },
+  pixelbuster: {
+    type: "basic",
+    name: "Pixelbuster",
+    owner: "Manon",
+    url: "https://manonamora.neocities.org/clique/pixelbuster",
+    alt: "A pixel box cover of the film ",
+    cls: "flex-gap-2 p-3 justify-content-md-start justify-content-center",
+    items: [
+      {
+        src: "bechno.png",
+        alt: "John Carpenter's \"Christine\""
+      },
+      {
+        src: "chaoticgoode.png",
+        alt: "Disney's \"Wreck-it Ralph\"",
+        url: "com"
+      },
+      {
+        src: "infini.png",
+        alt: "John Carpenter's \"The Thing\"",
+        url: "gay"
+      },
+      {
+        src: "infini.2.png",
+        alt: "Jack Sholder's \"A Nightmare on Elm Street 2: Freddy's Revenge\"",
+        url: "gay",
+      },
+      {
+        src: "manonamora.png",
+        alt: "Brad Bird's \"The Iron Giant\"",
+        url: "neocities"
+      },
+    ],
   },
   yys: {
     mine: [

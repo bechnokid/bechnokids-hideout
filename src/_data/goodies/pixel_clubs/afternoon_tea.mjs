@@ -147,12 +147,6 @@ export default {
       freezeframe: true,
     },
     {
-      src: "ecila.png",
-      alt: "A white cup and saucer with gold trims, a gold handle, and several card suits printed on it. Inside the cup is some tea, and some cookies are placed on the saucer",
-      url: "nekoweb",
-      desc: "wonderland"
-    },
-    {
       src: "snowcape.png",
       alt: "A white cup on a white saucer with a yellow circle along the trim. The cup has the logo of the Roost Cafe from Animal Crossing printed on it. Inside the cup is a dark brown coffee",
       url: "neocities",

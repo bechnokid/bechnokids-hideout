@@ -63,11 +63,6 @@ export default {
       url: "neocities",
     },
     {
-      src: "ecila.png",
-      alt: "A pale pink patchwork star with several stitches and hems that range from lavender to pink",
-      url: "nekoweb",
-    },
-    {
       src: "juria.png",
       alt: "A metallic golden star that resembles metallic balloons that appear at some parties and celebrations",
       url: "neocities",
