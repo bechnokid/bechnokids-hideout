@@ -1,14 +1,5 @@
----
-title: F.A.Q
-summary: I've gotten a lot of questions over the years. Many of them are asked pretty often, which is why I created this page! If you have another question that you don't see on this page, feel free to [contact me](/contact).
-description: Short for "frequently asked questions", here are some questions that I've been asked a lot over the years!
-displayOrder: 3
-permalink: faq/index.html
-toc:
-  unlisted: true
----
-
-## Me
+## F.A.Q
+### Me
 
 - **Where did the name "Bechno Kid" come from?**
   - My sister and her friend group came up with several nicknames for themselves. As a lonely middle-schooler, I always wanted a cool name. I originally went with "Techno Kid" but somewhere along the way, I started using "Bechno Kid".
@@ -17,7 +8,7 @@ toc:
 - **What's that thing on your head?**
   - It's my mask! It's based off of the cute masks you can give to your Chao in the Sonic Adventure games!
 
-## Art
+### Art
 
 - **What kind of tools/software do you use for your art?**
   - [Clip Studio Paint v.4](https://www.clipstudio.net/en/) with an [XP-Pen Fun Deco S tablet](https://www.xp-pen.com/product/deco-fun-xs-s-l.html) for drawing, and [Photoscape](http://www.photoscape.org/ps/main/index.php) for any final edits! I also use [Color Quantizer](https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Others/Color-quantizer.shtml) for resizing and compressing my art without losing too much of the quality.
@@ -34,11 +25,11 @@ toc:
 - **Will you ever draw _____ again?**
   - It's not likely if it's something I haven't drawn in a while since my interests tend to fluctuate a lot. {% emote 'embarrassed' %}
 
-## Fandom
+### Fandom
 
 - **Have you watched/played/heard of _____?**
   - Maybe or maybe not! I"d rather not be asked these kinds of questions!
 - **What do you think of _____?**
   - I probably won't know enough to give you an opinion unless it's related to a current or previous interest, sorry!
 - **Are you a proshipper or an anti?**
-  - Neither. I'm too old to get involved in tiresome discourse! You can see my thoughts on this over on my [fangirling](/fan#thoughts-on-taboo-topics) page!
+  - Neither. I'm too old to get involved in tiresome discourse or give myself unnecessary labels! You can see my thoughts on this over on my [fangirling](/fan#thoughts-on-taboo-topics) page!

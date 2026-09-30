@@ -7,7 +7,10 @@ tags:
 displayOrder: 1
 noScroll: true
 ---
-{% set contentBlock %}
+
+<div class="d-flex flex-column flex-gap-4">
+  <div class="content">
+    {% renderTemplate "md" %}
 Hello and welcome to **Bechno Kid's Hideout!**{.intro .ms-1} {.d-flex .flex-gap-1}
 
 This is a little nook where a simple beet can live her childhood dream as a webmaster. You'll find artwork, my blog, some tutorials, and some other things that I collected while browsing the Web.
@@ -15,10 +18,8 @@ This is a little nook where a simple beet can live her childhood dream as a webm
 Please enjoy your stay, and thank you for visiting! {% emote 'happy' %}
 
 Webrings and fanlistings can be found in [/joined](/joined)!
-{% endset %}
-
-<div class="d-flex flex-column flex-gap-4">
-  <div class="content">{{ contentBlock | markdownify | safe }}</div>
+    {% endrenderTemplate %}
+  </div>
   <ul class="home-links inline-list justify-content-center">
     {%- for link in meta.introLinks %}
       <li class="d-flex align-items-center display-2">{% link link.url, { text: link.name} %}</li>

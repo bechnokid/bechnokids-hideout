@@ -32,7 +32,7 @@
   --main-pink-40: #7b224f;
   --main-pink-50: #3d1234;
 
-  --light-purple-10: #f0e1f6;
+  --light-purple-10: #e5dde9;
   --light-purple-20: #f0cdff;
   --light-purple-30: #d8b1e9;
   --light-purple-40: #bf94d1;
@@ -86,7 +86,7 @@
   --text-link-visited: light-dark(var(--mint-40), var(--mint-20));
   --text-muted: #805f6f;
   --text-primary: light-dark(var(--main-pink-30), var(--light-purple-30));
-  --text-secondary: light-dark(var(--main-purple-30), var(--light-pink-40));
+  --text-secondary: light-dark(var(--main-purple-30), var(--light-pink-30));
   --text-selection: light-dark(var(--white), var(--black));
 
   --dots-color: light-dark(#ffffff4d 2px, #ffffff0d 2px);
@@ -235,9 +235,12 @@ h4, .h4 {
   margin: 1rem 0;
 }
 
-h1, .h1,
-h4, .h4 {
+h1, .h1 {
   color: var(--text-secondary);
+}
+
+h4, .h4 {
+  color: light-dark(var(--text-secondary), var(--light-pink-40));
 }
 
 h2, .h2,
@@ -546,6 +549,7 @@ main {
         content: var(--icon-list);
         font-family: 'TamaFont';
         font-size: 1rem;
+        color: light-dark(var(--text-secondary), var(--light-pink-40));
       }
 
       > ul {
@@ -555,6 +559,7 @@ main {
         > li::marker {
           content: var(--icon-sublist);
           font-size: 1.1rem;
+          color: light-dark(var(--text-secondary), var(--light-pink-40));
         }
       }
     }

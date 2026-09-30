@@ -8,32 +8,10 @@ description: (Almost) everything you need to know about the webmaster!
 freezeframe: true
 ---
 
-{% set profile_text %}
-Hi, I'm **Bechno Kid**, the head honcho of this hideout.
-
-You can call me **"Bechno"** or even just **"Bec"**. You can call me "Kid", but I don't recommend it unless you're older than me!
-
-I'm a software developer born in the early '90s who enjoys drawing on the side and talking for hours about her interests.
-
-I collect a number of things including Tamagotchi Original and Digital Monster virtual pets with shells/characters that I particularly like. I try to collect merchandise of my favorite characters, but most of them aren't popular enough to get merch, unfortunately. At least I get to save money!
-
-The little guys next to me are **Numemon**, a shy Champion-level Digimon, and **Maskutchi**, a slightly spoiled adult Tamagotchi. They are my little guys, and I love them very much!
-{% endset %}
-
-{% set geek_code %}
-```git
------BEGIN GEEK CODE-----
-  Version: 3.12
-  GCS/O>AT d s-: a@ C++ P !L W++>+++ w$ !M PS++ PE+ Y+ t X tv+
-  b- G e++ h-- r+++ z-
------END GEEK CODE-----
-```
-{% endset %}
-
 <div class="row g-0">
   <div class="col-lg-5 col-md-4 d-flex justify-content-center">{% img '/assets/images/profile.png', { alt: 'Bechno Kid sitting down and playing with a purple Digital Monster 20th Anniversary device. Strapped to her pants is an orange 1998 Tamagotchi device. In her lap is Maskutchi, and hiding behind her is Numemon' } %}</div>
-  <div class="col-lg-7 col-md-8 d-flex flex-column justify-content-center  px-md-3 py-md-0 py-3">
-    {{ profile_text | markdownify | safe }}
+  <div class="col-lg-7 col-md-8 d-flex flex-column justify-content-center px-md-3 py-md-0 py-3">
+    {% renderFile "./src/_includes/components/about/profile.md" %}
     <details class="identity-btns sidebar m-md-3 mt-4">
       <summary class="bg-dot">ID Buttons</summary>
       <div class="d-flex flex-wrap justify-content-center align-items-center flex-gap-2 p-2">
@@ -46,7 +24,9 @@ The little guys next to me are **Numemon**, a shy Champion-level Digimon, and **
 </div>
 
 <div class="d-flex flex-column flex-gap-4">
-  <div class="geek-code">{{ geek_code | markdownify | safe }}</div>
+  <div class="geek-code">
+    {% renderFile "./src/_includes/components/about/geek_code.md" %}
+  </div>
   <div class='about-info row d-flex flex-wrap justify-content-center'>
     <div class="col-md-4 col-12 mb-3 mb-md-0">
       {% galleryBox { title: "Other Facts", cls: "h-100" } %}
@@ -113,4 +93,7 @@ The little guys next to me are **Numemon**, a shy Champion-level Digimon, and **
       {% endfor %}
     </div>
   </div>
+
+  {% renderFile "./src/_includes/components/about/faq.md" %}
+  {% renderFile "./src/_includes/components/about/uses.md" %}
 </div>
