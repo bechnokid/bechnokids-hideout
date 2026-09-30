@@ -8,6 +8,11 @@ const template =
 
 export default [
   {
+    mood: "dead",
+    date: "2026-09-29",
+    content: "Writing alt text for images makes my hands exhausted, but it's worth it!!"
+  },
+  {
     mood: "sigh",
     date: "2026-09-13",
     content: "Didn't mean to sleep all day again, oops! Though, I guess I needed it after last week being so hectic lol"
