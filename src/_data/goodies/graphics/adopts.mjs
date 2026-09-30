@@ -135,6 +135,11 @@ export default {
       cls: "align-items-end",
       items: [
         {
+          src: "cyber-omamori.png",
+          alt: "A pink omamori charm",
+          url: "https://cyber-omamori.naru.pub/",
+        },
+        {
           src: "omamori.png",
           alt: "A black omamori charm with periwinkle text and stars. This charm is meant to provide protection from evil",
           url: "https://snowvalley.online/adopt/omamori/",

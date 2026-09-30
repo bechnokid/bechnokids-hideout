@@ -225,6 +225,11 @@ export default {
       alt: "A cup of green tea"
     },
     {
+      url: "https://onigiru.wixsite.com/onigiri",
+      img: "onigiri.gif",
+      alt: "An onigiri with text in Japanese that translates to, \"onigiri\""
+    },
+    {
       name: "Starwoven",
       tooltip: "Aquarius",
       url: "https://zodiac.aquarel.nu/",
