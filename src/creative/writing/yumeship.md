@@ -2,7 +2,7 @@
 title: Yumeshipping
 shortTitle: Yumeship
 displayOrder: 3
-description: I talk about my favorite OC x canon ships
+description: Talking about my love for shipping my original characters with canonical ones!
 permalink: /yumeship/index.html
 ---
 
@@ -14,7 +14,7 @@ I made a few more fan OCs until I discovered in 2004 the concept of [Mary Sues](
 
 It wasn't until probably 2019 when I actually decided to be a little bit more brave and re-discover the joy of shipping an original character with a canonical one, lore accuracy be damned!
 
-I honestly have no control over the process of making characters to ship with my favorite characters. They're either an extension of me (like a self-insert), completely original characters, or refurbished OCs from my childhood. The process is pretty random!
+I honestly have no control over the process of making characters to ship with my favorite characters. They're either an extension of me (like a self-insert), completely original characters, or refurbished OCs from my childhood. The process is random!
 
 ## Why Use "Yumeship" For the Title?
 
@@ -27,7 +27,9 @@ I was pretty undecided on what word to use for the title of this page. Below are
   : This is a term mostly used for fans who ship themselves with a canonical character of their choice. This does not apply to me since I never ship *myself* with any of my favorite characters and prefer using characters instead. Even characters that I have labelled "self-inserts" are still their own characters who just happen to share more similarities with me than other fan characters, Kaybee (profile WIP) being one of them.
 
 **Yumeship or Yumeshipping**
-  : While I can admit at times that I am a weeb at heart, I can at least say that, from what I've seen, that this term has generally been regarded as a broader term than "selfshipping" and "oc/canon".[[1]](#footnote-1) If we are to take "yume"'s translation to English literally, I guess I am "dreaming" about these ships haha.
+  : I admit that I am a weeb at heart who enjoys the sound of "yumeship". However, I can at least say that, from what I've seen, that this term has generally been regarded as a broader term than "selfshipping" and "oc/canon".[[1]](#footnote-1) If we are to take "yume"'s translation to English literally, I guess I am "dreaming" about these ships haha.
+
+## Humble List of OC/Canon Ships
 
 --- {.small .mt-4}
 
