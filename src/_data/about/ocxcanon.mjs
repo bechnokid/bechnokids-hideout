@@ -1,14 +1,14 @@
 const template = {
   oc: {
     name: "CHANGEME",
-    age: CHANGEME,
+    age: 0,
     img: "CHANGEME",
     info: "CHANGEME",
     trivia: "CHANGEME"
   },
   canon: {
     name: "CHANGEME",
-    age: CHANGEME,
+    age: 0,
     img: "",
     info: "CHANGEME",
   },
