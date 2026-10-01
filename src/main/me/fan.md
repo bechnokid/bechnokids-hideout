@@ -119,16 +119,20 @@ I plan on writing full descriptions for each OC x Canon ship I have, but for now
 
 ## Inspirations
 
-This page wouldn't be here if not for the existence of these webmasters' own fan pages!
+This page wouldn not be here if not for the existence of these webmasters' own fan pages!
+
+*WARNING*: The below pages are 18+. Please tread carefully.
 
 - [Inkcaps's shipping wall](https://inkcaps.neocities.org/library/ships/)
 - [Nanacore's fan page](https://nanacore.neocities.org/fan)
 - [Fan behaviors on Planetary Influence](https://planetaryinfluence.neocities.org/fan)
 
-## Thoughts on Taboo Topics
+## "Proship vs. Anti": Thoughts on Taboo Topics
 
-I'm not going to list any of them here because I can assure you that for any taboo, "problematic", or "dead dove" topic you can think of there is a ten billion percent chance that I do not like it. You can call me "bland", a "prude" or claim that I "don't truly enjoy fandom", and that's ok! That's your opinion, and I won't try to make you change it.
+I'm not going to list any of them here because I can assure you that for any taboo, "problematic", or "dead dove" topic you can think of there is a ten billion percent chance that I do *not* like it. You can call me "bland", a "prude", or claim that I "don't truly enjoy fandom", and that's ok! That's your opinion, and I won't try to make you change it.
 
-Even if I don't like any of those topics, I don't ever plan on going out of my way to bully or harass someone if they happen to enjoy them. I believe it's important to allow others to explore these topics in fiction as long as they have the self-awareness to not apply them in real life and actually hurt someone.
+I don't ever plan on going out of my way to bully or harass someone if they happen to enjoy those topics. I believe it's important to allow others to explore these topics in fiction as long as they have the self-awareness to not apply them in real life and actually hurt someone.
 
-I might not want to be friends with people who enjoy and consume those "dead dove" topics, but the worst I would do is ignore those people and continue with my life as if they don't exist.
+That being said, I'm not really seeking any friendships with anyone who enjoys and consumes those topics, but that's mostly because it makes me extremely uncomfortable discussing them. I'll still be respectful and cordial, and I can only hope the other will be as well.
+
+So, if you're wondering whether I'm a "proshipper" or "anti", I encourage you to read [this Carrd on what "proship" is](https://define-proship.carrd.co/), and then decide for yourself on what you want to label me.

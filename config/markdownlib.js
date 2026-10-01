@@ -4,7 +4,6 @@ const markdownItAttrs = require('markdown-it-attrs');
 const markdownItDefList = require('markdown-it-deflist');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItTaskList = require('markdown-it-task-lists');
-const markdownItLinkAttrs = require('markdown-it-link-attributes');
 const markdownItLinkAttributes = require('markdown-it-link-attributes');
 
 module.exports = markdownIt({
@@ -15,7 +14,9 @@ module.exports = markdownIt({
   // Automatically hyperlinking inline links
   linkify: false,
   // Renders typography
-  typographer: false
+  typographer: true,
+  // Disables fancy quotes
+  quotes: ['"', '"', "'", "'"]
 })
 .use(markdownItAttrs)
 .use(markdownItHeaderSections)
