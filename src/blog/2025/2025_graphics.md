@@ -1,6 +1,6 @@
 ---
 title: I'm Not a Fan of Graphic Collections
-permalink: blog/2025-11-05.html
+date: 2025-11-05
 ---
 
 I've noticed while browsing other personal sites that when webmasters provide a page dedicated to links[[1]](#footnote-1), there's usually always a section dedicated to graphic resources, which usually contain a bunch of reentry pages, carrds, etc. with large collections of graphics. A common pattern I see among those collections is the severe lack of credit or any sight of links that back to the original sources of those graphics.

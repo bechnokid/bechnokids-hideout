@@ -474,6 +474,21 @@ main {
     }
   }
 
+  dl {
+    margin: 1rem 0;
+
+    dt:not(:first-child) {
+      margin-top: 1rem;
+    }
+
+    dd {
+      border-left: 1px dashed var(--main-pink-10);
+      padding-left: 1rem;
+      margin-left: .5rem;
+      margin-top: .5rem;
+    }
+  }
+
   ul:not(.inline-list) {
     display: flex;
     flex-direction: column;
