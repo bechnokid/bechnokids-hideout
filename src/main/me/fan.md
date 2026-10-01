@@ -127,8 +127,8 @@ This page wouldn't be here if not for the existence of these webmasters' own fan
 
 ## Thoughts on Taboo Topics
 
-I'm not going to list any of them here because I can assure you that for any taboo or "dead dove" topic you can think of there is a ten billion percent chance that I do not like it. You can call me a "prude" or claim that I "don't truly enjoy fandom", and that's ok! That's your opinion, and I won't try to make you change it.
+I'm not going to list any of them here because I can assure you that for any taboo, "problematic", or "dead dove" topic you can think of there is a ten billion percent chance that I do not like it. You can call me "bland", a "prude" or claim that I "don't truly enjoy fandom", and that's ok! That's your opinion, and I won't try to make you change it.
 
 Even if I don't like any of those topics, I don't ever plan on going out of my way to bully or harass someone if they happen to enjoy them. I believe it's important to allow others to explore these topics in fiction as long as they have the self-awareness to not apply them in real life and actually hurt someone.
 
-I might never want to be friends with people who enjoy and consume those topics, but the worst I would do is ignore those people and continue with my life as if they don't exist.
+I might not want to be friends with people who enjoy and consume those "dead dove" topics, but the worst I would do is ignore those people and continue with my life as if they don't exist.
