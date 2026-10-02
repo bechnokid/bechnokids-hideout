@@ -102,6 +102,10 @@
   background-color: var(--bg-primary) !important;
 }
 
+.bg-secondary {
+  background-color: var(--bg-secondary) !important;
+}
+
 .bg-body {
   background-color: var(--bg-body) !important;
 }
@@ -143,6 +147,10 @@
   background-image: var(--bg-dots);
   background-position: 0 0,7px 7px;
   background-size: 14px 14px;
+}
+
+.bg-heading {
+  background-color: var(--light-pink-10);
 }
 
 .bg-dots {

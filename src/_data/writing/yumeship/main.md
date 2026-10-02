@@ -1,11 +1,3 @@
----
-title: Yumeshipping
-shortTitle: Yumeship
-displayOrder: 3
-description: Talking about my love for shipping my original characters with canonical ones!
-permalink: /yumeship/index.html
----
-
 ## Introduction
 
 I've loved shipping characters together since I started shipping SonAmy (Sonic the Hedgehog x Amy Rose) in 4th grade. At some point, I started created my own characters to pair up with my favorite canonical characters. The first OC/canon ship I can remember was shipping Shadow the Hedgehog with my mongoose fan OC named Jade.
@@ -28,11 +20,3 @@ I was pretty undecided on what word to use for the title of this page. Below are
 
 **Yumeship or Yumeshipping**
   : I admit that I am a weeb at heart who enjoys the sound of "yumeship". However, I can at least say that, from what I've seen, that this term has generally been regarded as a broader term than "selfshipping" and "oc/canon".[[1]](#footnote-1) If we are to take "yume"'s translation to English literally, I love "dreaming" about these the characters in my ships kissing and holding hands haha.
-
-## List of OC/Canon Ships
-
-Below is an attempt at an extensive list of OC/canon ships that I have! Please enjoy.
-
---- {.small .mt-4}
-
-<span id="footnote-1">[1]</span> Josie (June 13th, 2023). ["Selfship vs. Yume"](https://x.com/sachiko__tw/status/1668525043285127168/photo/1)

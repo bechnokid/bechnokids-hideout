@@ -1,0 +1,64 @@
+---
+title: Yumeshipping
+shortTitle: Yumeship
+displayOrder: 3
+description: Talking about my love for shipping my original characters with canonical ones!
+permalink: /yumeship/index.html
+---
+
+{% renderFile "./src/_data/writing/yumeship/main.md" %}
+
+{% macro yumeship(params) %}
+<div class="yumeship border-sidebar bg-sidebar d-flex flex-column flex-gap-3 p-3">
+  <div class="row g-0 d-flex flex-md-gap-0 flex-gap-3">
+    <div class="col-md-4 d-flex flex-column flex-gap-2 order-1">
+      {% set oc = params.oc %}
+      <p class="h3 border-0 bg-heading text-center m-0 py-2">{{ oc.name }} ({{ oc.age }})</p>
+      {% set img = oc.img if "https" in oc.img else meta.imgUrl + oc.img %}
+      {% img img, { alt: "Profile image of" + oc.name } %}
+    </div>
+    <div class="col-md-4 d-flex flex-column justify-content-between align-items-center order-md-2 order-3 px-md-2">
+      <p class="h4 bg-secondary text-center m-0 py-1 w-100">Media</p>
+      <p class="m-0 text-center">{{ params.media }}</p>
+      <p class="h4 bg-secondary text-center m-0 py-1 w-100">Tropes</p>
+      <ul class="py-0">
+        {% for item in params.tropes %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-md-4 d-flex flex-column flex-gap-2 order-md-3 order-2">
+      {% set canon = params.canon %}
+      <p class="h3 border-0 bg-heading text-center m-0 py-2">{{ canon.name }} ({{ canon.age }})</p>
+      {% set img = canon.img if "https" in canon.img else meta.imgUrl + canon.img %}
+      {% img img, { alt: "Profile image of" + canon.name } %}
+    </div>
+  </div>
+  <div class="row g-0">
+    <div class="col">
+      {% for item in params.relationship %}
+        {{ item | markdownify | safe}}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+<section>
+  <h2>List of OC/Canon Ships</h2>
+  <p>Below is an attempt at an extensive list of OC/canon ships that I have! Please enjoy.</p>
+  <div class="d-flex flex-column flex-gap-3 mt-4">
+    {%- for item in writing.yumeship.ships %}
+      {{ yumeship(item) }}
+    {% endfor %}
+  </div>
+</section>
+
+<hr class="small mt-4">
+
+{% for item in writing.yumeship.footnotes %}
+<p class="mb-md-0 mb-3">
+  <span id="footnote-{{ loop.index }}">[{{ loop.index }}]</span>
+  {{ item.name }} ({{ item.date | monthDayYear }}) {% link item.url, { text: '"' + item.text + '"' } %}
+</p>
+{% endfor %}
