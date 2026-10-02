@@ -4,6 +4,7 @@
   - [ ] Images
   - [ ] Basic description (who they are, how they met canon character)
   - [ ] Commentary
+- [ ] Create a [blanket statement](https://fanlore.org/wiki/Blanket_Statement)
 
 ## Creative
 
