@@ -1,5 +1,29 @@
 const placeholderImg = "https://placehold.co/125x125"
 
+const template = {
+  oc: {
+    name: "",
+    age: 0,
+    img: placeholderImg,
+  },
+  canon: {
+    name: "",
+    age: 0,
+    img: placeholderImg,
+  },
+  media: "",
+  tropes: [
+    "up",
+    "to",
+    "three",
+  ],
+  relationship: [
+    "paragraph",
+    "paragraph",
+    "paragraph"
+  ]
+}
+
 const alphastella = {
   oc: {
     name: "Stella Aiba",
