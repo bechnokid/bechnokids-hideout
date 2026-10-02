@@ -58,7 +58,9 @@ permalink: /yumeship/index.html
 
 {% for item in writing.yumeship.footnotes %}
 <p class="mb-md-0 mb-3">
-  <span id="footnote-{{ loop.index }}">[{{ loop.index }}]</span>
+  <span id="footnote-{{ loop.index }}">
+    <a href="#footnote-num-{{ loop.index }}">[{{ loop.index }}]</a>
+  </span>
   {{ item.name }} ({{ item.date | monthDayYear }}) {% link item.url, { text: '"' + item.text + '"' } %}
 </p>
 {% endfor %}

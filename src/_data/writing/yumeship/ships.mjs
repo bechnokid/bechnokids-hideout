@@ -1,3 +1,11 @@
+const shipsToDo = [
+  "Avis Hunter (♀ OC) x Nadia *(Monster Hunter Wilds)*",
+  "Siduri (OC) x Gilgamesh *(Chocobo Tales)*",
+  "Hisui Aoyama (OC) x Haganezuka *(Demon Slayer)*",
+  "Kaybee (OC) x Whisper *(Yokai Watch)*",
+  "Jennifer (OC) & Giovanni *(Pokemon)*"
+]
+
 const placeholderImg = "https://placehold.co/125x125"
 
 const template = {
@@ -24,6 +32,30 @@ const template = {
   ]
 }
 
+const sidumesh = {
+  oc: {
+    name: "Siduri Neemon",
+    age: 38,
+    img: placeholderImg,
+  },
+  canon: {
+    name: "Gilgamesh",
+    age: "> 2000",
+    img: placeholderImg,
+  },
+  media: "Final Fantasy VII Rebirth",
+  tropes: [
+    "enemies to friends to lovers",
+    "slow burn",
+    "height difference",
+  ],
+  relationship: [
+    "Siduri and Gilgamesh are unique in that they had two \"first\" meetings: one in the Corel Desert where Siduri confronted Gilgamesh for (unintentionally) wreaking havoc in the Corel Region and causing significant damage to one of the Gold Saucer's generators. Their second meeting would be on Gilgamesh Island where Siduri wanted to meet him face to face and force him to join Cloud and his friends to pay for the damage he had caused.",
+    "The two did not get along at first, frequently clashing and bickering. Despite Siduri's attraction to Gilgamesh's appearance, she never let it deter her from ensuring Gilgamesh kept his promise in paying off his debt.",
+    "Despite their fiery interactions, the two would eventually find common ground in their near-endless passion in their own interests. Siduri would come to admire Gilgamesh's love for the theatre and Gilgamesh would greatly appreciate her masterful skills in mechanics and robotics."
+  ]
+}
+
 const alphastella = {
   oc: {
     name: "Stella Aiba",
@@ -38,7 +70,7 @@ const alphastella = {
   media: "Digimon Story Cyber Sleuth",
   tropes: [
     "interspecies",
-    "slowburn",
+    "slow burn",
     "cannot spit it out (Stella)",
   ],
   relationship: [
@@ -73,6 +105,7 @@ const scienceparents = {
 }
 
 export default [
+  sidumesh,
   alphastella,
   scienceparents,
 ]
