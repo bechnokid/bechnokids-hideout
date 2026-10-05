@@ -104,8 +104,33 @@ const scienceparents = {
   ]
 }
 
+const kbwhissu = {
+  oc: {
+    name: "Kaybee (KB)",
+    age: 32,
+    img: placeholderImg,
+  },
+  canon: {
+    name: "Whisper",
+    age: "450+",
+    img: placeholderImg,
+  },
+  media: "Yokai Watch",
+  tropes: [
+    "interspecies",
+    "strange minds think alike",
+    "i want my beloved to be happy",
+  ],
+  relationship: [
+    "Kaybee is a programmer at Springdale Technologies who, one day, stumbled upon an antique store and accidentally opened an ancient capsule. From the capsule emerged Whisper, a ghostly entity who called himself a \"yokai\". As thanks for freeing him, Whisper offers his eternal servitude as the human's butler.",
+    "Although the two started a mostly professional relationship, Kaybee and Whisper eventually become close friends as Whisper teaches Kaybee about yokai and the world he inhabited, and Kaybee helps Whisper acclimate in the modern world. The two have bonded over their shared \"shame\" of having to look up references when doing their jobs.",
+    "Although Whisper tries very hard to be the best butler that he can be, little does he know how much Kaybee appreciates kindness and companionship. In fact, Kaybee harbors a large crush on the yokai butler. Kaybee might never confess, especially after learning of his previous love, but she's ok with that. Or is she?"
+  ]
+}
+
 export default [
   sidumesh,
   alphastella,
   scienceparents,
+  kbwhissu,
 ]
