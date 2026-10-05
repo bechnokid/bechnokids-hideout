@@ -28,7 +28,7 @@
   <section class="{{ params.id or (params.name | slugify) }}">
     <h2 class="d-flex align-items-center flex-gap-2">{{ params.name }}{% if params.btn %}{% img img_path + (params.id or (params.name | slugify)) + "/" + params.btn, { alt: "Button for the " + params.name, cls: params.btnCls, url: params.url } %}{% endif %}</h2>
     <p>Created by {% link params.url, { text: params.owner } %}!</p>
-    <div class="sidebar d-flex flex-wrap p-md-3 mt-3 {{ params.cls }}">
+    <div class="sidebar d-flex flex-wrap mt-3 {{ params.cls }}">
       {%- for item in params.items %}
         {% if item.url in ["neocities", "nekoweb"] %}
           {% set item_url = item.url + ".org" %}
@@ -151,7 +151,7 @@
     <h2>{{ params.name }}</h2>
     <p>Created by {% link params.url, { text: params.owner } %}! Scroll horizontally to simulate a moving train!</p>
     <div class="sidebar py-3 mt-3 overflow-x-auto">
-      <div class="d-flex align-items-baseline choo-choo">
+      <div class="d-flex align-items-end choo-choo">
         {%- for item in params.items %}
           {% if item.url == "neocities" or item.url == "nekoweb" %}
             {% set item_url = item.url + ".org" %}
@@ -160,7 +160,7 @@
           {% else %}
             {% set item_url = item.url %}
           {% endif %}
-          {% img img_path + params.id + "/" + item.src, { url: ("https://" + item.src.split(".")[0] + "." + item_url) if item.url and "https" not in item.url else item.url, alt: item.alt, freezeframe: item.freezeframe } %}
+          {% img img_path + params.id + "/" + item.src, { url: ("https://" + item.src.split(".")[0] + "." + item_url) if item.url and "https" not in item.url else item.url, alt: item.alt, freezeframe: item.freezeframe, cls: item.cls } %}
         {% endfor %}
       </div>
     </div>

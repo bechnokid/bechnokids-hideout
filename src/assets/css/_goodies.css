@@ -83,6 +83,10 @@ article.pixel-clubs {
 
   section.train .choo-choo {
     padding: 0 80rem 0 50rem;
+
+    > img {
+      max-width: unset;
+    }
   }
 
   .yys {

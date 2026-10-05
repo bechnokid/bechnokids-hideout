@@ -4,7 +4,7 @@ export default {
     name: "Bottlecaps",
     owner: "Karla",
     url: "https://miserabledolly.net/bottlecaps",
-    cls: "justify-content-center flex-md-gap-4 flex-gap-5 py-3",
+    cls: "justify-content-center flex-md-gap-4 flex-gap-5 p-md-3 py-3",
     items: [
      { src: "gallantmon.gif", alt: "A red bottle cap with Gallantmon's sprite by SomaKiryuu", freezeframe: true },
      { src: "beelzemon.gif", alt: "A purple bottle cap with Beelzemon's sprite by tortoisehel", freezeframe: true },
@@ -39,7 +39,7 @@ export default {
     id: "call",
     owner: "Andrea",
     url: "https://chaoticgoode.com/call",
-    cls: "justify-content-center align-items-center flex-gap-3 py-3 px-2",
+    cls: "justify-content-center align-items-center flex-gap-3 p-md-3 py-3 px-2",
     items: [
       {
         src: "bechno.png",
@@ -158,7 +158,7 @@ export default {
     id: "charms",
     owner: "Lapin",
     url: "https://charm-ring.valentinely.cc/",
-    cls: "justify-content-center flex-gap-1",
+    cls: "justify-content-center flex-gap-1 p-md-3",
     btn: "charm-ring.gif",
     btnCls: "freezeframe",
     items: [
@@ -218,7 +218,7 @@ export default {
     name: "Deltaplushie",
     owner: "Crush",
     url: "https://crushpunchh.neocities.org/othersites/deltaplushie/",
-    cls: "mobile-resize align-items-end flex-md-gap-2 flex-gap-5 p-4 justify-content-md-start justify-content-center",
+    cls: "mobile-resize align-items-end flex-md-gap-2 flex-gap-5 p-md-3 p-4 justify-content-md-start justify-content-center",
     btn: "button.gif",
     btnCls: "freezeframe",
     alt: "A small plushie of ",
@@ -283,7 +283,7 @@ export default {
     name: "Duck Pond",
     owner: "Ray",
     url: "https://raygammas.neocities.org/duckpond",
-    cls: "mobile-resize justify-content-center flex-md-gap-2 flex-gap-5 py-5 px-4",
+    cls: "mobile-resize justify-content-center flex-md-gap-2 flex-gap-5 p-md-3 py-5 px-4",
     btn: "button.gif",
     btnCls: "freezeframe",
     items: [
@@ -344,7 +344,7 @@ export default {
     name: "Jar Jams",
     owner: "Blissnet",
     url: "https://blissnet.neocities.org/toybox/JJ",
-    cls: "mobile-resize flex-md-gap-2 flex-gap-5 py-5 px-4 justify-content-md-start justify-content-center",
+    cls: "mobile-resize flex-md-gap-2 flex-gap-5 p-md-3 py-5 px-4 justify-content-md-start justify-content-center",
     items: [
       {
         src: "bechno.png",
@@ -421,7 +421,7 @@ export default {
     id: "kindnessrocks",
     owner: "PixelRevival",
     url: "https://web.archive.org/web/20260206163624/https://pixelrevival.xyz/kindnessrocks/",
-    cls: "mobile-resize flex-md-gap-1 flex-gap-5 justify-content-md-start justify-content-center p-5",
+    cls: "mobile-resize flex-md-gap-1 flex-gap-5 justify-content-md-start justify-content-center p-md-3 p-5",
     items: [
       {
         src: "bechnokid_beet.png",
@@ -485,7 +485,7 @@ export default {
     owner: "Andrea",
     url: "https://chaoticgoode.com/cliques/pill/pillpals",
     alt: "A pill that resembles ",
-    cls: "mobile-resize align-items-end flex-md-gap-2 flex-gap-5",
+    cls: "mobile-resize align-items-end flex-md-gap-2 flex-gap-5 p-md-3",
     items: [
       {
         src: "bechno.gif",
@@ -551,7 +551,7 @@ export default {
     owner: "Andrea",
     url: "https://chaoticgoode.com/cliques/parade/",
     alt: "A pokeball that resembles ",
-    cls: "align-items-end flex-md-gap-2 flex-gap-4 justify-content-md-start justify-content-center p-3",
+    cls: "align-items-end flex-md-gap-2 flex-gap-4 justify-content-md-start justify-content-center p-md-3 p-3",
     btn: "button.png",
     items: [
       {
@@ -596,7 +596,7 @@ export default {
     id: "sip",
     owner: "Nevere",
     url: "https://peachlantern.neocities.org/sipclique",
-    cls: "flex-gap-3 py-3 ",
+    cls: "flex-gap-3 p-md-3 py-3",
     btn: "button.png",
     items: [
       {
@@ -690,8 +690,8 @@ export default {
     name: "Sundae News",
     id: "sundae",
     owner: "Andrea",
-    url: "https://chaoticgoode.com/cliques/sundae/parlour",
-    cls: "flex-gap-2 align-items-end",
+    url: "https://chaoticgoode.com/cliques/sundae",
+    cls: "flex-gap-3 justify-content-center align-items-end px-5 py-3",
     btn: "button.gif",
     items: [
       {
@@ -761,8 +761,8 @@ export default {
     name: "Pixel Train",
     id: "train",
     owner: "Andrea",
-    cls: "align-items-baseline",
-    url: "https://chaoticgoode.com/pixeltrain",
+    cls: "align-items-end",
+    url: "https://chaoticgoode.com/pixeltrain p-md-3",
     items: [
       {
         src: "thepixeltrain.gif",
@@ -772,6 +772,7 @@ export default {
       {
         src: "bechno.gif",
         alt: "A pink wagon with white lace. Bechno Kid is riding the wagon while cheering \"Yay\"",
+        cls: "align-self-end"
       },
       {
         src: "chaoticgoode.gif",
@@ -831,7 +832,7 @@ export default {
     owner: "Manon",
     url: "https://manonamora.neocities.org/clique/pixelbuster",
     alt: "A pixel box cover of the film ",
-    cls: "flex-gap-2 p-3 justify-content-md-start justify-content-center",
+    cls: "flex-gap-2 p-3 justify-content-md-start justify-content-center p-md-3",
     items: [
       {
         src: "bechno.png",
