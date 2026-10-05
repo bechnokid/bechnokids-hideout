@@ -30,9 +30,9 @@
     <p>Created by {% link params.url, { text: params.owner } %}!</p>
     <div class="sidebar d-flex flex-wrap p-md-3 mt-3 {{ params.cls }}">
       {%- for item in params.items %}
-        {% if item.url == "neocities" or item.url == "nekoweb" %}
+        {% if item.url in ["neocities", "nekoweb"] %}
           {% set item_url = item.url + ".org" %}
-        {% elif item.url == "blogspot" %}
+        {% elif item.url in ["blogspot", "weebly", "necrophantasia", "tumblr"] %}
           {% set item_url = item.url + ".com" %}
         {% else %}
           {% set item_url = item.url %}

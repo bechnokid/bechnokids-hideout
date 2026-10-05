@@ -14,6 +14,26 @@ export default {
       freezeframe: true,
     },
     {
+      src: "bechno2.gif",
+      alt: "Corporal Giroro from Keroro Gunso sitting and performing a Keronian Resonance",
+      freezeframe: true,
+    },
+    {
+      src: "bechno3.gif",
+      alt: "First Private Tamama from Keroro Gunso sitting and performing a Keronian Resonance",
+      freezeframe: true,
+    },
+    {
+      src: "bechno4.gif",
+      alt: "Lance Corporal Dororo from Keroro Gunso sitting and performing a Keronian Resonance",
+      freezeframe: true,
+    },
+    {
+      src: "bechno5.gif",
+      alt: "Sergeant Major Kururu from Keroro Gunso sitting and performing a Keronian Resonance",
+      freezeframe: true,
+    },
+    {
       src: "zabnikinthevoid.png",
       alt: "A pair of rainbow-colored tadpoles",
       url: "neocities",

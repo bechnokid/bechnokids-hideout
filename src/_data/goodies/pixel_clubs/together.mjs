@@ -1,0 +1,150 @@
+export default {
+  type: "basic",
+  id: "together",
+  name: "Together Forever",
+  owner: "Andrea",
+  url: "https://chaoticgoode.com/cliques/togetherforever/",
+  cls: "align-items-end",
+  btn: "button.gif",
+  alt: "A doll of ",
+  items: [
+    {
+      src: "bechno.png",
+      alt: "Yukiki, the artist's humanized depiction of the character of the same name from the Sgt. Frog/Keroro Gunso. The text above Yukiki reads, \"Bechno Kid\"",
+    },
+    {
+      src: "chaoticgoode.gif",
+      alt: "Andrea, who has short dark brown hair and a beauty mark below her right eye. Her outfit consists of a pink shirt, black pants, and beige shoes. The text above her reads, \"Chaotic goode\"",
+      url: "com",
+    },
+    {
+      src: "peachlantern.png",
+      alt: "Nevere, who has long black hair. Her outfit consists of a black dress with blue details at the bottom, semi-transparent black sleeves, black tights, and silver boots. The text abover her reads, \"Peach Lantern\"",
+      url: "neocities",
+    },
+    {
+      src: "keepdolling.gif",
+      alt: "Bliss, a demon with purple skin, long horns, an arrow-tipped tail, and black hair. Her outfit consists of silver hoop earrings, a low-cut red shirt, a high-rise black pencil skirt, black fish-net tights, and black boots. The text above her reads, \"Bliss\"",
+      url: "necrophantasia",
+      freezeframe: true,
+    },
+    {
+      src: "pixel-dollz.gif",
+      alt: "the mascot of PixelDolls. She has short blue hair and her outfit consists of a straw hat with a long blue ribbon that she ties around her head, a light-blue lolita dress, white stockings, and black mary-jane shoes. The text above her reads \"Pixeldolls\"",
+      url: "tumblr",
+    },
+    {
+      src: "peachnuts.png",
+      alt: "Peach Nuts, who has long wavy brown hair. Her outfit consists of a green headband, golden hoop earrings, a white turtleneck, a green dress with a floral print, yellow stockings with green polka dots, and green sandals. The text above her reads \"peach nuts\"",
+      url: "neocities",
+    },
+    {
+      src: "artwork.gif",
+      alt: "Artwork, who has long brown hair. Her outfit consists of a cropped light blue sweater, a dress with an elaborate floral pattern that consists of light blue and pink, and a backpack with Usahana as the main mascot. The text above her reads, \"Artwork\"",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "raygammas.png",
+      alt: "Ray, who has short black hair with her bangs pinned up with several purple pins. Her outfit consists of a black choker, a necklace, a black camisole, a black blet, a purple skirt, black fish net tights with a garter, and striped kneesocks with pink at the knees. The text above her reads, \"Ray Gamma\"",
+      url: "neocities",
+    },
+    {
+      src: "humanfinny.gif",
+      alt: "a character",
+      url: "neocities",
+      url: "a character with a forest fairy theme. She has mid-length dirty blonde to green hair, and her outfit consists of a necklace with a red pendant, a green tank top, striped arm sleeves, long brown pants, and white shoes. The text above her reads, \"Human Finny\""
+    },
+    {
+      src: "ladyginger.gif",
+      alt: "LadyGinger, who has long wavy chestnut hair. Her outfit consists of a sleeveless purple maxi dress. The text above her reads, \"lady ginger\" in all lower case",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "juria.gif",
+      alt: "Juria, who as long platinum blonde hair with dark roots. Her outfit consists of a black shirt, a black skirt with white frills, black tights, black and white striped oversized socks, and black sneakers. There are two chains hanging next to her, and the text above her reads, \"Juria\"",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "cultpartykei.gif",
+      alt: "a girl with long pink hair whose sides taper into ringlets. her outfit consists of an eyepatch, and a long white dress with red details that resembles hospital wear. The text above her reads, \"cult party\"",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "gikaayumi.gif",
+      alt: "Gika Akumi, a kutsune with long black hair with pink red highlights. Her outfit consits of a long grey kimono with red details. The text above her reads \"Gika Ayumi\" before quickly switching to \"Death\" and back again",
+      url: "nekoweb",
+      freezeframe: true,
+    },
+    {
+      src: "cr34t0r.png",
+      alt: "Sam, who has long black hair. Her outfit consists of a black face mask, pants, and shoes, and a purple shirt. The text above her reads, \"Cr34t0r_S4m\", which translates to \"Creator Sam\"",
+      url: "neocities",
+    },
+    {
+      src: "monamies.gif",
+      alt: "yanyan, who has long black and red hair. Her outfit consists of a ripped white tank top, a black shirt with translucent sleeves, a red skirt with an elaborate design, black stockings with a red sheen, and pink mary-jane shoes. The text above her reads \"yanyan\"",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "katrinaevans.png",
+      alt: "Katrina, who has long blonde hair. Her outfit consists of large round glasses, a black shirt with a band logo on the front, baggy light blue jeans with a pride pin at the bottom on her right pant leg, and black shoes. The text above her reads, \"Katrina\"",
+      url: "art",
+    },
+    {
+      src: "sweetcharm.gif",
+      alt: "Clover, who has long golden hair tied into two pigtails that end in ringlets. Each pigtail as a single red highlight. Her royal outfit consists of a small crown perched on the left side of her head, a long royal cape with a fur trim, and a dress, stockings, and shoes that are a variation of red, white, black, and gold to resemble the Queen of Hearts. The text above her reads, \"Clover\"",
+      url: "net",
+      freezeframe: true,
+    },
+    {
+      src: "lydkb.gif",
+      alt: "Lydia, who has short pink lavender hair. Her outfit consists of a pink cropped hoodie, a sparkly lavender mini skirt, one fish net stocking on one leg, tattoos on the other leg, ripped blue kneesocks, and pink sneakers. The text above her reads, \"LydKB\"",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "koy.gif",
+      alt: "Koy Boy, who has short blonde hair in a fade cut. Their outfit consists of a white cropped hoodie, a red long sleeve, baggy black pants with red stripes on the side, and red shoes. The text above them reads, \"Koy\"",
+      url: "fish",
+    },
+    {
+      src: "starlingharley.gif",
+      alt: "Harley Starling, who has long wavy brown hair tied in two buns that resemble cat ears. His outfit consists of a white puffy shirt with a yellow collar and details, a midi navy blue skirt with two gold stripes along the end of the skirt, star-patterned stockings, and black mary-jane shoes. The text above him reads, \"Starling\"",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "ruach.gif",
+      alt: "",
+      url: "neocities",
+    },
+    {
+      src: "lunabelle.gif",
+      alt: "",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "butteroncookies.gif",
+      alt: "",
+      url: "neocities",
+      freezeframe: true,
+    },
+    {
+      src: "rice.gif",
+      alt: "",
+      url: "place",
+      freezeframe: true,
+    },
+    {
+      src: "wenkicai.gif",
+      alt: "",
+      url: "neocities",
+    },
+  ],
+}

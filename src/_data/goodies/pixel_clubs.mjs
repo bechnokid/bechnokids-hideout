@@ -478,6 +478,72 @@ export default {
       },
     ]
   },
+  pill: {
+    type: "basic",
+    name: "Pill Pals",
+    id: "pill",
+    owner: "Andrea",
+    url: "https://chaoticgoode.com/cliques/pill/pillpals",
+    alt: "A pill that resembles ",
+    cls: "mobile-resize align-items-end flex-md-gap-2 flex-gap-5",
+    items: [
+      {
+        src: "bechno.gif",
+        alt: "Sabotenshi from the Tamagotchi Angel devices",
+        freezeframe: true
+      },
+      {
+        src: "demigirl.png",
+        alt: "the demigirl pride flag, with seven stripes. Starting from the top to the bottom, the stripe colors are as follows: grey, light grey, pink, white, pink, light grey, and grey",
+        cls: "align-self-end"
+      },
+      {
+        src: "asexual.gif",
+        alt: "the asexual pride flag, with four stripes. Starting from the top to the bottom, the stripe colors are as follows: black, grey, white, and purple",
+        url: "https://chaoticgoode.com/cliques/pill/pillpals",
+      },
+      {
+        src: "artwork.gif",
+        alt: "Hello Kitty",
+        url: "neocities",
+      },
+      {
+        src: "artwork.2.gif",
+        alt: "Kerokeroppi",
+        url: "neocities",
+      },
+      {
+        src: "chaoticgoode.png",
+        alt: "a kokeshi doll. The doll has black hair with a pink-purple hair clip, and she is wearing a purple kimono",
+        url: "com",
+      },
+      {
+        src: "jasminnie.png",
+        alt: "a long green frog",
+        url: "weebly",
+      },
+      {
+        src: "sakuradreams.png",
+        alt: "No-Face from the Studio Ghibli film, \"Spirited Away\"",
+        url: "neocities",
+      },
+      {
+        src: "sakuradreams.2.png",
+        alt: "Totoro from the Studio Ghibli film, \"My Neighbor Totoro\"",
+        url: "neocities",
+      },
+      {
+        src: "snowcape.png",
+        alt: "Brewster from the Animal Crossing game series",
+        url: "neocities",
+      },
+      {
+        src: "cr34t0r.png",
+        alt: "a regular pink pill with a pink top and a white bottom with a cute smiling face",
+        url: "neocities",
+      },
+    ]
+  },
   pokeball: {
     type: "basic",
     name: "Pokeball Parade",
@@ -618,6 +684,78 @@ export default {
         freezeframe: true
       },
     ]
+  },
+  sundae: {
+    type: "basic",
+    name: "Sundae News",
+    id: "sundae",
+    owner: "Andrea",
+    url: "https://chaoticgoode.com/cliques/sundae/parlour",
+    cls: "flex-gap-2 align-items-end",
+    btn: "button.gif",
+    items: [
+      {
+        src: "bechno.png",
+        alt: "An ice cream stick that is shaped like Maskutchi from the Tamagotchi Original device",
+        cls: "align-self-end"
+      },
+      {
+        src: "chaoticgoode.png",
+        alt: "An ice cream sundae that consists of two scoops of mint chocolate chip ice cream topped with chocolate syrup and a large red cherry",
+        url: "com",
+      },
+      {
+        src: "chaoticgoode.2.png",
+        alt: "Swirled matcha ice cream with a wafer stick in a taiyaki pastry",
+        url: "com",
+      },
+      {
+        src: "peachlantern.png",
+        alt: "A large ice cream sundae bowl that consists of one scoop of purple and blue ice cream, topped with several candies shaped like stars, seashells, and the crescent moon. It is surrounded by a few colorful and small sparkles",
+        url: "neocities",
+      },
+      {
+        src: "artwork.gif",
+        alt: "A large ice cream sundae that consists of two large scoops of pink ice cream topped with whipped cream, a pink and blue straw, a large cherry, a slice of melon, a strawberry, and some other candies. Korilakkuma can be seen in the sundae bowl",
+        url: "neocities",
+      },
+      {
+        src: "butteroncookies.png",
+        alt: "A sundae bowl with two scoops of vanilla and strawberry ice cream with a chocolate drizzle, two wafer straws, and topped with a cherry on top of whipped cream that looks like a lop-earred rabbit. There are several sparkles around the sundae bowl",
+        url: "neocities",
+      },
+      {
+        src: "raygammas.png",
+        alt: "A purple sundae bowl with two scoops of multi-colored ice cream. One scoop is a dark pink and the other is a light blue. The pink scoop is topped with a purple heart-shaped candy",
+        url: "neocities",
+      },
+      {
+        src: "zabnikinthevoid.png",
+        alt: "A silver blue waffle cone topped with two scoops of dripping blue and semi-translucent ice cream.",
+        url: "neocities",
+      },
+      {
+        src: "qtbeans.png",
+        alt: "An ice cream bar that resembles Spongebob Squarepants",
+        url: "neocities",
+      },
+      {
+        src: "lydkb.gif",
+        alt: "A waffle cone with a large swirl of strawberry ice cream. It is topped with two strawberries with another strawberry at the base of the cone. There are also sparkles surrounding the cone",
+        url: "neocities",
+        freezeframe: true,
+      },
+      {
+        src: "gloomygoose13.png",
+        alt: "A waffle cone with three scoops of chocolate, vanilla, and strawberry ice cream topped with a single cherry",
+        url: "neocities",
+      },
+      {
+        src: "peachnuts.png",
+        alt: "A sundae cup with a mix of chocolate and vanilla ice cream. Inside the cup is a small lamb with some chocolate syrup, whipped cream, and a cherry on top of its head",
+        url: "neocities",
+      },
+    ],
   },
   pixelTrain: {
     name: "Pixel Train",

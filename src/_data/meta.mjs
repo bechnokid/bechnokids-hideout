@@ -29,9 +29,10 @@ export default {
     dev: "/assets/images/icon_meat.png"
   },
   updated: [
-    "Cliques",
+    "Pixel Clubs",
   ],
   new: [
+    "Cliques",
   ],
   emotes: [
     "angry",
