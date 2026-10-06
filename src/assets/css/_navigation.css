@@ -197,11 +197,12 @@
   &:not(.numbered) {
     a {
       color: var(--text-link-visited);
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
       border-bottom-color: transparent !important;
 
-      &:hover span {
-        text-decoration: underline;
+      &:hover {
+        text-decoration: none;
       }
     }
 

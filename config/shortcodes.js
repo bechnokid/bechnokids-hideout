@@ -23,11 +23,11 @@ const emoji = function (value) {
 }
 
 const emoticon = function (value) {
-  return `<img class='emoticon' src='/assets/images/blog/emoticon/${value}.svg' aria-hidden='true' alt=''>`;
+  return `<img class='emoticon' src='/assets/images/_emote/${value}.svg' aria-hidden='true' alt=''>`;
 }
 
 const emote = value => {
-  return `<img class='inline-img' src='/assets/images/blog/emoticon/emote_${value}.png' aria-hidden='true' alt=''>`;
+  return `<img class='inline-img' src='/assets/images/_emote/emote_${value}.png' aria-hidden='true' alt=''>`;
 }
 
 const link = function (url, options = {}) {
