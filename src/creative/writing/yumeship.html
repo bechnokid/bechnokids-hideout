@@ -11,11 +11,12 @@ permalink: /yumeship/index.html
 {% macro yumeship(params) %}
 <div class="yumeship border-sidebar bg-sidebar d-flex flex-column flex-gap-3 p-3">
   <div class="row g-0 d-flex flex-md-gap-0 flex-gap-3">
-    <div class="col-md-4 d-flex flex-column flex-gap-2 order-1">
+    <div class="col-md-4 text-center d-flex flex-column flex-gap-2 order-1">
       {% set oc = params.oc %}
-      <p class="h3 border-0 bg-heading text-center m-0 py-2">{{ oc.name }} ({{ oc.age }})</p>
+      <p class="h3 border-0 bg-heading m-0 py-2">{{ oc.name | markdownifyInline | safe }}</p>
       {% set img = oc.img if "https" in oc.img else "/assets/images/writing/yumeship/" + oc.img %}
       {% img img, { alt: "Profile image of " + oc.name, cls: "border-sidebar border-2" } %}
+      <p><strong>Age:</strong> {{ oc.age }}</p>
     </div>
     <div class="col-md-4 d-flex flex-column justify-content-between align-items-center order-md-2 order-3 px-md-2">
       <p class="h4 bg-secondary text-center m-0 py-1 w-100">Media</p>
@@ -27,11 +28,12 @@ permalink: /yumeship/index.html
         {% endfor %}
       </ul>
     </div>
-    <div class="col-md-4 d-flex flex-column flex-gap-2 order-md-3 order-2">
+    <div class="col-md-4 text-center d-flex flex-column flex-gap-2 order-md-3 order-2">
       {% set canon = params.canon %}
-      <p class="h3 border-0 bg-heading text-center m-0 py-2">{{ canon.name }} ({{ canon.age }})</p>
+      <p class="h3 border-0 bg-heading text-center m-0 py-2">{{ canon.name | markdownifyInline | safe }}</p>
       {% set img = canon.img if "https" in canon.img else "/assets/images/writing/yumeship/" + canon.img %}
       {% img img, { alt: "Profile image of " + canon.name, cls: "border-sidebar border-2" } %}
+      <p><strong>Age:</strong> {{ canon.age }}</p>
     </div>
   </div>
   <div class="row g-0">
