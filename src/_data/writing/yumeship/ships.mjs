@@ -177,6 +177,30 @@ const cuisinefriends = {
   ]
 }
 
+const jadesword = {
+  oc: {
+    name: "Hisui Aoyami",
+    age: 32,
+    img: placeholderImg,
+  },
+  canon: {
+    name: "Hotaru Haganezuka",
+    age: 37,
+    img: placeholderImg,
+  },
+  media: "Demon Slayer",
+  tropes: [
+    "playful teasing",
+    "slow burn",
+    "through his stomach",
+  ],
+  relationship: [
+    "Hisui has been a kakushi ever since she was a teenager, but had only recently transferred to the Swordsmith Village when she heard the rumors about Hotaru Haganezuka. A master swordsmith with a temper even hotter than the flames that forged the many swords he has smithed. As such, he has made very few friends and, despite his surprisingly good looks, hasn't found a romantic partner nor had interest in one.",
+    "*\"He's single???\"* ",
+    "paragraph"
+  ]
+}
+
 export default [
   sidumesh,
   bocosidumesh,
