@@ -1,8 +1,6 @@
 const shipsToDo = [
   "Avis Hunter (♀ OC) x Nadia *(Monster Hunter Wilds)*",
-  "Siduri (OC) x Gilgamesh *(Chocobo Tales)*",
   "Hisui Aoyama (OC) x Haganezuka *(Demon Slayer)*",
-  "Kaybee (OC) x Whisper *(Yokai Watch)*",
   "Jennifer (OC) & Giovanni *(Pokemon)*"
 ]
 
@@ -36,12 +34,12 @@ const sidumesh = {
   oc: {
     name: "Siduri Neemon",
     age: 38,
-    img: placeholderImg,
+    img: "siduri.png",
   },
   canon: {
     name: "Gilgamesh",
-    age: "> 2000",
-    img: placeholderImg,
+    age: "2000 +",
+    img: "gilgamesh.png",
   },
   media: "Final Fantasy VII Rebirth",
   tropes: [
@@ -53,19 +51,23 @@ const sidumesh = {
     "Siduri and Gilgamesh are unique in that they had two \"first\" meetings: one in the Corel Desert where Siduri confronted Gilgamesh for (unintentionally) wreaking havoc in the Corel Region and causing significant damage to one of the Gold Saucer's generators. Their second meeting would be on Gilgamesh Island where Siduri wanted to meet him face to face and force him to join Cloud and his friends to pay for the damage he had caused.",
     "The two did not get along at first, frequently clashing and bickering. Despite Siduri's attraction to Gilgamesh's appearance, she never let it deter her from ensuring Gilgamesh kept his promise in paying off his debt.",
     "Despite their fiery interactions, the two would eventually find common ground in their near-endless passion in their own interests. Siduri would come to admire Gilgamesh's love for the theatre and Gilgamesh would greatly appreciate her masterful skills in mechanics and robotics."
-  ]
+  ],
+  credits: {
+    name: "Lili",
+    url: "https://liliox.bsky.social/"
+  }
 }
 
 const alphastella = {
   oc: {
     name: "Stella Aiba",
     age: 27,
-    img: placeholderImg,
+    img: "stella.png",
   },
   canon: {
     name: "Alphamon",
     age: "???",
-    img: placeholderImg,
+    img: "alphamon.png",
   },
   media: "Digimon Story Cyber Sleuth",
   tropes: [
@@ -84,18 +86,18 @@ const scienceparents = {
   oc: {
     name: "Dr. Vitamin",
     age: 45,
-    img: placeholderImg,
+    img: "vitamin.png",
   },
   canon: {
     name: "Prof. Membrane",
     age: 42,
-    img: placeholderImg
+    img: "membrane.png"
   },
   media: "Invader Zim",
   tropes: [
     "everyone can see it",
-    "mutual pining",
-    "unknowingly in love"
+    "unknowingly in love",
+    "single parent bonding",
   ],
   relationship: [
     "Dr. Vitamin is a chemist who recently moved to The City with her daughter Amelia after receiving a job offer from Membrane Labs. Although she was aware of his status as the smartest man in the world, Dr. Vitamin mostly admired his work and contributions and, thus, mostly saw him as a sort of entity rather than a person.",
@@ -108,12 +110,12 @@ const kbwhissu = {
   oc: {
     name: "Kaybee (KB)",
     age: 32,
-    img: placeholderImg,
+    img: "kaybee.png",
   },
   canon: {
     name: "Whisper",
     age: "450+",
-    img: placeholderImg,
+    img: "whisper.png",
   },
   media: "Yokai Watch",
   tropes: [
