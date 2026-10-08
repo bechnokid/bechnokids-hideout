@@ -194,7 +194,8 @@ export default {
       {
         src: "sweetcharm.gif",
         alt: "A pink heart-shaped keychain with two pink ribbons, a string of star and circular beads, and a charm of a blue mascot with angel wings and a bow accessory. The carabiner itself has two wings and a ell attached to it. In the bottom right corner of the charm is a floating moon.",
-        url: "net"
+        url: "net",
+        freezeframe: true,
       },
       {
         src: "gikaayumi.png",

@@ -1,9 +1,7 @@
 ## Personal
 
-- [ ] Finish OC x Canon section in [fan](/personal/fan) page
-  - [ ] Images
-  - [ ] Basic description (who they are, how they met canon character)
-  - [ ] Commentary
+- [x] Finish OC x Canon section in [fan](/fan) page
+  - Made [yumeship](/yumeship) page!
 - [ ] Create a [blanket statement](https://fanlore.org/wiki/Blanket_Statement)
 
 ## Creative
