@@ -1,6 +1,5 @@
 const shipsToDo = [
   "Avis Hunter (♀ OC) x Nadia *(Monster Hunter Wilds)*",
-  "Hisui Aoyama (OC) x Haganezuka *(Demon Slayer)*",
 ]
 
 const placeholderImg = "https://placehold.co/125x125"
@@ -179,7 +178,7 @@ const cuisinefriends = {
 
 const jadesword = {
   oc: {
-    name: "Hisui Aoyami",
+    name: "Hisui Aoyama",
     age: 32,
     img: placeholderImg,
   },
@@ -192,13 +191,13 @@ const jadesword = {
   tropes: [
     "playful teasing",
     "slow burn",
-    "through his stomach",
+    "friends to lovers",
   ],
   relationship: [
-    "Hisui has been a kakushi ever since she was a teenager, but had only recently transferred to the Swordsmith Village when she heard the rumors about Hotaru Haganezuka. A master swordsmith with a temper even hotter than the flames that forged the many swords he has smithed. As such, he has made very few friends and, despite his surprisingly good looks, hasn't found a romantic partner nor had interest in one.",
-    "*\"He's single???\"* ",
-    "paragraph"
-  ]
+    "Hisui is a kakushi whose most recent assignment had her transferred to the Swordsmith Village. Upon her arrival, Hisui heard rumors about a master swordsmith with a rotten personality and a temper as hot as the very flames that forged the Corps' blades. She hoped she'd never meet him, not realizing until later that the first swordsmith she met and befriended was that same swordsmith: Hotaru Haganezuka.",
+    "Hisui was surprised after learning that her new friend was the swordsmith that people warned her about, especially after seeing how harshly he would act towards his fellow swordsmiths and other Corps. She wasn't sure if it was a fluke that they managed to get along, but nevertheless, she admired his love and dedication to the craft and loved listening to him share his knoweldge with her.",
+    "The two can be seen spending their days off relaxing by a nearby river, enjoying some mitarashi dango and some fish that she would catch herself.",
+  ],
 }
 
 export default [
@@ -208,4 +207,5 @@ export default [
   scienceparents,
   kbwhissu,
   cuisinefriends,
+  jadesword,
 ]

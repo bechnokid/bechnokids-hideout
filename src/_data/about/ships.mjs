@@ -36,7 +36,8 @@ export default {
         name: "Keroro Gunso",
         items: [
           { ship: "Yukiki x Hanana", emoji: "💖 ❗", desc: "Despite being canon characters, they had little to no personalities, so this ship pretty much only exists in an AU where they're humans. ^^;" },
-          "Kururu x Giroro"
+          "Kururu x Giroro",
+          { ship: "Kururu x Kurara", emoji: "❗", desc: "Kurara is my friend's OC, so yes, I am putting others' OCxcanon ships here!!" }
         ]
       },
       {
@@ -139,7 +140,8 @@ export default {
       {
         name: "Cookie Run",
         items: [
-          { ship: "Mogra x Burning Spice", emoji: "💖"},
+          { ship: "Mogra x Burning Spice", emoji: "💖" },
+          "Burning Spice x Mogra x Rajapendra",
           "White Lily x Silent Salt",
           "White Lily x Pure Vanilla",
           "Black Raisin x Pure Vanilla",
@@ -166,7 +168,7 @@ export default {
       {
         name: "Super Mario Bros.",
         items: [
-          "Rango x Hariet",
+          { ship: "Rango x Hariet", emoji: "❗", desc: "I do not headcanon these two to be blood-related at all"},
           { ship: "Fawful x Mimi", emoji: "🌱" },
         ]
       },
