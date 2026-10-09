@@ -60,12 +60,12 @@ const bocosidumesh = {
   oc: {
     name: "Lady Siduri",
     age: 36,
-    img: placeholderImg,
+    img: "bocosiduri.png",
   },
   canon: {
     name: "Gilgamesh",
     age: 38,
-    img: placeholderImg,
+    img: "bocogilgamesh.png",
   },
   media: "Chocobo Tales: The Witch, the Girl, and the Five Heroes",
   tropes: [
@@ -180,12 +180,12 @@ const jadesword = {
   oc: {
     name: "Hisui Aoyama",
     age: 32,
-    img: placeholderImg,
+    img: "hisui.png",
   },
   canon: {
     name: "Hotaru Haganezuka",
     age: 37,
-    img: placeholderImg,
+    img: "haganezuka.png",
   },
   media: "Demon Slayer",
   tropes: [
@@ -196,7 +196,7 @@ const jadesword = {
   relationship: [
     "Hisui is a kakushi whose most recent assignment had her transferred to the Swordsmith Village. Upon her arrival, Hisui heard rumors about a master swordsmith with a rotten personality and a temper as hot as the very flames that forged the Corps' blades. She hoped she'd never meet him, not realizing until later that the first swordsmith she met and befriended was that same swordsmith: Hotaru Haganezuka.",
     "Hisui was surprised after learning that her new friend was the swordsmith that people warned her about, especially after seeing how harshly he would act towards his fellow swordsmiths and other Corps. She wasn't sure if it was a fluke that they managed to get along, but nevertheless, she admired his love and dedication to the craft and loved listening to him share his knoweldge with her.",
-    "The two can be seen spending their days off relaxing by a nearby river, enjoying some mitarashi dango and some fish that she would catch herself.",
+    "The two can be seen spending their days off relaxing by a nearby river, enjoying some mitarashi dango and fish that she would catch herself.",
   ],
 }
 
