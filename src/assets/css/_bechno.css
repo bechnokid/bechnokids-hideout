@@ -102,6 +102,10 @@
   background-color: var(--bg-primary) !important;
 }
 
+.bg-secondary {
+  background-color: var(--bg-secondary) !important;
+}
+
 .bg-body {
   background-color: var(--bg-body) !important;
 }
@@ -145,6 +149,10 @@
   background-size: 14px 14px;
 }
 
+.bg-heading {
+  background-color: var(--light-pink-20);
+}
+
 .bg-dots {
   background-color: var(--bg-heading);
 }
@@ -155,7 +163,7 @@
 
 .heading-stitch {
   --border-stitch: light-dark(var(--main-purple-30), var(--light-purple-50));
-  --bg-stitch: light-dark(var(--bg-secondary), var(--dark-purple-30));
+  --bg-stitch: light-dark(#f5e5fd, var(--dark-purple-30));
   color: var(--text-secondary);
   background-color: var(--bg-stitch);
   border: 1px dashed var(--border-stitch);

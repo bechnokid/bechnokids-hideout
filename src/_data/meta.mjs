@@ -33,6 +33,7 @@ export default {
   ],
   new: [
     "Cliques",
+    "Yumeship"
   ],
   emotes: [
     "angry",

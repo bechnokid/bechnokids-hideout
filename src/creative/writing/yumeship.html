@@ -1,0 +1,75 @@
+---
+title: Yumeshipping
+shortTitle: Yumeship
+displayOrder: 3
+description: Talking about my love for shipping my original characters with canonical ones!
+permalink: /yumeship/index.html
+---
+
+{% renderFile "./src/_data/writing/yumeship/main.md" %}
+
+{% macro yumeship(params) %}
+<div class="yumeship border-sidebar bg-sidebar d-flex flex-column flex-gap-3 p-3">
+  <div class="row g-0 d-flex flex-md-gap-0 flex-gap-3">
+    <div class="col-md-4 text-center d-flex flex-column flex-gap-2 order-1">
+      {% set oc = params.oc %}
+      <p class="h3 border-0 bg-heading m-0 py-2">{{ oc.name | markdownifyInline | safe }}</p>
+      {% set img = oc.img if "https" in oc.img else "/assets/images/writing/yumeship/" + oc.img %}
+      {% img img, { alt: "Profile image of " + oc.name, cls: "border-sidebar border-2" } %}
+      <p><strong>Age:</strong> {{ oc.age }}</p>
+    </div>
+    <div class="col-md-4 d-flex flex-column justify-content-between align-items-center order-md-2 order-3 px-md-2">
+      <p class="h4 bg-secondary text-center m-0 py-1 w-100">Media</p>
+      <p class="m-0 text-center">{{ params.media | markdownifyInline | safe }}</p>
+      <p class="h4 bg-secondary text-center m-0 py-1 w-100">Tropes</p>
+      <ul class="py-0">
+        {% for item in params.tropes %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-md-4 text-center d-flex flex-column flex-gap-2 order-md-3 order-2">
+      {% set canon = params.canon %}
+      <p class="h3 border-0 bg-heading text-center m-0 py-2">{{ canon.name | markdownifyInline | safe }}</p>
+      {% set img = canon.img if "https" in canon.img else "/assets/images/writing/yumeship/" + canon.img %}
+      {% img img, { alt: "Profile image of " + canon.name, cls: "border-sidebar border-2" } %}
+      <p><strong>Age:</strong> {{ canon.age }}</p>
+    </div>
+  </div>
+  <div class="row g-0">
+    <div class="col">
+      {% for item in params.relationship %}
+        {{ item | markdownify | safe}}
+      {% endfor %}
+      {% if params.credits %}
+        {% set artist = params.credits %}
+        <p class="text-right">Artwork by {% link artist.url, { text: artist.name } %}</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+<section>
+  <h2>All Aboard!</h2>
+  <p>Below is an attempt at an extensive list of OC/canon ships that I have! Please enjoy.</p>
+  <div class="d-flex flex-column flex-gap-3 mt-4">
+    {%- for item in writing.yumeship.ships %}
+      {{ yumeship(item) }}
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>References</h2>
+  <ol>
+    {% for item in writing.yumeship.footnotes %}
+    <li>
+      <span id="footnote-{{ loop.index }}" class="footnote-back">
+        <a class="text-underline" href="#footnote-num-{{ loop.index }}">^</a>
+      </span>
+      {{ item.name }}{% if item.date %} ({{ item.date | monthDayYear }}){% endif %} {% link item.url, { text: '"' + item.text + '"' } %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>

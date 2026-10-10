@@ -93,6 +93,6 @@ export default{
     "You auto-complete me",
     "We just click!",
     "<div class='triangle-up'><p>You are acute-y</p></div>",
-    "You <i class='fa fa-power-off mx-1'></i> me on"
+    "You <i class='ft-power mx-1'></i> me on"
   ]
 }

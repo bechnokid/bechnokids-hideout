@@ -4,7 +4,7 @@ export default {
   id: "frog",
   owner: "ŻabnikRex",
   url: "https://zabnikinthevoid.neocities.org/froggybog",
-  cls: "flex-center flex-gap-3",
+  cls: "flex-center flex-gap-3 p-3",
   btn: "froggy-bog.gif",
   btnCls: "freezeframe",
   items: [

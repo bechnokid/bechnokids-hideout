@@ -15,7 +15,6 @@ section {
 
 a[href*="footnote"],
 span[id*="footnote"] {
-  font-size: .8em;
   vertical-align: super;
 }
 

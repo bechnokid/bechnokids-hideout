@@ -6,7 +6,6 @@ export default [
   "https://enter-the-sevenfold.neocities.org/webgarden",
   "https://linwood.neocities.org/webgarden.html",
   "https://skykristal.art/Links/Webgardens/index.html",
-  "https://blake.earth/webgarden",
   "https://astralobservatory.neocities.org/webgarden",
   "https://larvapuppy.neocities.org/webgarden",
   "https://sakuradreams.neocities.org/Pages/webgarden",

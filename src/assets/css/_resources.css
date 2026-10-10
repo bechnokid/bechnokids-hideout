@@ -37,14 +37,6 @@ article.status-cafe-theme {
     dt {
       font-weight: bold;
       color: var(--text-primary);
-
-      &:before {
-        content: var(--icon-list);
-        font-size: .55rem;
-        color: var(--text-secondary);
-        padding-right: .5rem;
-        margin-left: -.5rem;
-      }
     }
 
     dd {

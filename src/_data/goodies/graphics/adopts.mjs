@@ -148,6 +148,7 @@ export default {
           src: "great-white.gif",
           alt: "A great white shark",
           url: "http://whimsical.heartette.net/",
+          freezeframe: true,
         },
         {
           src: "icecream_daniberry.gif",
@@ -244,6 +245,7 @@ export default {
           src: "monster_mango.gif",
           alt: "A can of Mango Loco flavored Monster Juice",
           url: "https://velvetmoth.neocities.org/",
+          freezeframe: true,
         },
         {
           src: "bobateapeach.gif",
@@ -288,7 +290,8 @@ export default {
         {
           src: "hydrangea.gif",
           alt: "A bushel of hydrangea flowers",
-          url: "https://lastsecret.net/bitmapdreams/"
+          url: "https://lastsecret.net/bitmapdreams/",
+          freezeframe: true,
         },
         {
           src: 'lacroixhydrangea.gif',

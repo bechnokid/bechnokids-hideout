@@ -45,7 +45,7 @@ const pixelClubs = collection => {
 }
 
 const microblog = collection => {
-  const microblogCollection = collection.getAll()[0].data.blog.microblog
+  const microblogCollection = collection.getAll()[0].data.writing.blog.microblog
   return Object.values(microblogCollection).flat();
 }
 

@@ -56,7 +56,6 @@
   background-color: var(--bg-footer);
 }
 
-
 .candy {
   figure {
     width: 150px;
@@ -166,6 +165,12 @@ article.microblog .status-container {
     .status-text {
       padding: .5rem 0;
     }
+  }
+}
+
+article.yumeship {
+  p.h3 {
+    line-height: 1.5rem;
   }
 }
 

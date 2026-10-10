@@ -41,13 +41,6 @@ article.landing-page {
   dl {
     dt {
       margin-bottom: .5rem;
-
-      &::before {
-        margin-right: .25rem;
-        content: var(--icon-list);
-        color: var(--text-link-visited);
-        font-size: .55rem;
-      }
     }
 
     dd {

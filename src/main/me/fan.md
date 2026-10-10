@@ -103,20 +103,6 @@ You can click on ships with a dotted underline for commentary!
 <div class="row mt-1 mb-4 g-3">{% for key, value in about.ships.canon %} <div class="col-md-4 d-flex flex-column"><div class="sidebar"><p class="h3 bg-dots">{{ key | title }}</p><div class="content">{% for media in value %} <details open class="p-2"><summary class="heading-stitch text-center rounded-3 mb-2">{{ media.name }}</summary><ul>{% for item in media.items %} <li>{% if item.desc %} <details class="ship-desc"><summary>{{ item.ship | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %}</summary><p>{{ item.desc | safe }}</p></details>{% else %} {{ (item.ship or item) | safe }}{% if item.emoji %} {% emoji item.emoji %}{% endif %} {% endif %} </li>{% endfor %}</ul></details>{% endfor %}</div></div></div>{% endfor %}
 </div>
 
-### OC x Canon
-
-I used to have a few fan OCs as a child that I would ship with my favorite characters until I discovered in 2004 the (hopefully) now-outdated concept of [Mary Sues](https://tvtropes.org/pmwiki/pmwiki.php/Main/MarySue) and how much of a faux pas it was to ship them with canon characters.
-
-It wasn't until probably 2019 when I actually decided to be a little bit more brave and re-discover the wonders of OCxCanon ships.
-
-I honestly have no control over the process of making characters to ship with my favorite characters. They're either an extension of me (like a self-insert), completely original characters, or refurbished OCs from my childhood. The process is pretty random!
-
-I plan on writing full descriptions for each OC x Canon ship I have, but for now, I offer a humble list.
-
-**Note:** "x" is for romantic ships, while "&" is for platonic ships!
-
-<ul>{% for item in about.ships.ocxcanon %}<li>{{ item | markdownifyInline | safe }}</li>{% endfor %}</ul>
-
 ## Inspirations
 
 This page wouldn not be here if not for the existence of these webmasters' own fan pages!
@@ -135,4 +121,4 @@ I don't ever plan on going out of my way to bully or harass someone if they happ
 
 That being said, I'm not really seeking any friendships with anyone who enjoys and consumes those topics, but that's mostly because it makes me extremely uncomfortable discussing them. I'll still be respectful and cordial, and I can only hope the other will be as well.
 
-So, if you're wondering whether I'm a "proshipper" or "anti", I encourage you to read [this Carrd on what "proship" is](https://define-proship.carrd.co/), and then decide for yourself on what you want to label me.
+So, if you're wondering whether I'm a "proshipper" or "anti", I encourage you to read [this Carrd on what "proship" is](https://define-proship.carrd.co/), and then decide for yourself on what you want to label me as.

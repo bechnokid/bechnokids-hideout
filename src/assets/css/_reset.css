@@ -178,6 +178,7 @@ ul {
 }
 
 .text-underline {
+  border-bottom: 0 !important;
   text-decoration: underline !important;
 }
 
