@@ -11,12 +11,7 @@ Web cliques were a fun way to show off the things you're into, what you're like,
 
 Listed below are some mini-cliques that you can just copy and paste without needing to join a member list. My only request is that you save any image from this page onto your own server. Thanks, and have fun!
 
-## Credits
-
-Unless specified, all icons used in these cliques are not made by me.
-
-- Tamagotchi icon ripped by [Gooniez](https://www.spriters-resource.com/game_boy_gbc/tamagotchi/asset/18987/), colors by me
-- Monster Hunter weapon icons ripped by [Amanda Rose Chaqueta](https://github.com/AmandaRoseChaqueta)
+All cliques that I've joined myself can be found in [/joined](/joined)!
 
 ## Tamagotchi
 
@@ -64,3 +59,10 @@ Bring your Palico and take on a hunting quest! What weapon do you take with you 
 <!-- Text only -->
 <p><a href="{{ meta.url }}/cliques" rel="noreferrer" target="_blank">Happy Hunting!</a> <span style="font-size: 20px; vertical-align: middle">❖</span> Heavy Bowgun</p>
 ```
+
+## Credits
+
+Unless specified, none of the images used in these cliques are made by me.
+
+- Tamagotchi icon ripped by [Gooniez](https://www.spriters-resource.com/game_boy_gbc/tamagotchi/asset/18987/), colors by me
+- Monster Hunter weapon icons ripped by [Amanda Rose Chaqueta](https://github.com/AmandaRoseChaqueta)
